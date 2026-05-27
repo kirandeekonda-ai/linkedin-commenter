@@ -1,0 +1,19 @@
+{
+  "name": "linkedin-commenter",
+  "version": "0.1.0",
+  "description": "LinkedIn Commenter Agent — Analyze posts, generate human-authentic comments",
+  "type": "module",
+  "scripts": {
+    "login": "node src/login-manager.js --login",
+    "verify-session": "node src/login-manager.js --verify",
+    "test-spike1": "node src/login-manager.js --full-test",
+    "start": "node src/server.js",
+    "scan": "node src/feed-scanner.js",
+    "orchestrate": "node src/run.js",
+    "test": "node tests/browser-guard.test.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "playwright": "^1.52.0"
+  }
+}

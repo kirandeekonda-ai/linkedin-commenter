@@ -1,0 +1,7 @@
+node_modules/
+data/browser-state/
+data/runs/
+data/stats.json
+data/comment-history.json
+.env
+*.log

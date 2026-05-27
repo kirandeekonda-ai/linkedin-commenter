@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinkedIn Commenter Agent — Dashboard</title>
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Custom Styling -->
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <div class="glass-bg"></div>
+  
+  <div class="container">
+    <!-- Header -->
+    <header class="main-header animate-fade-in">
+      <div class="brand">
+        <span class="logo-icon">🧠</span>
+        <div>
+          <h1>LinkedIn Commenter</h1>
+          <p class="subtitle">Agentic Engagement & Insights Platform</p>
+        </div>
+      </div>
+      <div class="header-actions">
+        <div class="status-badge" id="sessionStatus">
+          <span class="pulse-indicator green"></span> Active Session
+        </div>
+        <button class="btn btn-primary" id="runScanBtn">
+          <span class="btn-icon">⚡</span> Run Scan Now
+        </button>
+      </div>
+    </header>
+
+    <!-- Stats Dashboard Grid -->
+    <section class="stats-grid animate-fade-in" style="animation-delay: 0.1s;">
+      <div class="stat-card">
+        <div class="stat-icon">📊</div>
+        <div class="stat-info">
+          <span class="stat-label">Total Analyzed</span>
+          <h2 id="statAnalyzed">0</h2>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon text-cyan">💬</div>
+        <div class="stat-info">
+          <span class="stat-label">Today's Comments</span>
+          <h2 id="statToday">0</h2>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon text-green">✅</div>
+        <div class="stat-info">
+          <span class="stat-label">Posted Rate</span>
+          <h2 id="statPostRate">0.0%</h2>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon text-purple">📈</div>
+        <div class="stat-info">
+          <span class="stat-label">Total Posted</span>
+          <h2 id="statPosted">0</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content Layout: Left (Posts/Comments), Right (Charts & History) -->
+    <div class="main-layout">
+      <!-- Left: Recommendations -->
+      <main class="recommendations-section animate-fade-in" style="animation-delay: 0.2s;">
+        <div class="section-header">
+          <h2>🎯 Today's Recommended Comments</h2>
+          <span class="date-badge" id="currentRunDate">YYYY-MM-DD</span>
+        </div>
+        
+        <div class="comments-list" id="commentsList">
+          <!-- Loading state -->
+          <div class="loading-state">
+            <span class="spinner"></span>
+            <p>Loading today's comments...</p>
+          </div>
+        </div>
+      </main>
+
+      <!-- Right: Analytics and Logs -->
+      <aside class="sidebar animate-fade-in" style="animation-delay: 0.3s;">
+        <!-- Charts Card -->
+        <div class="sidebar-card">
+          <h3>📊 Tone Distribution</h3>
+          <div class="chart-container">
+            <canvas id="toneChart"></canvas>
+          </div>
+        </div>
+
+        <!-- History Card -->
+        <div class="sidebar-card">
+          <h3>⏳ Run History</h3>
+          <div class="history-table-wrapper">
+            <table class="history-table">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Scanned</th>
+                  <th>Comments</th>
+                  <th>Posted</th>
+                </tr>
+              </thead>
+              <tbody id="historyTableBody">
+                <tr>
+                  <td colspan="4" class="text-center text-muted">No runs logged yet.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <!-- Edit Modal -->
+  <div class="modal-overlay" id="editModal">
+    <div class="modal">
+      <div class="modal-header">
+        <h3>✏️ Edit Comment</h3>
+        <button class="btn-close" id="closeModalBtn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <textarea id="modalTextarea" rows="6"></textarea>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" id="cancelModalBtn">Cancel</button>
+        <button class="btn btn-primary" id="saveModalBtn">Save Changes</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Notification Toast -->
+  <div class="toast" id="toast">Comment copied to clipboard!</div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
