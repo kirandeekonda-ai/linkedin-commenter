@@ -134,9 +134,50 @@ async function extractPosts(page) {
       return parseInt(text, 10) || 0;
     };
 
+    // Helper: decode obfuscated base64 protobuf URNs from component keys
+    const decodeBase64ProtobufUrn = (text) => {
+      if (!text) return null;
+      const matches = text.match(/(?:Cgs|Egs)I[A-Za-z0-9+/=_-]{12,40}/g);
+      if (!matches) return null;
+      
+      for (const rawMatch of matches) {
+        let base64 = rawMatch.replace(/-/g, '+').replace(/_/g, '/');
+        while (base64.length % 4 !== 0) {
+          base64 += '=';
+        }
+        
+        try {
+          const binaryString = atob(base64);
+          const bytes = new Uint8Array(binaryString.length);
+          for (let i = 0; i < binaryString.length; i++) {
+            bytes[i] = binaryString.charCodeAt(i);
+          }
+          
+          if (bytes[0] === 0x0a && bytes[2] === 0x08) {
+            const len = bytes[1];
+            const varintBytes = bytes.slice(3, 3 + len - 1);
+            let val = 0n;
+            let shift = 0n;
+            for (let b of varintBytes) {
+              val |= BigInt(b & 0x7f) << shift;
+              shift += 7n;
+            }
+            const activityId = val >> 1n;
+            if (activityId >= 7000000000000000000n && activityId <= 8000000000000000000n) {
+              return 'urn:li:activity:' + activityId.toString();
+            }
+          }
+        } catch (err) {
+          // ignore
+        }
+      }
+      return null;
+    };
+
     // Find post containers using multiple strategies
     let postElements = [];
     const strategies = [
+      '[role="listitem"]',
       '[data-urn^="urn:li:activity"]',
       '.feed-shared-update-v2',
       '[role="main"] article',
@@ -159,44 +200,86 @@ async function extractPosts(page) {
     for (const el of postElements) {
       try {
         // ── Post ID / URN ──
-        const urn = el.getAttribute('data-urn') ||
-                    el.closest('[data-urn]')?.getAttribute('data-urn') ||
-                    el.getAttribute('data-id') || '';
+        const urnEl = el.querySelector('[data-urn]') || el.closest('[data-urn]');
+        let urn = urnEl ? urnEl.getAttribute('data-urn') : (el.getAttribute('data-urn') || el.getAttribute('data-id') || '');
+
+        // Fallback using obfuscated component keys
+        if (!urn) {
+          const decodedUrn = decodeBase64ProtobufUrn(el.outerHTML);
+          if (decodedUrn) {
+            urn = decodedUrn;
+          }
+        }
 
         // Deduplicate
         if (urn && seenIds.has(urn)) continue;
         if (urn) seenIds.add(urn);
 
+
         // ── Author Info ──
-        // Strategy 1: Parse name from profile link aria-label (cleanest)
-        let authorName = getNameFromAriaLabel(el);
+        let authorName = '';
         
-        // Strategy 2: Get from .update-components-actor__title (current LinkedIn DOM)
+        // Strategy A: parse name from profile avatar image alt
+        const avatarImg = el.querySelector('a[href*="/in/"] img[alt*="profile"], a[href*="/in/"] img[alt*="’s"]');
+        if (avatarImg) {
+          const alt = avatarImg.getAttribute('alt') || '';
+          const match = alt.match(/View\s+(.+?)(?:'s|’s)\s+profile/i);
+          if (match) authorName = match[1].trim();
+        }
+
+        // Strategy B: Parse name from profile link aria-label
+        if (!authorName) {
+          authorName = getNameFromAriaLabel(el);
+        }
+
+        // Strategy C: Parse from first meaningful profile link text content
+        if (!authorName) {
+          const profileLink = el.querySelector('a[href*="/in/"]');
+          if (profileLink && profileLink.textContent.trim()) {
+            let name = profileLink.textContent.trim();
+            if (name.includes('•')) name = name.split('•')[0].trim();
+            if (name.includes('Premium Profile')) name = name.split('Premium Profile')[0].trim();
+            authorName = name;
+          }
+        }
+
+        // Strategy D: Legacy text selectors
         if (!authorName) {
           authorName = getText(el, [
             '.update-components-actor__title',
             '.update-components-actor__meta-link',
-          ]);
-          // The title may contain headline text too — take only first line
-          if (authorName && authorName.includes('•')) {
-            authorName = authorName.split('•')[0].trim();
-          }
-        }
-        
-        // Strategy 3: Legacy selectors (fallback)
-        if (!authorName) {
-          authorName = getText(el, [
             '.update-components-actor__name span[aria-hidden="true"]',
             '.feed-shared-actor__name span[aria-hidden="true"]',
             '.update-components-actor__name',
           ]);
+          if (authorName && authorName.includes('•')) {
+            authorName = authorName.split('•')[0].trim();
+          }
         }
 
-        const authorHeadline = getText(el, [
-          '.update-components-actor__description',
-          '.update-components-actor__subtitle',
-          '.feed-shared-actor__description',
-        ]);
+        let authorHeadline = '';
+        const nameLink = el.querySelector('a[href*="/in/"]');
+        if (nameLink && authorName) {
+          const container = nameLink.closest('div');
+          if (container) {
+            const spans = Array.from(container.querySelectorAll('span, div')).map(s => s.textContent.trim());
+            const nameClean = authorName.toLowerCase();
+            authorHeadline = spans.find(text => 
+              text.length > 20 && 
+              !text.toLowerCase().includes(nameClean) && 
+              !text.toLowerCase().includes('follow') &&
+              !text.toLowerCase().includes('suggested')
+            ) || '';
+          }
+        }
+
+        if (!authorHeadline) {
+          authorHeadline = getText(el, [
+            '.update-components-actor__description',
+            '.update-components-actor__subtitle',
+            '.feed-shared-actor__description',
+          ]);
+        }
 
         const authorProfileUrl = getHref(el, [
           '.update-components-actor__meta-link',
@@ -207,6 +290,7 @@ async function extractPosts(page) {
 
         // ── Post Text ──
         const postText = getText(el, [
+          '[data-testid="expandable-text-box"]',
           '.feed-shared-update-v2__description .break-words',
           '.update-components-text span.break-words',
           '.feed-shared-text .break-words',
@@ -219,16 +303,28 @@ async function extractPosts(page) {
         let postUrl = '';
         if (urn && urn.startsWith('urn:li:activity:')) {
           postUrl = `https://www.linkedin.com/feed/update/${urn}/`;
-        } else {
-          // Try to find a permalink
+        }
+        
+        if (!postUrl) {
+          // Try to find the timestamp permalink or any direct link
           const permalink = el.querySelector(
-            'a[href*="/feed/update/"], a[href*="/posts/"]'
+            '.update-components-actor__sub-description a, .feed-shared-actor__sub-description a, a[href*="/feed/update/"], a[href*="/posts/"]'
           );
           if (permalink) {
             const href = permalink.getAttribute('href');
-            postUrl = href.startsWith('http') ? href : `https://www.linkedin.com${href}`;
+            if (href) {
+              postUrl = href.startsWith('http') ? href : `https://www.linkedin.com${href}`;
+            }
           }
         }
+
+        // Fallback to recent activity URL if no direct link is available
+        if (!postUrl && authorProfileUrl) {
+          const base = authorProfileUrl.endsWith('/') ? authorProfileUrl : authorProfileUrl + '/';
+          postUrl = `${base}recent-activity/all/`;
+        }
+
+
 
         // ── Timestamp ──
         const timestamp = getText(el, [

@@ -1,0 +1,5407 @@
+[
+  {
+    "postIndex": 0,
+    "outerHtmlSample": "<div class=\"_95d5036b bb939d13 be945af7 _0c4d68a6 aee44b6b _9618c9d2 _5625003a ca6a2ac4 _64647e4f a8f884a9 _4f0eb1d0 c83698bf _35d5d25c c52a091f a292b8a6 _0eca8e58 ca0e1f9e _49236aae _5c737f4f _865c79e5 daede374\" role=\"listitem\" componentkey=\"expandedmqS8GzLgayeJKXtBr2byDuA4m2pkUvpRNJRel2NrtUIFeedTy",
+    "dataElements": [
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "_95d5036b a8f884a9 _4f0eb1d0 c83698bf _35d5d25c c52a091f a292b8a6",
+          "componentkey": "mqS8GzLgayeJKXtBr2byDuA4m2pkUvpRNJRel2NrtUI"
+        },
+        "textSample": "Feed postSriram Srinivasan  • 1stAI Champion @ Wip"
+      },
+      {
+        "tagName": "SPAN",
+        "attrs": {
+          "aria-hidden": "true"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "_07f2c1fd _82eae472 _56bded47 d87a6d07 a4bbc50b _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/in/sriramadvisory/",
+          "componentkey": "73c5b814-ae15-4a40-b8c3-f203204bb6b8"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "FIGURE",
+        "attrs": {
+          "class": "ec8e57de _413f2dd8 d9aa937f _6b3b6f8b a6ca4b51 daede374 b2ac0f54 _302da1a4",
+          "componentkey": "73c5b814-ae15-4a40-b8c3-f203204bb6b8"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "person-accent-4",
+          "aria-hidden": "false",
+          "viewBox": "0 0 128 128",
+          "data-token-id": "356",
+          "class": "_69be5bf3 _47c144c9 _302da1a4 b2ac0f54 _942d2b8f",
+          "role": "img",
+          "fetchPriority": "low",
+          "aria-label": "View Sriram Srinivasan’s profile",
+          "preserveAspectRatio": "xMidYMid slice"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "_2a7e3793 ea13b12b _61f144d2 _497c3b21 _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/in/sriramadvisory/",
+          "componentkey": "582518d2-a3e7-4c22-b83b-638f8450ebe6"
+        },
+        "textSample": "Sriram Srinivasan  • 1st"
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "a6ca4b51 ff0e404d _07e1c6a4",
+          "componentkey": "582518d2-a3e7-4c22-b83b-638f8450ebe6"
+        },
+        "textSample": "Sriram Srinivasan  • 1st"
+      },
+      {
+        "tagName": "SPAN",
+        "attrs": {
+          "class": "_6a0f6466 _9a413ba6",
+          "aria-hidden": "true"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "linkedin-bug-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "459",
+          "width": "16",
+          "height": "16",
+          "class": "_65fc9e2a _9a413ba6 _44e3033a",
+          "role": "img",
+          "style": "width: 16px; min-width: 16px; height: 16px; min-height: 16px;"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "P",
+        "attrs": {
+          "class": "b2777cf9 _1b06079e a57aba93 _20a9a9f3 _03656ddb daede374 b7111a01 _2a7e3793 _67eb55f7",
+          "componentkey": "6ddbb4f8-bd57-4771-8f45-3600dad16128"
+        },
+        "textSample": "1d •"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "globe-americas-small",
+          "fill": "currentColor",
+          "aria-hidden": "false",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "182",
+          "width": "16",
+          "height": "16",
+          "class": "_53c5c3f6 _9a413ba6 _6fd06a6a",
+          "role": "img",
+          "aria-label": "Visibility: Global",
+          "style": "width: 16px; min-width: 16px; height: 16px; min-height: 16px;"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "_2a7e3793 fb00c7ce _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/in/sriramadvisory/",
+          "componentkey": "159c43de-a718-4073-9c62-97422b97fbf6"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "a6ca4b51 ff0e404d _73c86c1a _07e1c6a4",
+          "componentkey": "159c43de-a718-4073-9c62-97422b97fbf6"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 bd2a259e e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece _0e8bd5d5 _73c4280d fd2fc91b b2dfb6e3 _3d10d77b a4bbc50b",
+          "type": "button",
+          "componentkey": "74ac3496-117d-42ef-9ee2-a5b199952ef5",
+          "aria-label": "Open control menu for post by Sriram Srinivasan",
+          "aria-expanded": "false"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "overflow-web-ios-small",
+          "fill": "currentColor",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "383",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": "",
+          "aria-hidden": "true"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 bd2a259e e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece _0e8bd5d5 fd2fc91b b2dfb6e3 _3d10d77b a4bbc50b",
+          "type": "button",
+          "componentkey": "07857690-a98a-4f1f-bf45-79d407907aeb",
+          "aria-label": "Hide post by Sriram Srinivasan"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "close-small",
+          "fill": "currentColor",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "206",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": "",
+          "aria-hidden": "true"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "P",
+        "attrs": {
+          "class": "b2777cf9 _94449bdc _9e415b92 _02318b6a daf1dc32 _5349ee97 _05d866de f03aabde _8be8c973 _0812541b _8decbcdb f6048ef7 _7dcfb1c6 _67eb55f7",
+          "componentkey": "feed-commentary_98f39e85-18b7-4a36-b9ae-e2fda95b97d3"
+        },
+        "textSample": "The biggest mistake professionals are making in th"
+      },
+      {
+        "tagName": "SPAN",
+        "attrs": {
+          "class": "f5fa6300 _20a9a9f3 _03656ddb daede374 b7111a01 _2a7e3793 b39c4f23 f93f8ece",
+          "tabindex": "-1",
+          "data-testid": "expandable-text-box"
+        },
+        "textSample": "The biggest mistake professionals are making in th"
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_6c05c2a3 _0553e249 b6d3012c _9dd1dfc9 _4c3bce13 b6fb284c _56349cb2 c1d63aae _3f5b20ab ca0e1f9e _497fc0a7 f3ad09dd _46e34e24 _700306d9 bcfc6674",
+          "type": "button",
+          "aria-hidden": "true",
+          "data-testid": "expandable-text-button",
+          "style": "--_317b8c87: var(--_63e99756); inset-inline-start: 0px; pointer-events: none;"
+        },
+        "textSample": "… more"
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "a6ca4b51 _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/feed/",
+          "componentkey": "b6064998-b219-48af-b0e0-185e088bd9da"
+        },
+        "textSample": "13 reactions13"
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "a6ca4b51 _98c7c331 _02318b6a a8f884a9 ed369678 c83698bf _90752ee4 c52a091f _9d3fd27f",
+          "componentkey": "b6064998-b219-48af-b0e0-185e088bd9da"
+        },
+        "textSample": "13 reactions13"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "like-consumption-ring-small",
+          "width": "16",
+          "height": "16",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "17",
+          "class": "dd59049d b39c4f23 _1a9f78f4 _33539d8a",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "interest-consumption-ring-small",
+          "width": "16",
+          "height": "16",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "25",
+          "class": "dd59049d b39c4f23 _1a9f78f4 _33539d8a",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "path",
+        "attrs": {
+          "fill": "none",
+          "stroke": "#fff",
+          "stroke-linecap": "round",
+          "stroke-linejoin": "round",
+          "stroke-width": "2",
+          "d": "M7.46 4.78a2.2 2.2 0 0 0-1.22.65 2.43 2.43 0 0 0-.68 1.22"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "SPAN",
+        "attrs": {
+          "aria-hidden": "true"
+        },
+        "textSample": "13"
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "role": "button",
+          "tabindex": "0",
+          "class": "ea13b12b a4bbc50b _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "componentkey": "d0045b5a-92c5-461f-8745-c771cba649c3"
+        },
+        "textSample": "3 comments3 comments"
+      },
+      {
+        "tagName": "P",
+        "attrs": {
+          "class": "b2777cf9 _94449bdc a6ca4b51 _98c7c331 _02318b6a _05d866de f03aabde _8be8c973 _0812541b _8decbcdb f3ad09dd _7dcfb1c6 _1149b69c e61f6585",
+          "componentkey": "d0045b5a-92c5-461f-8745-c771cba649c3",
+          "style": "--_08555671: var(--_63e99756); --_5d2fa3f0: var(--d2a09643); --_1c1c79e6: var(--_33180e65);"
+        },
+        "textSample": "3 comments3 comments"
+      },
+      {
+        "tagName": "SPAN",
+        "attrs": {
+          "aria-hidden": "true"
+        },
+        "textSample": "3 comments"
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "ea13b12b a4bbc50b _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/feed/",
+          "componentkey": "f69e632d-b807-4858-912c-e3463c83a50a"
+        },
+        "textSample": "1 repost1 repost"
+      },
+      {
+        "tagName": "P",
+        "attrs": {
+          "class": "b2777cf9 _94449bdc a6ca4b51 _98c7c331 _02318b6a _05d866de f03aabde _8be8c973 _0812541b _8decbcdb f3ad09dd _7dcfb1c6 _1149b69c e61f6585",
+          "componentkey": "f69e632d-b807-4858-912c-e3463c83a50a",
+          "style": "--_08555671: var(--_63e99756); --_5d2fa3f0: var(--d2a09643); --_1c1c79e6: var(--_33180e65);"
+        },
+        "textSample": "1 repost1 repost"
+      },
+      {
+        "tagName": "SPAN",
+        "attrs": {
+          "aria-hidden": "true"
+        },
+        "textSample": "1 repost"
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 bd2a259e e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece",
+          "type": "button",
+          "componentkey": "317b65ed-19c1-432f-b00e-8cc476148d1a",
+          "aria-label": "Reaction button state: no reaction"
+        },
+        "textSample": "Like"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "thumbs-up-outline-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "289",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "chevron-up-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "380",
+          "width": "16",
+          "height": "16",
+          "class": "",
+          "role": "img",
+          "style": "width: 16px; min-width: 16px; height: 16px; min-height: 16px;"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 _3ee27ee8 e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece",
+          "type": "button",
+          "componentkey": "8a02ad43-12f1-41d7-8384-cf350631e7fc"
+        },
+        "textSample": "Comment"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "comment-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "202",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 _3ee27ee8 e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece",
+          "type": "button",
+          "componentkey": "555ca8ef-ad89-4e2a-ad0e-bfa19ebc745f",
+          "aria-expanded": "false"
+        },
+        "textSample": "Repost"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "repost-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "255",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 _3ee27ee8 e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece",
+          "aria-disabled": "false",
+          "href": "https://www.linkedin.com/feed/",
+          "componentkey": "21509c37-06f6-453d-afb7-b8dc4db3ac2c"
+        },
+        "textSample": "Send"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "send-privately-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-rtl": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "232",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "_0e8e1ca9 _658cfaa4 _6e154561",
+          "componentkey": "CgsIgMDFmLX1yJjPAQ-replaceableCommentToolsmqS8GzLgayeJKXtBr2byDuA4m2pkUvpRNJRel2NrtUIFeedType_MAIN_FEED_RELEVANCE"
+        },
+        "textSample": ""
+      }
+    ],
+    "anchors": [
+      {
+        "href": "https://www.linkedin.com/in/sriramadvisory/",
+        "text": "",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/in/sriramadvisory/",
+        "text": "Sriram Srinivasan  • 1st",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/in/sriramadvisory/",
+        "text": "",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/feed/",
+        "text": "13 reactions13",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/feed/",
+        "text": "1 repost1 repost",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/feed/",
+        "text": "Send",
+        "ariaLabel": null
+      }
+    ]
+  },
+  {
+    "postIndex": 1,
+    "outerHtmlSample": "<div class=\"_95d5036b bb939d13 be945af7 _0c4d68a6 aee44b6b _9618c9d2 _5625003a ca6a2ac4 _64647e4f a8f884a9 _4f0eb1d0 c83698bf _35d5d25c c52a091f a292b8a6 _0eca8e58 ca0e1f9e _49236aae _5c737f4f _865c79e5 daede374\" role=\"listitem\" componentkey=\"expandedFV2C3KFh7t9rEJNQQHFwz4i2IUayeKrycCteKC8KksEFeedTy",
+    "dataElements": [
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "_95d5036b a8f884a9 _4f0eb1d0 c83698bf _35d5d25c c52a091f a292b8a6",
+          "componentkey": "FV2C3KFh7t9rEJNQQHFwz4i2IUayeKrycCteKC8KksE"
+        },
+        "textSample": "Feed postSuggestedRakesh Gohel  • 3rd+Scaling with"
+      },
+      {
+        "tagName": "SPAN",
+        "attrs": {
+          "aria-hidden": "true"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "_2a4006b3 f7b59a08 a8f884a9 ed369678 c83698bf _6088ed7e c52a091f a292b8a6",
+          "componentkey": "ffeac652-8d01-4417-8100-e3186e9a2982"
+        },
+        "textSample": "Suggested"
+      },
+      {
+        "tagName": "P",
+        "attrs": {
+          "class": "b2777cf9 _1b06079e f5fa6300 _20a9a9f3 _03656ddb daede374 b7111a01 _2a7e3793 _67eb55f7",
+          "componentkey": "1ff158e5-2b1d-4bc8-95e9-01979a12e2d3"
+        },
+        "textSample": "Suggested"
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 bd2a259e e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece b2dfb6e3 _3d10d77b a4bbc50b",
+          "type": "button",
+          "componentkey": "6e08b6ad-d6d4-47a4-bcdd-22bfd877f039",
+          "aria-label": "Open control menu for post by Rakesh Gohel",
+          "aria-expanded": "false"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "overflow-web-ios-small",
+          "fill": "currentColor",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "383",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": "",
+          "aria-hidden": "true"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 bd2a259e e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece fd2fc91b b2dfb6e3 _3d10d77b a4bbc50b",
+          "type": "button",
+          "componentkey": "f8a6ea18-52b2-4133-9136-407f333a7dd0",
+          "aria-label": "Hide post by Rakesh Gohel"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "close-small",
+          "fill": "currentColor",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "206",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": "",
+          "aria-hidden": "true"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "_0e8bd5d5 _82eae472 _56bded47 d87a6d07 a4bbc50b _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/in/rakeshgohel01/",
+          "componentkey": "aeefae27-5d4f-4321-a674-bc191fdef6a3"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "FIGURE",
+        "attrs": {
+          "class": "ec8e57de _413f2dd8 d9aa937f _6b3b6f8b a6ca4b51 daede374 b2ac0f54 _302da1a4",
+          "componentkey": "aeefae27-5d4f-4321-a674-bc191fdef6a3"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "person-accent-4",
+          "aria-hidden": "false",
+          "viewBox": "0 0 128 128",
+          "data-token-id": "356",
+          "class": "_69be5bf3 _47c144c9 _302da1a4 b2ac0f54 _942d2b8f",
+          "role": "img",
+          "fetchPriority": "low",
+          "aria-label": "View Rakesh Gohel’s profile",
+          "preserveAspectRatio": "xMidYMid slice"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "_2a7e3793 ea13b12b _61f144d2 _497c3b21 _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/in/rakeshgohel01/",
+          "componentkey": "04f0ca98-5fbf-4c73-a18d-6793253f6a21"
+        },
+        "textSample": "Rakesh Gohel  • 3rd+"
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "a6ca4b51 ff0e404d _07e1c6a4",
+          "componentkey": "04f0ca98-5fbf-4c73-a18d-6793253f6a21"
+        },
+        "textSample": "Rakesh Gohel  • 3rd+"
+      },
+      {
+        "tagName": "SPAN",
+        "attrs": {
+          "class": "_6a0f6466 _9a413ba6",
+          "aria-hidden": "true"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "linkedin-bug-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "459",
+          "width": "16",
+          "height": "16",
+          "class": "_65fc9e2a _9a413ba6 _44e3033a",
+          "role": "img",
+          "style": "width: 16px; min-width: 16px; height: 16px; min-height: 16px;"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "ea13b12b _61f144d2 _497c3b21 _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/services/page/369488327bb7415793/",
+          "target": "_blank",
+          "componentkey": "11a5e452-1d75-445f-979a-6bfbae2f7ab6"
+        },
+        "textSample": "View my services"
+      },
+      {
+        "tagName": "P",
+        "attrs": {
+          "class": "b2777cf9 _1b06079e a6ca4b51 _05d866de f03aabde _8c55ea74 _0812541b _8decbcdb _3097e1cb _7dcfb1c6 _67eb55f7",
+          "componentkey": "11a5e452-1d75-445f-979a-6bfbae2f7ab6"
+        },
+        "textSample": "View my services"
+      },
+      {
+        "tagName": "P",
+        "attrs": {
+          "class": "b2777cf9 _1b06079e a57aba93 _20a9a9f3 _03656ddb daede374 b7111a01 _2a7e3793 _67eb55f7",
+          "componentkey": "c0c32bb7-3452-4c2d-bb49-0ee0b179ddf9"
+        },
+        "textSample": "1d •"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "globe-americas-small",
+          "fill": "currentColor",
+          "aria-hidden": "false",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "182",
+          "width": "16",
+          "height": "16",
+          "class": "_53c5c3f6 _9a413ba6 _6fd06a6a",
+          "role": "img",
+          "aria-label": "Visibility: Global",
+          "style": "width: 16px; min-width: 16px; height: 16px; min-height: 16px;"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "_2a7e3793 fb00c7ce _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/in/rakeshgohel01/",
+          "componentkey": "5c43c0c3-e0b6-4dfa-9f18-4343862f9430"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "a6ca4b51 ff0e404d _73c86c1a _07e1c6a4",
+          "componentkey": "5c43c0c3-e0b6-4dfa-9f18-4343862f9430"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "ff0e404d _2a7e3793 ea13b12b _07e1c6a4",
+          "componentkey": "6a2242a4-99d0-46bf-8b78-cc0f64f35865"
+        },
+        "textSample": "Follow"
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 _3ee27ee8 e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece",
+          "type": "button",
+          "componentkey": "auto-component-9c55ba79-5478-41d2-bc91-43a77d212ec5",
+          "aria-label": "Follow Rakesh Gohel"
+        },
+        "textSample": "Follow"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "add-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "86",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "P",
+        "attrs": {
+          "class": "b2777cf9 _94449bdc _9e415b92 _02318b6a daf1dc32 _5349ee97 _05d866de f03aabde _8be8c973 _0812541b _8decbcdb f6048ef7 _7dcfb1c6 _67eb55f7",
+          "componentkey": "feed-commentary_61e16cef-6ba3-4d96-a12c-a3791ceef079"
+        },
+        "textSample": "AI agents degrade when memory is ignoredContext dr"
+      },
+      {
+        "tagName": "SPAN",
+        "attrs": {
+          "class": "f5fa6300 _20a9a9f3 _03656ddb daede374 b7111a01 _2a7e3793 b39c4f23 f93f8ece",
+          "tabindex": "-1",
+          "data-testid": "expandable-text-box"
+        },
+        "textSample": "AI agents degrade when memory is ignoredContext dr"
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_6c05c2a3 _0553e249 b6d3012c _9dd1dfc9 _4c3bce13 b6fb284c _56349cb2 c1d63aae _3f5b20ab ca0e1f9e _497fc0a7 f3ad09dd _46e34e24 _700306d9 bcfc6674",
+          "type": "button",
+          "aria-hidden": "true",
+          "data-testid": "expandable-text-button",
+          "style": "--_317b8c87: var(--_63e99756); inset-inline-start: 238.172px; pointer-events: none;"
+        },
+        "textSample": "… more"
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "_0eca8e58 _7db789d8 _497c3b21 _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/feed/",
+          "componentkey": "7a394643-9b4e-44b4-9860-e86e17939952",
+          "style": "aspect-ratio: 0.800539 / 1;"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "a6ca4b51 _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/feed/",
+          "componentkey": "91535764-9459-491c-8a11-6691103690cf"
+        },
+        "textSample": "556 reactions556"
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "a6ca4b51 _98c7c331 _02318b6a a8f884a9 ed369678 c83698bf _90752ee4 c52a091f _9d3fd27f",
+          "componentkey": "91535764-9459-491c-8a11-6691103690cf"
+        },
+        "textSample": "556 reactions556"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "like-consumption-ring-small",
+          "width": "16",
+          "height": "16",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "17",
+          "class": "dd59049d b39c4f23 _1a9f78f4 _33539d8a",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "interest-consumption-ring-small",
+          "width": "16",
+          "height": "16",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "25",
+          "class": "dd59049d b39c4f23 _1a9f78f4 _33539d8a",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "path",
+        "attrs": {
+          "fill": "none",
+          "stroke": "#fff",
+          "stroke-linecap": "round",
+          "stroke-linejoin": "round",
+          "stroke-width": "2",
+          "d": "M7.46 4.78a2.2 2.2 0 0 0-1.22.65 2.43 2.43 0 0 0-.68 1.22"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "empathy-consumption-ring-small",
+          "width": "16",
+          "height": "16",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "23",
+          "class": "dd59049d b39c4f23 _1a9f78f4 _33539d8a",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "SPAN",
+        "attrs": {
+          "aria-hidden": "true"
+        },
+        "textSample": "556"
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "role": "button",
+          "tabindex": "0",
+          "class": "ea13b12b a4bbc50b _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "componentkey": "b8647861-67b5-40a8-93d1-a43f61f6a85f"
+        },
+        "textSample": "56 comments56 comments"
+      },
+      {
+        "tagName": "P",
+        "attrs": {
+          "class": "b2777cf9 _94449bdc a6ca4b51 _98c7c331 _02318b6a _05d866de f03aabde _8be8c973 _0812541b _8decbcdb f3ad09dd _7dcfb1c6 _1149b69c e61f6585",
+          "componentkey": "b8647861-67b5-40a8-93d1-a43f61f6a85f",
+          "style": "--_08555671: var(--_63e99756); --_5d2fa3f0: var(--d2a09643); --_1c1c79e6: var(--_33180e65);"
+        },
+        "textSample": "56 comments56 comments"
+      },
+      {
+        "tagName": "SPAN",
+        "attrs": {
+          "aria-hidden": "true"
+        },
+        "textSample": "56 comments"
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "ea13b12b a4bbc50b _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/feed/",
+          "componentkey": "35e1b92a-206c-48a5-aab4-3b21a38307ad"
+        },
+        "textSample": "90 reposts90 reposts"
+      },
+      {
+        "tagName": "P",
+        "attrs": {
+          "class": "b2777cf9 _94449bdc a6ca4b51 _98c7c331 _02318b6a _05d866de f03aabde _8be8c973 _0812541b _8decbcdb f3ad09dd _7dcfb1c6 _1149b69c e61f6585",
+          "componentkey": "35e1b92a-206c-48a5-aab4-3b21a38307ad",
+          "style": "--_08555671: var(--_63e99756); --_5d2fa3f0: var(--d2a09643); --_1c1c79e6: var(--_33180e65);"
+        },
+        "textSample": "90 reposts90 reposts"
+      },
+      {
+        "tagName": "SPAN",
+        "attrs": {
+          "aria-hidden": "true"
+        },
+        "textSample": "90 reposts"
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 bd2a259e e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece",
+          "type": "button",
+          "componentkey": "c394f713-be76-4a53-955b-b5973245962f",
+          "aria-label": "Reaction button state: no reaction"
+        },
+        "textSample": "Like"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "thumbs-up-outline-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "289",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "chevron-up-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "380",
+          "width": "16",
+          "height": "16",
+          "class": "",
+          "role": "img",
+          "style": "width: 16px; min-width: 16px; height: 16px; min-height: 16px;"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 _3ee27ee8 e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece",
+          "type": "button",
+          "componentkey": "97784130-d6e9-42c8-8f27-a0c40041636a"
+        },
+        "textSample": "Comment"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "comment-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "202",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 _3ee27ee8 e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece",
+          "type": "button",
+          "componentkey": "87591411-cfdc-442b-b695-0caf4da56659",
+          "aria-expanded": "false"
+        },
+        "textSample": "Repost"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "repost-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "255",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 _3ee27ee8 e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece",
+          "aria-disabled": "false",
+          "href": "https://www.linkedin.com/feed/",
+          "componentkey": "7de421dd-0cf0-4bd3-a116-1879e783ee43"
+        },
+        "textSample": "Send"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "send-privately-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-rtl": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "232",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "_0e8e1ca9 _658cfaa4 _6e154561",
+          "componentkey": "CgsIgIDL3IWviZnPAQ-replaceableCommentToolsFV2C3KFh7t9rEJNQQHFwz4i2IUayeKrycCteKC8KksEFeedType_MAIN_FEED_RELEVANCE"
+        },
+        "textSample": ""
+      }
+    ],
+    "anchors": [
+      {
+        "href": "https://www.linkedin.com/in/rakeshgohel01/",
+        "text": "",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/in/rakeshgohel01/",
+        "text": "Rakesh Gohel  • 3rd+",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/services/page/369488327bb7415793/",
+        "text": "View my services",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/in/rakeshgohel01/",
+        "text": "",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/safety/go/?url=https%3A%2F%2Flnkd%2Ein%2FesJDdA5Q&urlhash=ZP6d&mt=-zrAlC8AaTfXUyvw-abfTSfY-otA71lKwEGWsubwgsy8ax93llaB-UpsFbXz3H3UgihX9Z0yXkKoR-AEJNtD5vWKQGFUCMd5QaVDs9H75hTmbJKKQTLOmagn7Q&isSdui=true",
+        "text": "https://lnkd.in/esJDdA5Q",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/feed/",
+        "text": "",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/feed/",
+        "text": "556 reactions556",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/feed/",
+        "text": "90 reposts90 reposts",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/feed/",
+        "text": "Send",
+        "ariaLabel": null
+      }
+    ]
+  },
+  {
+    "postIndex": 2,
+    "outerHtmlSample": "<div class=\"_95d5036b bb939d13 be945af7 _0c4d68a6 aee44b6b _9618c9d2 _5625003a ca6a2ac4 _64647e4f a8f884a9 _4f0eb1d0 c83698bf _35d5d25c c52a091f a292b8a6 _0eca8e58 ca0e1f9e _49236aae _5c737f4f _865c79e5 daede374\" role=\"listitem\" componentkey=\"expandedbrTPjyMTTn6IB5S5147NQ4NbBjZgDQqgpy6z_zNl2f4FeedTy",
+    "dataElements": [
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "_95d5036b a8f884a9 _4f0eb1d0 c83698bf _35d5d25c c52a091f a292b8a6",
+          "componentkey": "brTPjyMTTn6IB5S5147NQ4NbBjZgDQqgpy6z_zNl2f4"
+        },
+        "textSample": "Feed postRavi Sunkara FRM PMP CAIE loves thisAdam"
+      },
+      {
+        "tagName": "SPAN",
+        "attrs": {
+          "aria-hidden": "true"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "_2a4006b3 f7b59a08 a8f884a9 ed369678 c83698bf _6088ed7e c52a091f a292b8a6",
+          "componentkey": "58fee49e-3359-4041-b7b0-9daadaca1c75"
+        },
+        "textSample": "Ravi Sunkara FRM PMP CAIE loves this"
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "_889ed897 e8382129 a4bbc50b _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/in/ravi-sunkara-frm-pmp-caie-3a15a68/",
+          "componentkey": "c56bd0d8-22fa-40bf-88c9-4558cadbf950"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "FIGURE",
+        "attrs": {
+          "class": "ec8e57de _413f2dd8 d9aa937f _6b3b6f8b a6ca4b51 daede374 b2ac0f54 _302da1a4",
+          "componentkey": "c56bd0d8-22fa-40bf-88c9-4558cadbf950"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "person-accent-4",
+          "aria-hidden": "false",
+          "viewBox": "0 0 128 128",
+          "data-token-id": "356",
+          "class": "_69be5bf3 _47c144c9 _302da1a4 b2ac0f54 _942d2b8f",
+          "role": "img",
+          "fetchPriority": "low",
+          "aria-label": "View Ravi Sunkara FRM PMP CAIE’s profile",
+          "preserveAspectRatio": "xMidYMid slice"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "P",
+        "attrs": {
+          "class": "b2777cf9 _1b06079e f5fa6300 _20a9a9f3 _03656ddb daede374 b7111a01 _2a7e3793 _67eb55f7",
+          "componentkey": "7b843d99-a66c-4158-bb7d-ff54365159e6"
+        },
+        "textSample": "Ravi Sunkara FRM PMP CAIE loves this"
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 bd2a259e e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece b2dfb6e3 _3d10d77b a4bbc50b",
+          "type": "button",
+          "componentkey": "c5da5f6d-c4ea-4eae-bf3d-67137896b650",
+          "aria-label": "Open control menu for post by Adam Danyal",
+          "aria-expanded": "false"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "overflow-web-ios-small",
+          "fill": "currentColor",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "383",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": "",
+          "aria-hidden": "true"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 bd2a259e e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece fd2fc91b b2dfb6e3 _3d10d77b a4bbc50b",
+          "type": "button",
+          "componentkey": "33abc890-755b-4898-a9cc-d394d12f6089",
+          "aria-label": "Hide post by Adam Danyal"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "close-small",
+          "fill": "currentColor",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "206",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": "",
+          "aria-hidden": "true"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "_0e8bd5d5 _82eae472 _56bded47 d87a6d07 a4bbc50b _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/in/adamdanyal/",
+          "componentkey": "b8a2865e-fffe-411a-a883-6fe42381af89"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "FIGURE",
+        "attrs": {
+          "class": "ec8e57de _413f2dd8 d9aa937f _6b3b6f8b a6ca4b51 daede374 b2ac0f54 _302da1a4",
+          "componentkey": "b8a2865e-fffe-411a-a883-6fe42381af89"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "person-accent-4",
+          "aria-hidden": "false",
+          "viewBox": "0 0 128 128",
+          "data-token-id": "356",
+          "class": "_69be5bf3 _47c144c9 _302da1a4 b2ac0f54 _942d2b8f",
+          "role": "img",
+          "fetchPriority": "low",
+          "aria-label": "View Adam Danyal’s profile",
+          "preserveAspectRatio": "xMidYMid slice"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "_2a7e3793 ea13b12b _61f144d2 _497c3b21 _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/in/adamdanyal/",
+          "componentkey": "4ce41c18-77df-4d47-80f6-01d45e54908e"
+        },
+        "textSample": "Adam Danyal  • 3rd+"
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "a6ca4b51 ff0e404d _07e1c6a4",
+          "componentkey": "4ce41c18-77df-4d47-80f6-01d45e54908e"
+        },
+        "textSample": "Adam Danyal  • 3rd+"
+      },
+      {
+        "tagName": "SPAN",
+        "attrs": {
+          "class": "_6a0f6466 _9a413ba6",
+          "aria-hidden": "true"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "linkedin-bug-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "459",
+          "width": "16",
+          "height": "16",
+          "class": "_65fc9e2a _9a413ba6 _44e3033a",
+          "role": "img",
+          "style": "width: 16px; min-width: 16px; height: 16px; min-height: 16px;"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "ea13b12b _61f144d2 _497c3b21 _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/safety/go/?url=https%3A%2F%2Faiforleaders%2Ecom&urlhash=3uH6&mt=uuBCqdPzjiDKe9DVMXY4LQb3ytJxJT1EMlZkBSnvx7zWjz2d8bM2IgiUQJyg8nucwGBDnMR-os9gRoKyVV3nwgx2tcdQz6X_bS97viRfBg&isSdui=true",
+          "target": "_blank",
+          "componentkey": "1b7c305a-c514-4ac8-b1c6-790ae581ad75"
+        },
+        "textSample": "View my newsletter"
+      },
+      {
+        "tagName": "P",
+        "attrs": {
+          "class": "b2777cf9 _1b06079e a6ca4b51 _05d866de f03aabde _8c55ea74 _0812541b _8decbcdb _3097e1cb _7dcfb1c6 _67eb55f7",
+          "componentkey": "1b7c305a-c514-4ac8-b1c6-790ae581ad75"
+        },
+        "textSample": "View my newsletter"
+      },
+      {
+        "tagName": "P",
+        "attrs": {
+          "class": "b2777cf9 _1b06079e a57aba93 _20a9a9f3 _03656ddb daede374 b7111a01 _2a7e3793 _67eb55f7",
+          "componentkey": "4ab8d95e-56ca-4a17-8549-2f57eddb0a43"
+        },
+        "textSample": "14h •"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "globe-americas-small",
+          "fill": "currentColor",
+          "aria-hidden": "false",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "182",
+          "width": "16",
+          "height": "16",
+          "class": "_53c5c3f6 _9a413ba6 _6fd06a6a",
+          "role": "img",
+          "aria-label": "Visibility: Global",
+          "style": "width: 16px; min-width: 16px; height: 16px; min-height: 16px;"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "_2a7e3793 fb00c7ce _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/in/adamdanyal/",
+          "componentkey": "1fefa397-149a-43dc-8f46-b8061c8449cd"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "a6ca4b51 ff0e404d _73c86c1a _07e1c6a4",
+          "componentkey": "1fefa397-149a-43dc-8f46-b8061c8449cd"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "ff0e404d _2a7e3793 ea13b12b _07e1c6a4",
+          "componentkey": "979414dd-bbca-414b-9779-2495255e6692"
+        },
+        "textSample": "Follow"
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 _3ee27ee8 e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece",
+          "type": "button",
+          "componentkey": "auto-component-d52b52e5-b51f-4464-bfe4-ba9f07e5e3bf",
+          "aria-label": "Follow Adam Danyal"
+        },
+        "textSample": "Follow"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "add-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "86",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "P",
+        "attrs": {
+          "class": "b2777cf9 _94449bdc _9e415b92 _02318b6a daf1dc32 _5349ee97 _05d866de f03aabde _8be8c973 _0812541b _8decbcdb f6048ef7 _7dcfb1c6 _67eb55f7",
+          "componentkey": "feed-commentary_3234c581-f417-46b3-9608-e448496d48bd"
+        },
+        "textSample": "Claude and ChatGPT are built for different jobs.𝗕"
+      },
+      {
+        "tagName": "SPAN",
+        "attrs": {
+          "class": "f5fa6300 _20a9a9f3 _03656ddb daede374 b7111a01 _2a7e3793 b39c4f23 f93f8ece",
+          "tabindex": "-1",
+          "data-testid": "expandable-text-box"
+        },
+        "textSample": "Claude and ChatGPT are built for different jobs.𝗕"
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_6c05c2a3 _0553e249 b6d3012c _9dd1dfc9 _4c3bce13 b6fb284c _56349cb2 c1d63aae _3f5b20ab ca0e1f9e _497fc0a7 f3ad09dd _46e34e24 _700306d9 bcfc6674",
+          "type": "button",
+          "aria-hidden": "true",
+          "data-testid": "expandable-text-button",
+          "style": "--_317b8c87: var(--_63e99756); inset-inline-start: 274.469px; pointer-events: none;"
+        },
+        "textSample": "… more"
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "_0eca8e58 _7db789d8 _497c3b21 _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/feed/",
+          "componentkey": "979ef2e1-6246-4843-9dc7-27712b98544e",
+          "style": "aspect-ratio: 0.800285 / 1;"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "a6ca4b51 _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/feed/",
+          "componentkey": "b78d3290-c8a6-4c1d-a1d9-c0155c2f8cd0"
+        },
+        "textSample": "Ravi Sunkara FRM PMP CAIE and 254 others reactedRa"
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "a6ca4b51 _98c7c331 _02318b6a a8f884a9 ed369678 c83698bf _90752ee4 c52a091f _9d3fd27f",
+          "componentkey": "b78d3290-c8a6-4c1d-a1d9-c0155c2f8cd0"
+        },
+        "textSample": "Ravi Sunkara FRM PMP CAIE and 254 others reactedRa"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "like-consumption-ring-small",
+          "width": "16",
+          "height": "16",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "17",
+          "class": "dd59049d b39c4f23 _1a9f78f4 _33539d8a",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "interest-consumption-ring-small",
+          "width": "16",
+          "height": "16",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "25",
+          "class": "dd59049d b39c4f23 _1a9f78f4 _33539d8a",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "path",
+        "attrs": {
+          "fill": "none",
+          "stroke": "#fff",
+          "stroke-linecap": "round",
+          "stroke-linejoin": "round",
+          "stroke-width": "2",
+          "d": "M7.46 4.78a2.2 2.2 0 0 0-1.22.65 2.43 2.43 0 0 0-.68 1.22"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "empathy-consumption-ring-small",
+          "width": "16",
+          "height": "16",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "23",
+          "class": "dd59049d b39c4f23 _1a9f78f4 _33539d8a",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "SPAN",
+        "attrs": {
+          "aria-hidden": "true"
+        },
+        "textSample": "Ravi Sunkara FRM PMP CAIE and 254 others"
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "role": "button",
+          "tabindex": "0",
+          "class": "ea13b12b a4bbc50b _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "componentkey": "e722f448-4638-43e4-a641-e4ec45783e02"
+        },
+        "textSample": "86 comments86 comments"
+      },
+      {
+        "tagName": "P",
+        "attrs": {
+          "class": "b2777cf9 _94449bdc a6ca4b51 _98c7c331 _02318b6a _05d866de f03aabde _8be8c973 _0812541b _8decbcdb f3ad09dd _7dcfb1c6 _1149b69c e61f6585",
+          "componentkey": "e722f448-4638-43e4-a641-e4ec45783e02",
+          "style": "--_08555671: var(--_63e99756); --_5d2fa3f0: var(--d2a09643); --_1c1c79e6: var(--_33180e65);"
+        },
+        "textSample": "86 comments86 comments"
+      },
+      {
+        "tagName": "SPAN",
+        "attrs": {
+          "aria-hidden": "true"
+        },
+        "textSample": "86 comments"
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "ea13b12b a4bbc50b _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/feed/",
+          "componentkey": "c4ac93ff-4bf8-47eb-beaf-89ab4b031809"
+        },
+        "textSample": "40 reposts40 reposts"
+      },
+      {
+        "tagName": "P",
+        "attrs": {
+          "class": "b2777cf9 _94449bdc a6ca4b51 _98c7c331 _02318b6a _05d866de f03aabde _8be8c973 _0812541b _8decbcdb f3ad09dd _7dcfb1c6 _1149b69c e61f6585",
+          "componentkey": "c4ac93ff-4bf8-47eb-beaf-89ab4b031809",
+          "style": "--_08555671: var(--_63e99756); --_5d2fa3f0: var(--d2a09643); --_1c1c79e6: var(--_33180e65);"
+        },
+        "textSample": "40 reposts40 reposts"
+      },
+      {
+        "tagName": "SPAN",
+        "attrs": {
+          "aria-hidden": "true"
+        },
+        "textSample": "40 reposts"
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 bd2a259e e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece",
+          "type": "button",
+          "componentkey": "ac298047-3bc7-403b-9428-db9544b2c515",
+          "aria-label": "Reaction button state: no reaction"
+        },
+        "textSample": "Like"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "thumbs-up-outline-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "289",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "chevron-up-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "380",
+          "width": "16",
+          "height": "16",
+          "class": "",
+          "role": "img",
+          "style": "width: 16px; min-width: 16px; height: 16px; min-height: 16px;"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 _3ee27ee8 e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece",
+          "type": "button",
+          "componentkey": "e561a310-3f8c-4d33-85a0-9246e1277422"
+        },
+        "textSample": "Comment"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "comment-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "202",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 _3ee27ee8 e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece",
+          "type": "button",
+          "componentkey": "132d0e02-a128-49c9-b457-04f3024d7c7a",
+          "aria-expanded": "false"
+        },
+        "textSample": "Repost"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "repost-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "255",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 _3ee27ee8 e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece",
+          "aria-disabled": "false",
+          "href": "https://www.linkedin.com/feed/",
+          "componentkey": "ddd8e9ef-38fb-43e0-992b-0a2f049a1fe6"
+        },
+        "textSample": "Send"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "send-privately-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-rtl": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "232",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "_0e8e1ca9 _658cfaa4 _6e154561",
+          "componentkey": "CgsIgMC+yMbrqZrPAQ-replaceableCommentToolsbrTPjyMTTn6IB5S5147NQ4NbBjZgDQqgpy6z_zNl2f4FeedType_MAIN_FEED_RELEVANCE"
+        },
+        "textSample": ""
+      }
+    ],
+    "anchors": [
+      {
+        "href": "https://www.linkedin.com/in/ravi-sunkara-frm-pmp-caie-3a15a68/",
+        "text": "",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/in/ravi-sunkara-frm-pmp-caie-3a15a68/",
+        "text": "Ravi Sunkara FRM PMP CAIE",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/in/adamdanyal/",
+        "text": "",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/in/adamdanyal/",
+        "text": "Adam Danyal  • 3rd+",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/safety/go/?url=https%3A%2F%2Faiforleaders%2Ecom&urlhash=3uH6&mt=uuBCqdPzjiDKe9DVMXY4LQb3ytJxJT1EMlZkBSnvx7zWjz2d8bM2IgiUQJyg8nucwGBDnMR-os9gRoKyVV3nwgx2tcdQz6X_bS97viRfBg&isSdui=true",
+        "text": "View my newsletter",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/in/adamdanyal/",
+        "text": "",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/safety/go/?url=http%3A%2F%2Faiforleaders%2Ecom&urlhash=IILC&mt=-wbZUvdYNB1aq1ndA6S5MFYpuir_tsKNHveQ0q9kkGDw3xwD0c_IvA5e3xomGH904Tgqu--RaVvy4xBNKjZHmnS5Exw_azlTqaXJf6wpjwjMkeQVDGYjQVTcug&isSdui=true",
+        "text": "aiforleaders.com",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/feed/",
+        "text": "",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/feed/",
+        "text": "Ravi Sunkara FRM PMP CAIE and",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/feed/",
+        "text": "40 reposts40 reposts",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/feed/",
+        "text": "Send",
+        "ariaLabel": null
+      }
+    ]
+  },
+  {
+    "postIndex": 3,
+    "outerHtmlSample": "<div class=\"_95d5036b bb939d13 be945af7 _0c4d68a6 aee44b6b _9618c9d2 _5625003a ca6a2ac4 _64647e4f a8f884a9 _4f0eb1d0 c83698bf _35d5d25c c52a091f a292b8a6 _0eca8e58 ca0e1f9e _49236aae _5c737f4f _865c79e5 daede374\" role=\"listitem\" componentkey=\"expandedwQCLHcsj2k-1Fx5qqek7wTAJPUfggNApvmYtD9bEdGgFeedTy",
+    "dataElements": [
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "_95d5036b a8f884a9 _4f0eb1d0 c83698bf _35d5d25c c52a091f a292b8a6",
+          "componentkey": "wQCLHcsj2k-1Fx5qqek7wTAJPUfggNApvmYtD9bEdGg"
+        },
+        "textSample": "Feed postSuggestedPatrick Inyangetoh • 3rd+Softwar"
+      },
+      {
+        "tagName": "SPAN",
+        "attrs": {
+          "aria-hidden": "true"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "_2a4006b3 f7b59a08 a8f884a9 ed369678 c83698bf _6088ed7e c52a091f a292b8a6",
+          "componentkey": "ee455a2b-e621-4784-9f95-49e7a48f7512"
+        },
+        "textSample": "Suggested"
+      },
+      {
+        "tagName": "P",
+        "attrs": {
+          "class": "b2777cf9 _1b06079e f5fa6300 _20a9a9f3 _03656ddb daede374 b7111a01 _2a7e3793 _67eb55f7",
+          "componentkey": "f20f7172-cfee-4f9e-a0f8-79f785f20caa"
+        },
+        "textSample": "Suggested"
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 bd2a259e e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece b2dfb6e3 _3d10d77b a4bbc50b",
+          "type": "button",
+          "componentkey": "4ab12a2a-9e70-4a90-88a6-5c8a46729266",
+          "aria-label": "Open control menu for post by Patrick Inyangetoh",
+          "aria-expanded": "false"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "overflow-web-ios-small",
+          "fill": "currentColor",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "383",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": "",
+          "aria-hidden": "true"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 bd2a259e e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece fd2fc91b b2dfb6e3 _3d10d77b a4bbc50b",
+          "type": "button",
+          "componentkey": "c280261e-35f6-48a2-85fd-2dcc700d8df9",
+          "aria-label": "Hide post by Patrick Inyangetoh"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "close-small",
+          "fill": "currentColor",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "206",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": "",
+          "aria-hidden": "true"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "_0e8bd5d5 _82eae472 _56bded47 d87a6d07 a4bbc50b _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/in/patrick-inyangetoh/",
+          "componentkey": "9f605668-b9c6-44c4-a101-7579eca2779a"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "FIGURE",
+        "attrs": {
+          "class": "ec8e57de _413f2dd8 d9aa937f _6b3b6f8b a6ca4b51 daede374 b2ac0f54 _302da1a4",
+          "componentkey": "9f605668-b9c6-44c4-a101-7579eca2779a"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "person-accent-4",
+          "aria-hidden": "false",
+          "viewBox": "0 0 128 128",
+          "data-token-id": "356",
+          "class": "_69be5bf3 _47c144c9 _302da1a4 b2ac0f54 _942d2b8f",
+          "role": "img",
+          "fetchPriority": "low",
+          "aria-label": "View Patrick Inyangetoh’s profile",
+          "preserveAspectRatio": "xMidYMid slice"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "_2a7e3793 ea13b12b _61f144d2 _497c3b21 _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/in/patrick-inyangetoh/",
+          "componentkey": "81736006-a0f2-41b0-9482-b4172059c817"
+        },
+        "textSample": "Patrick Inyangetoh • 3rd+"
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "a6ca4b51 ff0e404d _07e1c6a4",
+          "componentkey": "81736006-a0f2-41b0-9482-b4172059c817"
+        },
+        "textSample": "Patrick Inyangetoh • 3rd+"
+      },
+      {
+        "tagName": "P",
+        "attrs": {
+          "class": "b2777cf9 _1b06079e a57aba93 _20a9a9f3 _03656ddb daede374 b7111a01 _2a7e3793 _67eb55f7",
+          "componentkey": "972b8a63-f226-465f-b2bb-d24f89500cc7"
+        },
+        "textSample": "2d •"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "globe-americas-small",
+          "fill": "currentColor",
+          "aria-hidden": "false",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "182",
+          "width": "16",
+          "height": "16",
+          "class": "_53c5c3f6 _9a413ba6 _6fd06a6a",
+          "role": "img",
+          "aria-label": "Visibility: Global",
+          "style": "width: 16px; min-width: 16px; height: 16px; min-height: 16px;"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "_2a7e3793 fb00c7ce _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/in/patrick-inyangetoh/",
+          "componentkey": "4598876d-750c-4d7e-9ca9-626ea7aec3ea"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "a6ca4b51 ff0e404d _73c86c1a _07e1c6a4",
+          "componentkey": "4598876d-750c-4d7e-9ca9-626ea7aec3ea"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "ff0e404d _2a7e3793 ea13b12b _07e1c6a4",
+          "componentkey": "b7996826-0046-4114-aad9-51397005a1a6"
+        },
+        "textSample": "Follow"
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 _3ee27ee8 e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece",
+          "type": "button",
+          "componentkey": "auto-component-53db0918-0754-43db-9fc9-9a4a3b489f72",
+          "aria-label": "Follow Patrick Inyangetoh"
+        },
+        "textSample": "Follow"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "add-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "86",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "P",
+        "attrs": {
+          "class": "b2777cf9 _94449bdc _9e415b92 _02318b6a daf1dc32 _5349ee97 _05d866de f03aabde _8be8c973 _0812541b _8decbcdb f6048ef7 _7dcfb1c6 _67eb55f7",
+          "componentkey": "feed-commentary_f9c4f58b-78f6-4d4a-b0e3-6823a6356114"
+        },
+        "textSample": "How I really use AI as a PM AI is not going to rep"
+      },
+      {
+        "tagName": "SPAN",
+        "attrs": {
+          "class": "f5fa6300 _20a9a9f3 _03656ddb daede374 b7111a01 _2a7e3793 b39c4f23 f93f8ece",
+          "tabindex": "-1",
+          "data-testid": "expandable-text-box"
+        },
+        "textSample": "How I really use AI as a PM AI is not going to rep"
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_6c05c2a3 _0553e249 b6d3012c _9dd1dfc9 _4c3bce13 b6fb284c _56349cb2 c1d63aae _3f5b20ab ca0e1f9e _497fc0a7 f3ad09dd _46e34e24 _700306d9 bcfc6674",
+          "type": "button",
+          "aria-hidden": "true",
+          "data-testid": "expandable-text-button",
+          "style": "--_317b8c87: var(--_63e99756); inset-inline-start: 275.922px; pointer-events: none;"
+        },
+        "textSample": "… more"
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "a6ca4b51 _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/feed/",
+          "componentkey": "b528997a-2614-455a-8f4a-d51bd9e16604"
+        },
+        "textSample": "3 reactions3"
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "a6ca4b51 _98c7c331 _02318b6a a8f884a9 ed369678 c83698bf _90752ee4 c52a091f _9d3fd27f",
+          "componentkey": "b528997a-2614-455a-8f4a-d51bd9e16604"
+        },
+        "textSample": "3 reactions3"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "like-consumption-ring-small",
+          "width": "16",
+          "height": "16",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "17",
+          "class": "dd59049d b39c4f23 _1a9f78f4 _33539d8a",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "interest-consumption-ring-small",
+          "width": "16",
+          "height": "16",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "25",
+          "class": "dd59049d b39c4f23 _1a9f78f4 _33539d8a",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "path",
+        "attrs": {
+          "fill": "none",
+          "stroke": "#fff",
+          "stroke-linecap": "round",
+          "stroke-linejoin": "round",
+          "stroke-width": "2",
+          "d": "M7.46 4.78a2.2 2.2 0 0 0-1.22.65 2.43 2.43 0 0 0-.68 1.22"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "SPAN",
+        "attrs": {
+          "aria-hidden": "true"
+        },
+        "textSample": "3"
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 bd2a259e e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece",
+          "type": "button",
+          "componentkey": "89495ebf-8dd5-488b-b52c-bc3b47e21d5d",
+          "aria-label": "Reaction button state: no reaction"
+        },
+        "textSample": "Like"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "thumbs-up-outline-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "289",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "chevron-up-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "380",
+          "width": "16",
+          "height": "16",
+          "class": "",
+          "role": "img",
+          "style": "width: 16px; min-width: 16px; height: 16px; min-height: 16px;"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 _3ee27ee8 e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece",
+          "type": "button",
+          "componentkey": "9501c43b-fd30-469c-aba7-e0ab2b21334f"
+        },
+        "textSample": "Comment"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "comment-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "202",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 _3ee27ee8 e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece",
+          "type": "button",
+          "componentkey": "9bd2456d-c4c9-46c4-89cd-95e40152dc95",
+          "aria-expanded": "false"
+        },
+        "textSample": "Repost"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "repost-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "255",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 _3ee27ee8 e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece",
+          "aria-disabled": "false",
+          "href": "https://www.linkedin.com/feed/",
+          "componentkey": "cbddcc5e-e165-4378-9237-4c61dee2c472"
+        },
+        "textSample": "Send"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "send-privately-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-rtl": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "232",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "_0e8e1ca9 _658cfaa4 _6e154561",
+          "componentkey": "CgsIgIDXtMrL5pfPAQ-replaceableCommentToolswQCLHcsj2k-1Fx5qqek7wTAJPUfggNApvmYtD9bEdGgFeedType_MAIN_FEED_RELEVANCE"
+        },
+        "textSample": ""
+      }
+    ],
+    "anchors": [
+      {
+        "href": "https://www.linkedin.com/in/patrick-inyangetoh/",
+        "text": "",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/in/patrick-inyangetoh/",
+        "text": "Patrick Inyangetoh • 3rd+",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/in/patrick-inyangetoh/",
+        "text": "",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/search/results/all/?keywords=%23productmanagement&origin=HASH_TAG_FROM_FEED",
+        "text": "#ProductManagement",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/search/results/all/?keywords=%23artificialintelligence&origin=HASH_TAG_FROM_FEED",
+        "text": "#ArtificialIntelligence",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/search/results/all/?keywords=%23productleadership&origin=HASH_TAG_FROM_FEED",
+        "text": "#ProductLeadership",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/search/results/all/?keywords=%23worksmarter&origin=HASH_TAG_FROM_FEED",
+        "text": "#WorkSmarter",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/feed/",
+        "text": "3 reactions3",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/feed/",
+        "text": "Send",
+        "ariaLabel": null
+      }
+    ]
+  },
+  {
+    "postIndex": 4,
+    "outerHtmlSample": "<div class=\"_95d5036b bb939d13 be945af7 _0c4d68a6 aee44b6b _9618c9d2 _5625003a ca6a2ac4 _64647e4f a8f884a9 _4f0eb1d0 c83698bf _35d5d25c c52a091f a292b8a6 _0eca8e58 ca0e1f9e _49236aae _5c737f4f _865c79e5 daede374\" role=\"listitem\" componentkey=\"expandedx4Z5Fg7tvUzEgG_VMaX59P-EbmcCnJmDbrY2tINxQIwFeedTy",
+    "dataElements": [
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "_95d5036b a8f884a9 _4f0eb1d0 c83698bf _35d5d25c c52a091f a292b8a6",
+          "componentkey": "x4Z5Fg7tvUzEgG_VMaX59P-EbmcCnJmDbrY2tINxQIw"
+        },
+        "textSample": "Feed postChandrakumar R Pillai likes thisJonal Sut"
+      },
+      {
+        "tagName": "SPAN",
+        "attrs": {
+          "aria-hidden": "true"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "_2a4006b3 f7b59a08 a8f884a9 ed369678 c83698bf _6088ed7e c52a091f a292b8a6",
+          "componentkey": "647aa2af-03df-41c6-b619-b2eb1d8efedf"
+        },
+        "textSample": "Chandrakumar R Pillai likes this"
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "_889ed897 e8382129 a4bbc50b _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/in/chandrakumarpillai/",
+          "componentkey": "b837d92e-c143-485c-a525-bc64d675d231"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "FIGURE",
+        "attrs": {
+          "class": "ec8e57de _413f2dd8 d9aa937f _6b3b6f8b a6ca4b51 daede374 b2ac0f54 _302da1a4",
+          "componentkey": "b837d92e-c143-485c-a525-bc64d675d231"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "person-accent-4",
+          "aria-hidden": "false",
+          "viewBox": "0 0 128 128",
+          "data-token-id": "356",
+          "class": "_69be5bf3 _47c144c9 _302da1a4 b2ac0f54 _942d2b8f",
+          "role": "img",
+          "fetchPriority": "low",
+          "aria-label": "View Chandrakumar R Pillai’s profile",
+          "preserveAspectRatio": "xMidYMid slice"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "P",
+        "attrs": {
+          "class": "b2777cf9 _1b06079e f5fa6300 _20a9a9f3 _03656ddb daede374 b7111a01 _2a7e3793 _67eb55f7",
+          "componentkey": "6a34486d-a8cc-428c-a0a5-36256257b324"
+        },
+        "textSample": "Chandrakumar R Pillai likes this"
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 bd2a259e e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece b2dfb6e3 _3d10d77b a4bbc50b",
+          "type": "button",
+          "componentkey": "dc32df10-f95b-47bf-9174-78cc368ce586",
+          "aria-label": "Open control menu for post by Jonal Suthar",
+          "aria-expanded": "false"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "overflow-web-ios-small",
+          "fill": "currentColor",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "383",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": "",
+          "aria-hidden": "true"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 bd2a259e e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece fd2fc91b b2dfb6e3 _3d10d77b a4bbc50b",
+          "type": "button",
+          "componentkey": "479fe12c-88f4-48f6-a13e-36aa67f3e9c0",
+          "aria-label": "Hide post by Jonal Suthar"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "close-small",
+          "fill": "currentColor",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "206",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": "",
+          "aria-hidden": "true"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "_0e8bd5d5 _82eae472 _56bded47 d87a6d07 a4bbc50b _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/in/jonal-suthar-b32a29202/",
+          "componentkey": "3a42620d-7dd7-4c1c-843e-a876247c5bf4"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "FIGURE",
+        "attrs": {
+          "class": "ec8e57de _413f2dd8 d9aa937f _6b3b6f8b a6ca4b51 daede374 b2ac0f54 _302da1a4",
+          "componentkey": "3a42620d-7dd7-4c1c-843e-a876247c5bf4"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "person-accent-4",
+          "aria-hidden": "false",
+          "viewBox": "0 0 128 128",
+          "data-token-id": "356",
+          "class": "_69be5bf3 _47c144c9 _302da1a4 b2ac0f54 _942d2b8f",
+          "role": "img",
+          "fetchPriority": "low",
+          "aria-label": "View Jonal Suthar’s profile",
+          "preserveAspectRatio": "xMidYMid slice"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "_2a7e3793 ea13b12b _61f144d2 _497c3b21 _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/in/jonal-suthar-b32a29202/",
+          "componentkey": "25cb2b87-4c56-4a7a-a39b-a61ec5f1e7d8"
+        },
+        "textSample": "Jonal Suthar  • 3rd+"
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "a6ca4b51 ff0e404d _07e1c6a4",
+          "componentkey": "25cb2b87-4c56-4a7a-a39b-a61ec5f1e7d8"
+        },
+        "textSample": "Jonal Suthar  • 3rd+"
+      },
+      {
+        "tagName": "SPAN",
+        "attrs": {
+          "class": "_6a0f6466 _9a413ba6",
+          "aria-hidden": "true"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "verified-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "304",
+          "width": "16",
+          "height": "16",
+          "class": "_53c5c3f6 _9a413ba6 _44e3033a",
+          "role": "img",
+          "style": "width: 16px; min-width: 16px; height: 16px; min-height: 16px;"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "P",
+        "attrs": {
+          "class": "b2777cf9 _1b06079e a57aba93 _20a9a9f3 _03656ddb daede374 b7111a01 _2a7e3793 _67eb55f7",
+          "componentkey": "123a64ea-0e20-4682-898a-d6f671c307a4"
+        },
+        "textSample": "5h •"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "globe-americas-small",
+          "fill": "currentColor",
+          "aria-hidden": "false",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "182",
+          "width": "16",
+          "height": "16",
+          "class": "_53c5c3f6 _9a413ba6 _6fd06a6a",
+          "role": "img",
+          "aria-label": "Visibility: Global",
+          "style": "width: 16px; min-width: 16px; height: 16px; min-height: 16px;"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "_2a7e3793 fb00c7ce _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/in/jonal-suthar-b32a29202/",
+          "componentkey": "0bb11f2f-4ae9-45bf-9dc7-8d97e25d5fed"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "a6ca4b51 ff0e404d _73c86c1a _07e1c6a4",
+          "componentkey": "0bb11f2f-4ae9-45bf-9dc7-8d97e25d5fed"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "ff0e404d _2a7e3793 ea13b12b _07e1c6a4",
+          "componentkey": "b6174dbe-856d-48fc-97f2-bf6a5cda0ffc"
+        },
+        "textSample": "Follow"
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 _3ee27ee8 e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece",
+          "type": "button",
+          "componentkey": "auto-component-dac6102e-de7e-46b7-ba65-6e204efa52c6",
+          "aria-label": "Follow Jonal Suthar"
+        },
+        "textSample": "Follow"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "add-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "86",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "P",
+        "attrs": {
+          "class": "b2777cf9 _94449bdc _9e415b92 _02318b6a daf1dc32 _5349ee97 _05d866de f03aabde _8be8c973 _0812541b _8decbcdb f6048ef7 _7dcfb1c6 _67eb55f7",
+          "componentkey": "feed-commentary_0a1913b5-3853-42ed-a6af-27703b02fe6f"
+        },
+        "textSample": "Most tools give you a chat answer.I wanted somethi"
+      },
+      {
+        "tagName": "SPAN",
+        "attrs": {
+          "class": "f5fa6300 _20a9a9f3 _03656ddb daede374 b7111a01 _2a7e3793 b39c4f23 f93f8ece",
+          "tabindex": "-1",
+          "data-testid": "expandable-text-box"
+        },
+        "textSample": "Most tools give you a chat answer.I wanted somethi"
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_6c05c2a3 _0553e249 b6d3012c _9dd1dfc9 _4c3bce13 b6fb284c _56349cb2 c1d63aae _3f5b20ab ca0e1f9e _497fc0a7 f3ad09dd _46e34e24 _700306d9 bcfc6674",
+          "type": "button",
+          "aria-hidden": "true",
+          "data-testid": "expandable-text-button",
+          "style": "--_317b8c87: var(--_63e99756); inset-inline-start: 180.844px; pointer-events: none;"
+        },
+        "textSample": "… more"
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "_2a7e3793 _0eca8e58 a4bbc50b _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/feed/",
+          "componentkey": "f382829c-96b1-4ae3-9198-402496b57b06",
+          "style": "aspect-ratio: 1.69536 / 1;"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "FIGURE",
+        "attrs": {
+          "class": "ec8e57de a6ca4b51 daede374 b2ac0f54",
+          "componentkey": "f382829c-96b1-4ae3-9198-402496b57b06",
+          "style": "aspect-ratio: 1.69536 / 1; overflow: hidden;"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "d73ff095 _0eca8e58 _61f144d2 _497c3b21 _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/feed/",
+          "componentkey": "fba6752b-c16e-4c22-9db8-6b071122be3d"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "FIGURE",
+        "attrs": {
+          "class": "ec8e57de a6ca4b51 daede374 b2ac0f54 _302da1a4",
+          "componentkey": "fba6752b-c16e-4c22-9db8-6b071122be3d"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "d73ff095 _0eca8e58 _61f144d2 _497c3b21 _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/feed/",
+          "componentkey": "4a10aa74-d41d-424f-bb61-b334a537b90b"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "FIGURE",
+        "attrs": {
+          "class": "ec8e57de a6ca4b51 daede374 b2ac0f54 _302da1a4",
+          "componentkey": "4a10aa74-d41d-424f-bb61-b334a537b90b"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "d73ff095 _0eca8e58 _61f144d2 _497c3b21 _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/feed/",
+          "componentkey": "711cb7b6-7fac-4010-9014-5674980c29dd"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "FIGURE",
+        "attrs": {
+          "class": "ec8e57de a6ca4b51 daede374 b2ac0f54 _302da1a4",
+          "componentkey": "711cb7b6-7fac-4010-9014-5674980c29dd"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "d73ff095 _0eca8e58 _61f144d2 _497c3b21 _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/feed/",
+          "componentkey": "f90c718b-0d99-4d3d-b11c-54082df38a18"
+        },
+        "textSample": "+5"
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "a6ca4b51 ff0e404d be59d832 _07e1c6a4",
+          "componentkey": "f90c718b-0d99-4d3d-b11c-54082df38a18",
+          "data-color-scheme": "light",
+          "aria-label": "5 more images"
+        },
+        "textSample": "+5"
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "a6ca4b51 _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/feed/",
+          "componentkey": "9900ef02-cb20-4201-9e46-e8388984e9bc"
+        },
+        "textSample": "5 reactions5"
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "a6ca4b51 _98c7c331 _02318b6a a8f884a9 ed369678 c83698bf _90752ee4 c52a091f _9d3fd27f",
+          "componentkey": "9900ef02-cb20-4201-9e46-e8388984e9bc"
+        },
+        "textSample": "5 reactions5"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "like-consumption-ring-small",
+          "width": "16",
+          "height": "16",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "17",
+          "class": "dd59049d b39c4f23 _1a9f78f4 _33539d8a",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "SPAN",
+        "attrs": {
+          "aria-hidden": "true"
+        },
+        "textSample": "5"
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 bd2a259e e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece",
+          "type": "button",
+          "componentkey": "297cca7e-9b1c-4f2e-9254-5be70248b25d",
+          "aria-label": "Reaction button state: no reaction"
+        },
+        "textSample": "Like"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "thumbs-up-outline-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "289",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "chevron-up-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "380",
+          "width": "16",
+          "height": "16",
+          "class": "",
+          "role": "img",
+          "style": "width: 16px; min-width: 16px; height: 16px; min-height: 16px;"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 _3ee27ee8 e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece",
+          "type": "button",
+          "componentkey": "2812aa66-8ea7-4643-9b5e-642ee9ca0b5c"
+        },
+        "textSample": "Comment"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "comment-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "202",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 _3ee27ee8 e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece",
+          "type": "button",
+          "componentkey": "1657758a-4ae9-497f-a01c-e01056eab508",
+          "aria-expanded": "false"
+        },
+        "textSample": "Repost"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "repost-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "255",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 _3ee27ee8 e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece",
+          "aria-disabled": "false",
+          "href": "https://www.linkedin.com/feed/",
+          "componentkey": "dcee38c5-d168-4a71-a568-fadecfc3ef9d"
+        },
+        "textSample": "Send"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "send-privately-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-rtl": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "232",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "_0e8e1ca9 _658cfaa4 _6e154561",
+          "componentkey": "EgsIgIDK0IyV5JrPAQ-replaceableCommentToolsx4Z5Fg7tvUzEgG_VMaX59P-EbmcCnJmDbrY2tINxQIwFeedType_MAIN_FEED_RELEVANCE"
+        },
+        "textSample": ""
+      }
+    ],
+    "anchors": [
+      {
+        "href": "https://www.linkedin.com/in/chandrakumarpillai/",
+        "text": "",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/in/chandrakumarpillai/",
+        "text": "Chandrakumar R Pillai",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/in/jonal-suthar-b32a29202/",
+        "text": "",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/in/jonal-suthar-b32a29202/",
+        "text": "Jonal Suthar  • 3rd+",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/in/jonal-suthar-b32a29202/",
+        "text": "",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/search/results/all/?keywords=%23systemdesign&origin=HASH_TAG_FROM_FEED",
+        "text": "#SystemDesign",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/search/results/all/?keywords=%23genai&origin=HASH_TAG_FROM_FEED",
+        "text": "#GenAI",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/search/results/all/?keywords=%23ai&origin=HASH_TAG_FROM_FEED",
+        "text": "#AI",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/search/results/all/?keywords=%23fastapi&origin=HASH_TAG_FROM_FEED",
+        "text": "#FastAPI",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/search/results/all/?keywords=%23cloudarchitecture&origin=HASH_TAG_FROM_FEED",
+        "text": "#CloudArchitecture",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/search/results/all/?keywords=%23fullstack&origin=HASH_TAG_FROM_FEED",
+        "text": "#FullStack",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/search/results/all/?keywords=%23softwareengineering&origin=HASH_TAG_FROM_FEED",
+        "text": "#SoftwareEngineering",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/feed/",
+        "text": "",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/feed/",
+        "text": "",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/feed/",
+        "text": "",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/feed/",
+        "text": "",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/feed/",
+        "text": "+5",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/feed/",
+        "text": "5 reactions5",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/feed/",
+        "text": "Send",
+        "ariaLabel": null
+      }
+    ]
+  },
+  {
+    "postIndex": 5,
+    "outerHtmlSample": "<div class=\"_95d5036b bb939d13 be945af7 _0c4d68a6 aee44b6b _9618c9d2 _5625003a ca6a2ac4 _64647e4f a8f884a9 _4f0eb1d0 c83698bf _35d5d25c c52a091f a292b8a6 _0eca8e58 ca0e1f9e _49236aae _5c737f4f _865c79e5 daede374\" role=\"listitem\" componentkey=\"expanded2sjcnUvKg3OEdQJs81B2c4mnR8QscLUPcN6DPe8dJqIFeedTy",
+    "dataElements": [
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "_95d5036b a8f884a9 _4f0eb1d0 c83698bf _35d5d25c c52a091f a292b8a6",
+          "componentkey": "2sjcnUvKg3OEdQJs81B2c4mnR8QscLUPcN6DPe8dJqI"
+        },
+        "textSample": "Feed postSuggestedPrzemysław Grzenkowicz  • 3rd+AI"
+      },
+      {
+        "tagName": "SPAN",
+        "attrs": {
+          "aria-hidden": "true"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "_2a4006b3 f7b59a08 a8f884a9 ed369678 c83698bf _6088ed7e c52a091f a292b8a6",
+          "componentkey": "19ce27b4-b105-4baf-8052-82d102893d97"
+        },
+        "textSample": "Suggested"
+      },
+      {
+        "tagName": "P",
+        "attrs": {
+          "class": "b2777cf9 _1b06079e f5fa6300 _20a9a9f3 _03656ddb daede374 b7111a01 _2a7e3793 _67eb55f7",
+          "componentkey": "ce213255-7695-4752-9d4f-41aa130b444f"
+        },
+        "textSample": "Suggested"
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 bd2a259e e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece b2dfb6e3 _3d10d77b a4bbc50b",
+          "type": "button",
+          "componentkey": "2bb4f806-9a93-4114-9052-a8ed021f2294",
+          "aria-label": "Open control menu for post by Przemysław Grzenkowicz",
+          "aria-expanded": "false"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "overflow-web-ios-small",
+          "fill": "currentColor",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "383",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": "",
+          "aria-hidden": "true"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 bd2a259e e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece fd2fc91b b2dfb6e3 _3d10d77b a4bbc50b",
+          "type": "button",
+          "componentkey": "1123b0fb-ebf0-4aa3-9b0f-1f5a65b74606",
+          "aria-label": "Hide post by Przemysław Grzenkowicz"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "close-small",
+          "fill": "currentColor",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "206",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": "",
+          "aria-hidden": "true"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "_0e8bd5d5 _82eae472 _56bded47 d87a6d07 a4bbc50b _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/in/pgrzenkowicz/",
+          "componentkey": "7010dba9-c9f4-40b7-a025-e9a897af405b"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "FIGURE",
+        "attrs": {
+          "class": "ec8e57de _413f2dd8 d9aa937f _6b3b6f8b a6ca4b51 daede374 b2ac0f54 _302da1a4",
+          "componentkey": "7010dba9-c9f4-40b7-a025-e9a897af405b"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "person-accent-4",
+          "aria-hidden": "false",
+          "viewBox": "0 0 128 128",
+          "data-token-id": "356",
+          "class": "_69be5bf3 _47c144c9 _302da1a4 b2ac0f54 _942d2b8f",
+          "role": "img",
+          "fetchPriority": "low",
+          "aria-label": "View Przemysław Grzenkowicz’s profile",
+          "preserveAspectRatio": "xMidYMid slice"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "_2a7e3793 ea13b12b _61f144d2 _497c3b21 _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/in/pgrzenkowicz/",
+          "componentkey": "9c392965-46c2-4f04-9c1e-88955720ab03"
+        },
+        "textSample": "Przemysław Grzenkowicz  • 3rd+"
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "a6ca4b51 ff0e404d _07e1c6a4",
+          "componentkey": "9c392965-46c2-4f04-9c1e-88955720ab03"
+        },
+        "textSample": "Przemysław Grzenkowicz  • 3rd+"
+      },
+      {
+        "tagName": "SPAN",
+        "attrs": {
+          "class": "_6a0f6466 _9a413ba6",
+          "aria-hidden": "true"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "linkedin-bug-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "459",
+          "width": "16",
+          "height": "16",
+          "class": "_65fc9e2a _9a413ba6 _44e3033a",
+          "role": "img",
+          "style": "width: 16px; min-width: 16px; height: 16px; min-height: 16px;"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "P",
+        "attrs": {
+          "class": "b2777cf9 _1b06079e a57aba93 _20a9a9f3 _03656ddb daede374 b7111a01 _2a7e3793 _67eb55f7",
+          "componentkey": "1508c57b-404f-4020-a8ce-b4f9254b0c8f"
+        },
+        "textSample": "2d •"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "globe-americas-small",
+          "fill": "currentColor",
+          "aria-hidden": "false",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "182",
+          "width": "16",
+          "height": "16",
+          "class": "_53c5c3f6 _9a413ba6 _6fd06a6a",
+          "role": "img",
+          "aria-label": "Visibility: Global",
+          "style": "width: 16px; min-width: 16px; height: 16px; min-height: 16px;"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "_2a7e3793 fb00c7ce _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/in/pgrzenkowicz/",
+          "componentkey": "12496e70-13ae-4559-8d55-8ee66c5c2955"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "a6ca4b51 ff0e404d _73c86c1a _07e1c6a4",
+          "componentkey": "12496e70-13ae-4559-8d55-8ee66c5c2955"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "ff0e404d _2a7e3793 ea13b12b _07e1c6a4",
+          "componentkey": "fe50cd86-2415-4ca4-b924-50a06f8dfd98"
+        },
+        "textSample": "Follow"
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 _3ee27ee8 e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece",
+          "type": "button",
+          "componentkey": "auto-component-253d7c21-c9c5-493b-bb46-3db8af4b104a",
+          "aria-label": "Follow Przemysław Grzenkowicz"
+        },
+        "textSample": "Follow"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "add-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "86",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "P",
+        "attrs": {
+          "class": "b2777cf9 _94449bdc _9e415b92 _02318b6a daf1dc32 _5349ee97 _05d866de f03aabde _8be8c973 _0812541b _8decbcdb f6048ef7 _7dcfb1c6 _67eb55f7",
+          "componentkey": "feed-commentary_2bb20af4-b23b-4abc-af15-e645c1f92dbf"
+        },
+        "textSample": "Meetings to discuss prompts before sending prompts"
+      },
+      {
+        "tagName": "SPAN",
+        "attrs": {
+          "class": "f5fa6300 _20a9a9f3 _03656ddb daede374 b7111a01 _2a7e3793 b39c4f23 f93f8ece",
+          "tabindex": "-1",
+          "data-testid": "expandable-text-box"
+        },
+        "textSample": "Meetings to discuss prompts before sending prompts"
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_6c05c2a3 _0553e249 b6d3012c _9dd1dfc9 _4c3bce13 b6fb284c _56349cb2 c1d63aae _3f5b20ab ca0e1f9e _497fc0a7 f3ad09dd _46e34e24 _700306d9 bcfc6674",
+          "type": "button",
+          "aria-hidden": "true",
+          "data-testid": "expandable-text-button",
+          "style": "--_317b8c87: var(--_63e99756); inset-inline-start: 0px; pointer-events: none;"
+        },
+        "textSample": "… more"
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "_0eca8e58 _7db789d8 _497c3b21 _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/feed/",
+          "componentkey": "b6da5931-069f-426d-9067-9f98d046c665",
+          "style": "aspect-ratio: 0.8 / 1;"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "FIGURE",
+        "attrs": {
+          "class": "ec8e57de a6ca4b51 daede374 b2ac0f54",
+          "componentkey": "b6da5931-069f-426d-9067-9f98d046c665",
+          "style": "aspect-ratio: 0.8 / 1; overflow: hidden;"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "a6ca4b51 _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/feed/",
+          "componentkey": "0eb606e9-21ad-454c-b5a3-408754d96b5b"
+        },
+        "textSample": "13 reactions13"
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "a6ca4b51 _98c7c331 _02318b6a a8f884a9 ed369678 c83698bf _90752ee4 c52a091f _9d3fd27f",
+          "componentkey": "0eb606e9-21ad-454c-b5a3-408754d96b5b"
+        },
+        "textSample": "13 reactions13"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "like-consumption-ring-small",
+          "width": "16",
+          "height": "16",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "17",
+          "class": "dd59049d b39c4f23 _1a9f78f4 _33539d8a",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "entertainment-consumption-ring-small",
+          "width": "16",
+          "height": "16",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "144",
+          "class": "dd59049d b39c4f23 _1a9f78f4 _33539d8a",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "SPAN",
+        "attrs": {
+          "aria-hidden": "true"
+        },
+        "textSample": "13"
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "role": "button",
+          "tabindex": "0",
+          "class": "ea13b12b a4bbc50b _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "componentkey": "bed2a293-2590-434f-b493-396096b69e13"
+        },
+        "textSample": "3 comments3 comments"
+      },
+      {
+        "tagName": "P",
+        "attrs": {
+          "class": "b2777cf9 _94449bdc a6ca4b51 _98c7c331 _02318b6a _05d866de f03aabde _8be8c973 _0812541b _8decbcdb f3ad09dd _7dcfb1c6 _1149b69c e61f6585",
+          "componentkey": "bed2a293-2590-434f-b493-396096b69e13",
+          "style": "--_08555671: var(--_63e99756); --_5d2fa3f0: var(--d2a09643); --_1c1c79e6: var(--_33180e65);"
+        },
+        "textSample": "3 comments3 comments"
+      },
+      {
+        "tagName": "SPAN",
+        "attrs": {
+          "aria-hidden": "true"
+        },
+        "textSample": "3 comments"
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "ea13b12b a4bbc50b _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/feed/",
+          "componentkey": "f518fdb5-4c04-4541-bf89-a1bf0603c998"
+        },
+        "textSample": "1 repost1 repost"
+      },
+      {
+        "tagName": "P",
+        "attrs": {
+          "class": "b2777cf9 _94449bdc a6ca4b51 _98c7c331 _02318b6a _05d866de f03aabde _8be8c973 _0812541b _8decbcdb f3ad09dd _7dcfb1c6 _1149b69c e61f6585",
+          "componentkey": "f518fdb5-4c04-4541-bf89-a1bf0603c998",
+          "style": "--_08555671: var(--_63e99756); --_5d2fa3f0: var(--d2a09643); --_1c1c79e6: var(--_33180e65);"
+        },
+        "textSample": "1 repost1 repost"
+      },
+      {
+        "tagName": "SPAN",
+        "attrs": {
+          "aria-hidden": "true"
+        },
+        "textSample": "1 repost"
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 bd2a259e e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece",
+          "type": "button",
+          "componentkey": "1467bfd3-b0ee-4d49-9442-8a0252a29c4d",
+          "aria-label": "Reaction button state: no reaction"
+        },
+        "textSample": "Like"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "thumbs-up-outline-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "289",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "chevron-up-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "380",
+          "width": "16",
+          "height": "16",
+          "class": "",
+          "role": "img",
+          "style": "width: 16px; min-width: 16px; height: 16px; min-height: 16px;"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 _3ee27ee8 e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece",
+          "type": "button",
+          "componentkey": "48bebf55-7466-461f-b381-790aeb6c41c4"
+        },
+        "textSample": "Comment"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "comment-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "202",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 _3ee27ee8 e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece",
+          "type": "button",
+          "componentkey": "bd4a8dde-a1b6-4063-8d27-8d01b1313993",
+          "aria-expanded": "false"
+        },
+        "textSample": "Repost"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "repost-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "255",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 _3ee27ee8 e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece",
+          "aria-disabled": "false",
+          "href": "https://www.linkedin.com/feed/",
+          "componentkey": "2184057b-05f1-4ecc-b912-88609518bc11"
+        },
+        "textSample": "Send"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "send-privately-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-rtl": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "232",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "_0e8e1ca9 _658cfaa4 _6e154561",
+          "componentkey": "CgsIgsDL/K3M4ZfPAQ-replaceableCommentTools2sjcnUvKg3OEdQJs81B2c4mnR8QscLUPcN6DPe8dJqIFeedType_MAIN_FEED_RELEVANCE"
+        },
+        "textSample": ""
+      }
+    ],
+    "anchors": [
+      {
+        "href": "https://www.linkedin.com/in/pgrzenkowicz/",
+        "text": "",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/in/pgrzenkowicz/",
+        "text": "Przemysław Grzenkowicz  • 3rd+",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/in/pgrzenkowicz/",
+        "text": "",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/feed/",
+        "text": "",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/feed/",
+        "text": "13 reactions13",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/feed/",
+        "text": "1 repost1 repost",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/feed/",
+        "text": "Send",
+        "ariaLabel": null
+      }
+    ]
+  },
+  {
+    "postIndex": 6,
+    "outerHtmlSample": "<div class=\"_95d5036b bb939d13 be945af7 _0c4d68a6 aee44b6b _9618c9d2 _5625003a ca6a2ac4 _64647e4f a8f884a9 _4f0eb1d0 c83698bf _35d5d25c c52a091f a292b8a6 _0eca8e58 ca0e1f9e _49236aae _5c737f4f _865c79e5 daede374\" role=\"listitem\" componentkey=\"expandeddEUZBynNx8isPqKIWxKdk2gqzzVHmEXdbB-M0Rra5GgFeedTy",
+    "dataElements": [
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "_95d5036b a8f884a9 _4f0eb1d0 c83698bf _35d5d25c c52a091f a292b8a6",
+          "componentkey": "dEUZBynNx8isPqKIWxKdk2gqzzVHmEXdbB-M0Rra5Gg"
+        },
+        "textSample": "Feed postSriram Srinivasan commentedTushar Wagh CS"
+      },
+      {
+        "tagName": "SPAN",
+        "attrs": {
+          "aria-hidden": "true"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "_2a4006b3 f7b59a08 a8f884a9 ed369678 c83698bf _6088ed7e c52a091f a292b8a6",
+          "componentkey": "11c66b00-642b-436b-b58a-043237d8f43a"
+        },
+        "textSample": "Sriram Srinivasan commented"
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "_889ed897 e8382129 a4bbc50b _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/in/sriramadvisory/",
+          "componentkey": "210b6ec0-526a-4d78-9248-6fcd13e34592"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "FIGURE",
+        "attrs": {
+          "class": "ec8e57de _413f2dd8 d9aa937f _6b3b6f8b a6ca4b51 daede374 b2ac0f54 _302da1a4",
+          "componentkey": "210b6ec0-526a-4d78-9248-6fcd13e34592"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "person-accent-4",
+          "aria-hidden": "false",
+          "viewBox": "0 0 128 128",
+          "data-token-id": "356",
+          "class": "_69be5bf3 _47c144c9 _302da1a4 b2ac0f54 _942d2b8f",
+          "role": "img",
+          "fetchPriority": "low",
+          "aria-label": "View Sriram Srinivasan’s profile",
+          "preserveAspectRatio": "xMidYMid slice"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "P",
+        "attrs": {
+          "class": "b2777cf9 _1b06079e f5fa6300 _20a9a9f3 _03656ddb daede374 b7111a01 _2a7e3793 _67eb55f7",
+          "componentkey": "b8e248d9-ec94-4194-b910-f0f1a811244e"
+        },
+        "textSample": "Sriram Srinivasan commented"
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 bd2a259e e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece b2dfb6e3 _3d10d77b a4bbc50b",
+          "type": "button",
+          "componentkey": "5499779e-1cfb-4ba8-b2a4-123d5877e7ed",
+          "aria-label": "Open control menu for post by Tushar Wagh CSM",
+          "aria-expanded": "false"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "overflow-web-ios-small",
+          "fill": "currentColor",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "383",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": "",
+          "aria-hidden": "true"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 bd2a259e e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece fd2fc91b b2dfb6e3 _3d10d77b a4bbc50b",
+          "type": "button",
+          "componentkey": "792af4d6-e913-466a-83a4-9ddb5dc86b44",
+          "aria-label": "Hide post by Tushar Wagh CSM"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "close-small",
+          "fill": "currentColor",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "206",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": "",
+          "aria-hidden": "true"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "_0e8bd5d5 _82eae472 _56bded47 d87a6d07 a4bbc50b _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/in/tusharwagh23041997/",
+          "componentkey": "22e71172-adc8-46b5-b2f5-ca36d5d56f25"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "FIGURE",
+        "attrs": {
+          "class": "ec8e57de _413f2dd8 d9aa937f _6b3b6f8b a6ca4b51 daede374 b2ac0f54 _302da1a4",
+          "componentkey": "22e71172-adc8-46b5-b2f5-ca36d5d56f25"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "person-accent-4",
+          "aria-hidden": "false",
+          "viewBox": "0 0 128 128",
+          "data-token-id": "356",
+          "class": "_69be5bf3 _47c144c9 _302da1a4 b2ac0f54 _942d2b8f",
+          "role": "img",
+          "fetchPriority": "low",
+          "aria-label": "View Tushar Wagh CSM’s profile",
+          "preserveAspectRatio": "xMidYMid slice"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "_2a7e3793 ea13b12b _61f144d2 _497c3b21 _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/in/tusharwagh23041997/",
+          "componentkey": "3a8a73d9-7233-4911-8989-274bf8ca2548"
+        },
+        "textSample": "Tushar Wagh CSM  • 2nd"
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "a6ca4b51 ff0e404d _07e1c6a4",
+          "componentkey": "3a8a73d9-7233-4911-8989-274bf8ca2548"
+        },
+        "textSample": "Tushar Wagh CSM  • 2nd"
+      },
+      {
+        "tagName": "SPAN",
+        "attrs": {
+          "class": "_6a0f6466 _9a413ba6",
+          "aria-hidden": "true"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "verified-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "304",
+          "width": "16",
+          "height": "16",
+          "class": "_53c5c3f6 _9a413ba6 _44e3033a",
+          "role": "img",
+          "style": "width: 16px; min-width: 16px; height: 16px; min-height: 16px;"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "P",
+        "attrs": {
+          "class": "b2777cf9 _1b06079e a57aba93 _20a9a9f3 _03656ddb daede374 b7111a01 _2a7e3793 _67eb55f7",
+          "componentkey": "22c73393-e555-45b3-be5d-ce6ec4c9cb77"
+        },
+        "textSample": "17h •"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "globe-americas-small",
+          "fill": "currentColor",
+          "aria-hidden": "false",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "182",
+          "width": "16",
+          "height": "16",
+          "class": "_53c5c3f6 _9a413ba6 _6fd06a6a",
+          "role": "img",
+          "aria-label": "Visibility: Global",
+          "style": "width: 16px; min-width: 16px; height: 16px; min-height: 16px;"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "_2a7e3793 fb00c7ce _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/in/tusharwagh23041997/",
+          "componentkey": "33496b62-eb7a-4067-9f38-adff1e2a8988"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "a6ca4b51 ff0e404d _73c86c1a _07e1c6a4",
+          "componentkey": "33496b62-eb7a-4067-9f38-adff1e2a8988"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "ff0e404d _2a7e3793 ea13b12b _07e1c6a4",
+          "componentkey": "7326bbab-2a2e-4fb5-91ef-644fa42eceb3"
+        },
+        "textSample": "Follow"
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 _3ee27ee8 e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece",
+          "type": "button",
+          "componentkey": "auto-component-68b6ed4b-d18e-4444-af82-6d2959dcf9f0",
+          "aria-label": "Follow Tushar Wagh CSM"
+        },
+        "textSample": "Follow"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "add-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "86",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "P",
+        "attrs": {
+          "class": "b2777cf9 _94449bdc _9e415b92 _02318b6a daf1dc32 _5349ee97 _05d866de f03aabde _8be8c973 _0812541b _8decbcdb f6048ef7 _7dcfb1c6 _67eb55f7",
+          "componentkey": "feed-commentary_58c6b376-314f-44f8-80a5-475b95ccb6ec"
+        },
+        "textSample": "Everyone is racing to build AI.Nobody is asking wh"
+      },
+      {
+        "tagName": "SPAN",
+        "attrs": {
+          "class": "f5fa6300 _20a9a9f3 _03656ddb daede374 b7111a01 _2a7e3793 b39c4f23 f93f8ece",
+          "tabindex": "-1",
+          "data-testid": "expandable-text-box"
+        },
+        "textSample": "Everyone is racing to build AI.Nobody is asking wh"
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_6c05c2a3 _0553e249 b6d3012c _9dd1dfc9 _4c3bce13 b6fb284c _56349cb2 c1d63aae _3f5b20ab ca0e1f9e _497fc0a7 f3ad09dd _46e34e24 _700306d9 bcfc6674",
+          "type": "button",
+          "aria-hidden": "true",
+          "data-testid": "expandable-text-button",
+          "style": "--_317b8c87: var(--_63e99756); inset-inline-start: 331.078px; pointer-events: none;"
+        },
+        "textSample": "… more"
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "_0eca8e58 _7db789d8 _497c3b21 _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/feed/",
+          "componentkey": "bcdeda6e-7c28-4f38-9d9f-fde4a1b2d52c",
+          "style": "aspect-ratio: 0.839299 / 1;"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "FIGURE",
+        "attrs": {
+          "class": "ec8e57de a6ca4b51 daede374 b2ac0f54",
+          "componentkey": "bcdeda6e-7c28-4f38-9d9f-fde4a1b2d52c",
+          "style": "aspect-ratio: 0.839299 / 1; overflow: hidden;"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 _3ee27ee8 e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece _0e8e1ca9 _2a7e3793 ea13b12b f970b497 _61f144d2 _497c3b21",
+          "type": "button",
+          "componentkey": "1a0078d8-5f10-4518-babf-fc44cf2e1965",
+          "data-color-scheme": "light",
+          "aria-label": "This image has content credentials."
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "FIGURE",
+        "attrs": {
+          "class": "ec8e57de daede374 _33539d8a _1a9f78f4 fd7626b8 _9d7d7495",
+          "aria-hidden": "true"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "content-credentials-color",
+          "aria-hidden": "true",
+          "data-supported-dps": "24x24",
+          "viewBox": "0 0 24 24",
+          "data-token-id": "878",
+          "width": "24",
+          "height": "24",
+          "class": "_69be5bf3 _47c144c9 _302da1a4 b2ac0f54 _942d2b8f",
+          "role": "img",
+          "fetchPriority": "low",
+          "aria-label": "",
+          "preserveAspectRatio": "xMidYMid slice"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "a6ca4b51 _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/feed/",
+          "componentkey": "ea7bc9d5-99da-4c6b-964f-87dcb7e24f9e"
+        },
+        "textSample": "Sriram Srinivasan and 7 others reactedSriram Srini"
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "a6ca4b51 _98c7c331 _02318b6a a8f884a9 ed369678 c83698bf _90752ee4 c52a091f _9d3fd27f",
+          "componentkey": "ea7bc9d5-99da-4c6b-964f-87dcb7e24f9e"
+        },
+        "textSample": "Sriram Srinivasan and 7 others reactedSriram Srini"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "like-consumption-ring-small",
+          "width": "16",
+          "height": "16",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "17",
+          "class": "dd59049d b39c4f23 _1a9f78f4 _33539d8a",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "SPAN",
+        "attrs": {
+          "aria-hidden": "true"
+        },
+        "textSample": "Sriram Srinivasan and 7 others"
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "role": "button",
+          "tabindex": "0",
+          "class": "ea13b12b a4bbc50b _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "componentkey": "ef10020d-f0fe-4b2c-a4f0-7abcc22544c7"
+        },
+        "textSample": "2 comments2 comments"
+      },
+      {
+        "tagName": "P",
+        "attrs": {
+          "class": "b2777cf9 _94449bdc a6ca4b51 _98c7c331 _02318b6a _05d866de f03aabde _8be8c973 _0812541b _8decbcdb f3ad09dd _7dcfb1c6 _1149b69c e61f6585",
+          "componentkey": "ef10020d-f0fe-4b2c-a4f0-7abcc22544c7",
+          "style": "--_08555671: var(--_63e99756); --_5d2fa3f0: var(--d2a09643); --_1c1c79e6: var(--_33180e65);"
+        },
+        "textSample": "2 comments2 comments"
+      },
+      {
+        "tagName": "SPAN",
+        "attrs": {
+          "aria-hidden": "true"
+        },
+        "textSample": "2 comments"
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 bd2a259e e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece",
+          "type": "button",
+          "componentkey": "6c040071-9831-4612-b4aa-4cf111ccd769",
+          "aria-label": "Reaction button state: no reaction"
+        },
+        "textSample": "Like"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "thumbs-up-outline-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "289",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "chevron-up-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "380",
+          "width": "16",
+          "height": "16",
+          "class": "",
+          "role": "img",
+          "style": "width: 16px; min-width: 16px; height: 16px; min-height: 16px;"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 _3ee27ee8 e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece",
+          "type": "button",
+          "componentkey": "9ed77bad-5bcb-48e9-9061-45fd4c2ce68e"
+        },
+        "textSample": "Comment"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "comment-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "202",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 _3ee27ee8 e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece",
+          "type": "button",
+          "componentkey": "b9bf1f1b-0eb9-4701-bed5-eb2a1e4c26f1",
+          "aria-expanded": "false"
+        },
+        "textSample": "Repost"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "repost-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "255",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 _3ee27ee8 e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece",
+          "aria-disabled": "false",
+          "href": "https://www.linkedin.com/feed/",
+          "componentkey": "ad9f040f-912d-4c47-90db-766ebe751fd4"
+        },
+        "textSample": "Send"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "send-privately-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-rtl": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "232",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "_0e8e1ca9 _658cfaa4 _6e154561",
+          "componentkey": "CgsIgMDC9K/ej5rPAQ-replaceableCommentToolsdEUZBynNx8isPqKIWxKdk2gqzzVHmEXdbB-M0Rra5GgFeedType_MAIN_FEED_RELEVANCE"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "_95d5036b a8f884a9 _4f0eb1d0 c83698bf _35d5d25c c52a091f a292b8a6",
+          "componentkey": "commentsSectionContainerdEUZBynNx8isPqKIWxKdk2gqzzVHmEXdbB-M0Rra5GgFeedType_MAIN_FEED_RELEVANCE"
+        },
+        "textSample": "Sriram Srinivasan Premium Profile 1stSriram Sriniv"
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "_95d5036b a8f884a9 _4f0eb1d0 a292b8a6 f93f8ece",
+          "data-testid": "CgsIgMDC9K/ej5rPAQ-commentListdEUZBynNx8isPqKIWxKdk2gqzzVHmEXdbB-M0Rra5GgFeedType_MAIN_FEED_RELEVANCE",
+          "data-component-type": "LazyColumn"
+        },
+        "textSample": "Sriram Srinivasan Premium Profile 1stSriram Sriniv"
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "ff0e404d _2a7e3793 ea13b12b _07e1c6a4",
+          "componentkey": "CgsIgMDC9K/ej5rPAQ-commentsSectionAnchorRefdEUZBynNx8isPqKIWxKdk2gqzzVHmEXdbB-M0Rra5GgFeedType_MAIN_FEED_RELEVANCE"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "",
+          "componentkey": "replaceableComment_urn:li:comment:(urn:li:activity:7465313939006967808,7465336500956737537)",
+          "viewtrackingspecs": "[object Object]",
+          "bindablemodifiers": "[object Object]",
+          "style": "--b69cd985: var(--_4cc47067); --cfd4650f: var(--a7da387f); --_12279c46: var(--ddf65236); --ab6a06e0: var(--ddf65236); --_3cc42247: var(--d87237db); --_276a602d: var(--a7da387f); --_8503b0f9: var(--d87237db); --a4c580de: var(--_4bb1726f);"
+        },
+        "textSample": "Sriram Srinivasan Premium Profile 1stSriram Sriniv"
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "_6e154561",
+          "componentkey": "replaceableComment_urn:li:comment:(urn:li:activity:7465313939006967808,7465336500956737537)",
+          "threadlinedecoration": "[object Object]",
+          "style": "background-color: var(--bb0cc8df);"
+        },
+        "textSample": "Sriram Srinivasan Premium Profile 1stSriram Sriniv"
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "daf1dc32 a8f884a9 ed369678 c83698bf _35d5d25c c52a091f _9d3fd27f _0eca8e58",
+          "componentkey": "replaceableComment_urn:li:comment:(urn:li:activity:7465313939006967808,7465336500956737537)",
+          "threadlinedecoration": "[object Object]",
+          "style": "background-color: var(--bb0cc8df);"
+        },
+        "textSample": "Sriram Srinivasan Premium Profile 1stSriram Sriniv"
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "_0e8bd5d5 b2dfb6e3 _3d10d77b a4bbc50b _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/in/sriramadvisory/",
+          "componentkey": "4d990f0b-efeb-40b7-8225-a95eb449cc5d"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "FIGURE",
+        "attrs": {
+          "class": "ec8e57de _413f2dd8 d9aa937f _6b3b6f8b a6ca4b51 daede374 b2ac0f54 _302da1a4",
+          "componentkey": "4d990f0b-efeb-40b7-8225-a95eb449cc5d",
+          "style": "opacity: var(--58fde35c);"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "person-accent-4",
+          "aria-hidden": "false",
+          "viewBox": "0 0 128 128",
+          "data-token-id": "356",
+          "class": "_69be5bf3 _47c144c9 _302da1a4 b2ac0f54 _942d2b8f",
+          "role": "img",
+          "fetchPriority": "low",
+          "aria-label": "View Sriram Srinivasan’s profile",
+          "preserveAspectRatio": "xMidYMid slice"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "a6ca4b51 _0e8bd5d5 _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/in/sriramadvisory/",
+          "componentkey": "886c7ca1-6542-4028-b6e2-701e983b654d"
+        },
+        "textSample": "Sriram Srinivasan Premium Profile 1stSriram Sriniv"
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "_95d5036b a6ca4b51 a8f884a9 _4f0eb1d0 c83698bf _6088ed7e c52a091f a292b8a6",
+          "componentkey": "886c7ca1-6542-4028-b6e2-701e983b654d"
+        },
+        "textSample": "Sriram Srinivasan Premium Profile 1stSriram Sriniv"
+      },
+      {
+        "tagName": "SPAN",
+        "attrs": {
+          "aria-hidden": "true"
+        },
+        "textSample": "Sriram Srinivasan  • 1st"
+      },
+      {
+        "tagName": "SPAN",
+        "attrs": {
+          "class": "_6a0f6466 _9a413ba6",
+          "aria-hidden": "true"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "linkedin-bug-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "459",
+          "width": "16",
+          "height": "16",
+          "class": "_65fc9e2a _9a413ba6 _44e3033a",
+          "role": "img",
+          "style": "width: 16px; min-width: 16px; height: 16px; min-height: 16px;"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 bd2a259e e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece _4b47ca4f b2dfb6e3 _3d10d77b a4bbc50b",
+          "type": "button",
+          "componentkey": "0e6e0109-1958-4f93-b5bd-3b02a11f8e26",
+          "aria-label": "View more options for Sriram Srinivasan’s comment.",
+          "aria-expanded": "false"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "overflow-web-ios-small",
+          "fill": "currentColor",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "383",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": "",
+          "aria-hidden": "true"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "_95d5036b _2a24db93 _76249ec7 _5349ee97 a8f884a9 _4f0eb1d0 c83698bf _35d5d25c c52a091f a292b8a6",
+          "componentkey": "1e66ccac-974c-462e-8d7c-ef16e633eb44",
+          "style": "opacity: var(--3cd5cd6b);"
+        },
+        "textSample": "Hello Tushar Wagh CSM great points. But right now"
+      },
+      {
+        "tagName": "P",
+        "attrs": {
+          "class": "b2777cf9 _94449bdc _05d866de f03aabde _8be8c973 _0812541b _8decbcdb f6048ef7 _7dcfb1c6 _1149b69c",
+          "componentkey": "comment-commentary_33f87907-9aa8-4d4d-a5e2-d3805bfbc529",
+          "style": "background-color: var(--bd5c0717);"
+        },
+        "textSample": "Hello Tushar Wagh CSM great points. But right now"
+      },
+      {
+        "tagName": "SPAN",
+        "attrs": {
+          "class": "f5fa6300 _20a9a9f3 _03656ddb daede374 b7111a01 _2a7e3793 _705084ab b39c4f23 f93f8ece",
+          "tabindex": "-1",
+          "data-testid": "expandable-text-box"
+        },
+        "textSample": "Hello Tushar Wagh CSM great points. But right now"
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_6c05c2a3 _0553e249 b6d3012c _9dd1dfc9 _4c3bce13 b6fb284c _56349cb2 c1d63aae _3f5b20ab ca0e1f9e _497fc0a7 f3ad09dd _46e34e24 _700306d9 bcfc6674 _705084ab",
+          "type": "button",
+          "aria-hidden": "true",
+          "data-testid": "expandable-text-button",
+          "style": "--_317b8c87: var(--_63e99756); inset-inline-start: 0px; pointer-events: none;"
+        },
+        "textSample": "… more"
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "role": "button",
+          "tabindex": "0",
+          "class": "_1b76dd8f bed8504b _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "componentkey": "12aebdad-1821-4386-92cd-978b6fc13b2d"
+        },
+        "textSample": "1 reaction1"
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "a6ca4b51 a8f884a9 ed369678 c83698bf _90752ee4 c52a091f a292b8a6",
+          "componentkey": "12aebdad-1821-4386-92cd-978b6fc13b2d"
+        },
+        "textSample": "1 reaction1"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "thumbs-up-outline-small",
+          "fill": "currentColor",
+          "aria-hidden": "false",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "289",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d _73c4280d fd2fc91b b39c4f23 _53c5c3f6 _1a9f78f4 _33539d8a a4bbc50b",
+          "role": "img",
+          "aria-label": "Reaction button state: no reaction"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "SPAN",
+        "attrs": {
+          "aria-hidden": "true"
+        },
+        "textSample": "1"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "chevron-up-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "380",
+          "width": "16",
+          "height": "16",
+          "class": "",
+          "role": "img",
+          "style": "width: 16px; min-width: 16px; height: 16px; min-height: 16px;"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 bd2a259e e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece",
+          "type": "button",
+          "componentkey": "2e2d79cf-332d-4b5b-abdc-7ee588e60bce",
+          "aria-label": "Reply"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "comment-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "202",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "_923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/feed/",
+          "componentkey": "8bfed2c7-27e6-4188-8250-ca11bfb8be27"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "UL",
+        "attrs": {
+          "class": "a6ca4b51 _98c7c331 _02318b6a a8f884a9 ed369678",
+          "role": "presentation",
+          "componentkey": "8bfed2c7-27e6-4188-8250-ca11bfb8be27"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "like-consumption-ring-small",
+          "width": "16",
+          "height": "16",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "17",
+          "class": "dd59049d b39c4f23 _1a9f78f4 _33539d8a",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "_6e154561",
+          "componentkey": "CgsIgMDC9K/ej5rPAQ-replaceableLoadMoreCommentsdEUZBynNx8isPqKIWxKdk2gqzzVHmEXdbB-M0Rra5GgFeedType_MAIN_FEED_RELEVANCE"
+        },
+        "textSample": "Load more comments"
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "role": "button",
+          "tabindex": "0",
+          "class": "_0e8e1ca9 _658cfaa4 ea13b12b _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "componentkey": "c79da88b-b904-43ef-ac96-cfe209b67ec3"
+        },
+        "textSample": "Load more comments"
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "a6ca4b51 a8f884a9 ed369678 c83698bf _35d5d25c c52a091f a292b8a6",
+          "componentkey": "c79da88b-b904-43ef-ac96-cfe209b67ec3"
+        },
+        "textSample": "Load more comments"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "maximize-medium",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-supported-dps": "24x24",
+          "viewBox": "0 0 24 24",
+          "data-token-id": "628",
+          "width": "24",
+          "height": "24",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      }
+    ],
+    "anchors": [
+      {
+        "href": "https://www.linkedin.com/in/sriramadvisory/",
+        "text": "",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/in/sriramadvisory/",
+        "text": "Sriram Srinivasan",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/in/tusharwagh23041997/",
+        "text": "",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/in/tusharwagh23041997/",
+        "text": "Tushar Wagh CSM  • 2nd",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/in/tusharwagh23041997/",
+        "text": "",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/search/results/all/?keywords=%23futureofwork&origin=HASH_TAG_FROM_FEED",
+        "text": "#FutureOfWork",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/search/results/all/?keywords=%23artificialintelligence&origin=HASH_TAG_FROM_FEED",
+        "text": "#ArtificialIntelligence",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/search/results/all/?keywords=%23ai&origin=HASH_TAG_FROM_FEED",
+        "text": "#AI",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/search/results/all/?keywords=%23automation&origin=HASH_TAG_FROM_FEED",
+        "text": "#Automation",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/search/results/all/?keywords=%23economy&origin=HASH_TAG_FROM_FEED",
+        "text": "#Economy",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/search/results/all/?keywords=%23innovation&origin=HASH_TAG_FROM_FEED",
+        "text": "#Innovation",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/search/results/all/?keywords=%23leadership&origin=HASH_TAG_FROM_FEED",
+        "text": "#Leadership",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/search/results/all/?keywords=%23technology&origin=HASH_TAG_FROM_FEED",
+        "text": "#Technology",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/search/results/all/?keywords=%23digitaltransformation&origin=HASH_TAG_FROM_FEED",
+        "text": "#DigitalTransformation",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/search/results/all/?keywords=%23aiethics&origin=HASH_TAG_FROM_FEED",
+        "text": "#AIethics",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/search/results/all/?keywords=%23jobs&origin=HASH_TAG_FROM_FEED",
+        "text": "#Jobs",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/search/results/all/?keywords=%23economicpolicy&origin=HASH_TAG_FROM_FEED",
+        "text": "#EconomicPolicy",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/search/results/all/?keywords=%23futureeconomy&origin=HASH_TAG_FROM_FEED",
+        "text": "#FutureEconomy",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/search/results/all/?keywords=%23businessstrategy&origin=HASH_TAG_FROM_FEED",
+        "text": "#BusinessStrategy",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/search/results/all/?keywords=%23humancentered&origin=HASH_TAG_FROM_FEED",
+        "text": "#HumanCentered",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/feed/",
+        "text": "",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/feed/",
+        "text": "Sriram Srinivasan and 7 others",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/feed/",
+        "text": "Send",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/in/sriramadvisory/",
+        "text": "",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/in/sriramadvisory/",
+        "text": "Sriram Srinivasan Premium Prof",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/in/tusharwagh23041997/",
+        "text": "Tushar Wagh CSM",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/safety/go/?url=http%3A%2F%2Fwww%2Esriramadvisory%2Ecom&urlhash=QgTd&mt=vp4tFdJkgFoR2v2yxsY4VskGezlYIzX2WTpxXEZjv0i2CZhXjg6n-FNcB71YXTyDFcf2s0Oh6xyybQtALSzMk_ndK-gsqbeF2k6g1n0rKuZ8yl1y89xsRF9t7y0OncD3Ch-tFZf7xkMrladxnbd5Ij92VMCPYDeHWQ&isSdui=true",
+        "text": "www.sriramadvisory.com",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/feed/",
+        "text": "",
+        "ariaLabel": null
+      }
+    ]
+  },
+  {
+    "postIndex": 7,
+    "outerHtmlSample": "<div class=\"_95d5036b bb939d13 be945af7 _0c4d68a6 aee44b6b _9618c9d2 _5625003a ca6a2ac4 _64647e4f a8f884a9 _4f0eb1d0 c83698bf _35d5d25c c52a091f a292b8a6 _0eca8e58 ca0e1f9e _49236aae _5c737f4f _865c79e5 daede374\" role=\"listitem\" componentkey=\"expandedJCNOc8Wfqc7PN47n_Eu1uIeDH-jI60TBFWvql00cYhAFeedTy",
+    "dataElements": [
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "_95d5036b a8f884a9 _4f0eb1d0 c83698bf _35d5d25c c52a091f a292b8a6",
+          "componentkey": "JCNOc8Wfqc7PN47n_Eu1uIeDH-jI60TBFWvql00cYhA"
+        },
+        "textSample": "Feed postSuggestedDr. Satyajit Pattnaik  • 3rd+Lea"
+      },
+      {
+        "tagName": "SPAN",
+        "attrs": {
+          "aria-hidden": "true"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "_2a4006b3 f7b59a08 a8f884a9 ed369678 c83698bf _6088ed7e c52a091f a292b8a6",
+          "componentkey": "a1b638c8-92df-4f33-9005-307c994876ab"
+        },
+        "textSample": "Suggested"
+      },
+      {
+        "tagName": "P",
+        "attrs": {
+          "class": "b2777cf9 _1b06079e f5fa6300 _20a9a9f3 _03656ddb daede374 b7111a01 _2a7e3793 _67eb55f7",
+          "componentkey": "165ee502-891d-4470-9cf5-bfbe245c5ca7"
+        },
+        "textSample": "Suggested"
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 bd2a259e e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece b2dfb6e3 _3d10d77b a4bbc50b",
+          "type": "button",
+          "componentkey": "d5baf31a-550c-4981-8845-9f37be9f2f8a",
+          "aria-label": "Open control menu for post by Dr. Satyajit Pattnaik",
+          "aria-expanded": "false"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "overflow-web-ios-small",
+          "fill": "currentColor",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "383",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": "",
+          "aria-hidden": "true"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 bd2a259e e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece fd2fc91b b2dfb6e3 _3d10d77b a4bbc50b",
+          "type": "button",
+          "componentkey": "19c5e127-86c1-44a7-851f-dab0c8a11a18",
+          "aria-label": "Hide post by Dr. Satyajit Pattnaik"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "close-small",
+          "fill": "currentColor",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "206",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": "",
+          "aria-hidden": "true"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "_0e8bd5d5 _82eae472 _56bded47 d87a6d07 a4bbc50b _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/in/satyajitpattnaik/",
+          "componentkey": "6502f737-e072-47a1-afd1-e7318a4abc74"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "FIGURE",
+        "attrs": {
+          "class": "ec8e57de _413f2dd8 d9aa937f _6b3b6f8b a6ca4b51 daede374 b2ac0f54 _302da1a4",
+          "componentkey": "6502f737-e072-47a1-afd1-e7318a4abc74"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "person-accent-4",
+          "aria-hidden": "false",
+          "viewBox": "0 0 128 128",
+          "data-token-id": "356",
+          "class": "_69be5bf3 _47c144c9 _302da1a4 b2ac0f54 _942d2b8f",
+          "role": "img",
+          "fetchPriority": "low",
+          "aria-label": "View Dr. Satyajit Pattnaik’s profile",
+          "preserveAspectRatio": "xMidYMid slice"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "_2a7e3793 ea13b12b _61f144d2 _497c3b21 _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/in/satyajitpattnaik/",
+          "componentkey": "9df57349-dff3-4f2d-b392-a36a881bcfa6"
+        },
+        "textSample": "Dr. Satyajit Pattnaik  • 3rd+"
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "a6ca4b51 ff0e404d _07e1c6a4",
+          "componentkey": "9df57349-dff3-4f2d-b392-a36a881bcfa6"
+        },
+        "textSample": "Dr. Satyajit Pattnaik  • 3rd+"
+      },
+      {
+        "tagName": "SPAN",
+        "attrs": {
+          "class": "_6a0f6466 _9a413ba6",
+          "aria-hidden": "true"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "verified-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "304",
+          "width": "16",
+          "height": "16",
+          "class": "_53c5c3f6 _9a413ba6 _44e3033a",
+          "role": "img",
+          "style": "width: 16px; min-width: 16px; height: 16px; min-height: 16px;"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "P",
+        "attrs": {
+          "class": "b2777cf9 _1b06079e a57aba93 _20a9a9f3 _03656ddb daede374 b7111a01 _2a7e3793 _67eb55f7",
+          "componentkey": "a910cb65-1260-4d96-8f9f-1358aa80c931"
+        },
+        "textSample": "2d •"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "globe-americas-small",
+          "fill": "currentColor",
+          "aria-hidden": "false",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "182",
+          "width": "16",
+          "height": "16",
+          "class": "_53c5c3f6 _9a413ba6 _6fd06a6a",
+          "role": "img",
+          "aria-label": "Visibility: Global",
+          "style": "width: 16px; min-width: 16px; height: 16px; min-height: 16px;"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "_2a7e3793 fb00c7ce _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/in/satyajitpattnaik/",
+          "componentkey": "410908ee-f37d-4a5a-93e0-ca28642c0a34"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "a6ca4b51 ff0e404d _73c86c1a _07e1c6a4",
+          "componentkey": "410908ee-f37d-4a5a-93e0-ca28642c0a34"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "ff0e404d _2a7e3793 ea13b12b _07e1c6a4",
+          "componentkey": "2c45cb1d-dc7d-4626-8090-58396a578c8e"
+        },
+        "textSample": "Follow"
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 _3ee27ee8 e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece",
+          "type": "button",
+          "componentkey": "auto-component-bcbf72b9-4eb4-48e2-8830-8215a2fe322f",
+          "aria-label": "Follow Dr. Satyajit Pattnaik"
+        },
+        "textSample": "Follow"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "add-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "86",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "P",
+        "attrs": {
+          "class": "b2777cf9 _94449bdc _9e415b92 _02318b6a daf1dc32 _5349ee97 _05d866de f03aabde _8be8c973 _0812541b _8decbcdb f6048ef7 _7dcfb1c6 _67eb55f7",
+          "componentkey": "feed-commentary_b7f939de-25a3-4a7d-94cb-b192e0a1c988"
+        },
+        "textSample": "The AI hype meets harsh reality even Microsoft and"
+      },
+      {
+        "tagName": "SPAN",
+        "attrs": {
+          "class": "f5fa6300 _20a9a9f3 _03656ddb daede374 b7111a01 _2a7e3793 b39c4f23 f93f8ece",
+          "tabindex": "-1",
+          "data-testid": "expandable-text-box"
+        },
+        "textSample": "The AI hype meets harsh reality even Microsoft and"
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_6c05c2a3 _0553e249 b6d3012c _9dd1dfc9 _4c3bce13 b6fb284c _56349cb2 c1d63aae _3f5b20ab ca0e1f9e _497fc0a7 f3ad09dd _46e34e24 _700306d9 bcfc6674",
+          "type": "button",
+          "aria-hidden": "true",
+          "data-testid": "expandable-text-button",
+          "style": "--_317b8c87: var(--_63e99756); inset-inline-start: 0px; pointer-events: none;"
+        },
+        "textSample": "… more"
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "_0eca8e58 _7db789d8 _497c3b21 _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/feed/",
+          "componentkey": "3f5d8476-7024-442d-b007-bb7bc5e62774",
+          "style": "aspect-ratio: 1 / 1;"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "FIGURE",
+        "attrs": {
+          "class": "ec8e57de a6ca4b51 daede374 b2ac0f54",
+          "componentkey": "3f5d8476-7024-442d-b007-bb7bc5e62774",
+          "style": "aspect-ratio: 1 / 1; overflow: hidden;"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 _3ee27ee8 e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece _0e8e1ca9 _2a7e3793 ea13b12b f970b497 _61f144d2 _497c3b21",
+          "type": "button",
+          "componentkey": "2ba44171-babf-460c-b103-43390f409d4c",
+          "data-color-scheme": "light",
+          "aria-label": "This image has content credentials."
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "FIGURE",
+        "attrs": {
+          "class": "ec8e57de daede374 _33539d8a _1a9f78f4 fd7626b8 _9d7d7495",
+          "aria-hidden": "true"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "content-credentials-color",
+          "aria-hidden": "true",
+          "data-supported-dps": "24x24",
+          "viewBox": "0 0 24 24",
+          "data-token-id": "878",
+          "width": "24",
+          "height": "24",
+          "class": "_69be5bf3 _47c144c9 _302da1a4 b2ac0f54 _942d2b8f",
+          "role": "img",
+          "fetchPriority": "low",
+          "aria-label": "",
+          "preserveAspectRatio": "xMidYMid slice"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "a6ca4b51 _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/feed/",
+          "componentkey": "53f0c767-5660-458e-8477-776195438fdc"
+        },
+        "textSample": "78 reactions78"
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "a6ca4b51 _98c7c331 _02318b6a a8f884a9 ed369678 c83698bf _90752ee4 c52a091f _9d3fd27f",
+          "componentkey": "53f0c767-5660-458e-8477-776195438fdc"
+        },
+        "textSample": "78 reactions78"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "like-consumption-ring-small",
+          "width": "16",
+          "height": "16",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "17",
+          "class": "dd59049d b39c4f23 _1a9f78f4 _33539d8a",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "interest-consumption-ring-small",
+          "width": "16",
+          "height": "16",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "25",
+          "class": "dd59049d b39c4f23 _1a9f78f4 _33539d8a",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "path",
+        "attrs": {
+          "fill": "none",
+          "stroke": "#fff",
+          "stroke-linecap": "round",
+          "stroke-linejoin": "round",
+          "stroke-width": "2",
+          "d": "M7.46 4.78a2.2 2.2 0 0 0-1.22.65 2.43 2.43 0 0 0-.68 1.22"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "empathy-consumption-ring-small",
+          "width": "16",
+          "height": "16",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "23",
+          "class": "dd59049d b39c4f23 _1a9f78f4 _33539d8a",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "SPAN",
+        "attrs": {
+          "aria-hidden": "true"
+        },
+        "textSample": "78"
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "role": "button",
+          "tabindex": "0",
+          "class": "ea13b12b a4bbc50b _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "componentkey": "1578ac99-bb54-44d0-b9ed-18eb2b003af7"
+        },
+        "textSample": "15 comments15 comments"
+      },
+      {
+        "tagName": "P",
+        "attrs": {
+          "class": "b2777cf9 _94449bdc a6ca4b51 _98c7c331 _02318b6a _05d866de f03aabde _8be8c973 _0812541b _8decbcdb f3ad09dd _7dcfb1c6 _1149b69c e61f6585",
+          "componentkey": "1578ac99-bb54-44d0-b9ed-18eb2b003af7",
+          "style": "--_08555671: var(--_63e99756); --_5d2fa3f0: var(--d2a09643); --_1c1c79e6: var(--_33180e65);"
+        },
+        "textSample": "15 comments15 comments"
+      },
+      {
+        "tagName": "SPAN",
+        "attrs": {
+          "aria-hidden": "true"
+        },
+        "textSample": "15 comments"
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "tabindex": "0",
+          "class": "ea13b12b a4bbc50b _923bed97 _5bbb7b8c e0ce3ffc _1f6f2015 _2f494abe _2b11b6e7 _497fc0a7 _63279000 _6ef5e5e7 a8f884a9",
+          "href": "https://www.linkedin.com/feed/",
+          "componentkey": "a1beed19-8f57-4542-a40d-c922f8171b89"
+        },
+        "textSample": "2 reposts2 reposts"
+      },
+      {
+        "tagName": "P",
+        "attrs": {
+          "class": "b2777cf9 _94449bdc a6ca4b51 _98c7c331 _02318b6a _05d866de f03aabde _8be8c973 _0812541b _8decbcdb f3ad09dd _7dcfb1c6 _1149b69c e61f6585",
+          "componentkey": "a1beed19-8f57-4542-a40d-c922f8171b89",
+          "style": "--_08555671: var(--_63e99756); --_5d2fa3f0: var(--d2a09643); --_1c1c79e6: var(--_33180e65);"
+        },
+        "textSample": "2 reposts2 reposts"
+      },
+      {
+        "tagName": "SPAN",
+        "attrs": {
+          "aria-hidden": "true"
+        },
+        "textSample": "2 reposts"
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 bd2a259e e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece",
+          "type": "button",
+          "componentkey": "72cb4090-4b99-4772-9bdf-a3a914c90a23",
+          "aria-label": "Reaction button state: no reaction"
+        },
+        "textSample": "Like"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "thumbs-up-outline-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "289",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "chevron-up-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "380",
+          "width": "16",
+          "height": "16",
+          "class": "",
+          "role": "img",
+          "style": "width: 16px; min-width: 16px; height: 16px; min-height: 16px;"
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 _3ee27ee8 e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece",
+          "type": "button",
+          "componentkey": "2d9db048-0843-4d8d-b29e-1ee332405632"
+        },
+        "textSample": "Comment"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "comment-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "202",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "BUTTON",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 _3ee27ee8 e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece",
+          "type": "button",
+          "componentkey": "eee42f61-bae6-4a4c-988c-bded515a0ef4",
+          "aria-expanded": "false"
+        },
+        "textSample": "Repost"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "repost-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "255",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "A",
+        "attrs": {
+          "class": "_4e973f5f _56467f9d _497fc0a7 _7555fd41 _63279000 _0812541b fbe33369 _3ee27ee8 e798f07c aaf03ae8 b90aaa13 _90752ee4 f93f8ece",
+          "aria-disabled": "false",
+          "href": "https://www.linkedin.com/feed/",
+          "componentkey": "235aeab5-8a18-4cbd-bcbd-2a1d043b0350"
+        },
+        "textSample": "Send"
+      },
+      {
+        "tagName": "svg",
+        "attrs": {
+          "xmlns": "http://www.w3.org/2000/svg",
+          "id": "send-privately-small",
+          "fill": "currentColor",
+          "aria-hidden": "true",
+          "data-rtl": "true",
+          "data-supported-dps": "16x16",
+          "viewBox": "0 0 16 16",
+          "data-token-id": "232",
+          "width": "16",
+          "height": "16",
+          "class": "dd59049d b39c4f23 _33539d8a fd7626b8 _1a9f78f4 _9d7d7495",
+          "role": "img",
+          "aria-label": ""
+        },
+        "textSample": ""
+      },
+      {
+        "tagName": "DIV",
+        "attrs": {
+          "class": "_0e8e1ca9 _658cfaa4 _6e154561",
+          "componentkey": "CgsIgMDIxLLwzpfPAQ-replaceableCommentToolsJCNOc8Wfqc7PN47n_Eu1uIeDH-jI60TBFWvql00cYhAFeedType_MAIN_FEED_RELEVANCE"
+        },
+        "textSample": ""
+      }
+    ],
+    "anchors": [
+      {
+        "href": "https://www.linkedin.com/in/satyajitpattnaik/",
+        "text": "",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/in/satyajitpattnaik/",
+        "text": "Dr. Satyajit Pattnaik  • 3rd+",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/in/satyajitpattnaik/",
+        "text": "",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/search/results/all/?keywords=%23ai&origin=HASH_TAG_FROM_FEED",
+        "text": "#ai",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/search/results/all/?keywords=%23tech&origin=HASH_TAG_FROM_FEED",
+        "text": "#tech",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/search/results/all/?keywords=%23jobs&origin=HASH_TAG_FROM_FEED",
+        "text": "#jobs",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/search/results/all/?keywords=%23hiring&origin=HASH_TAG_FROM_FEED",
+        "text": "#hiring",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/search/results/all/?keywords=%23trends&origin=HASH_TAG_FROM_FEED",
+        "text": "#trends",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/search/results/all/?keywords=%23claude&origin=HASH_TAG_FROM_FEED",
+        "text": "#claude",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/feed/",
+        "text": "",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/feed/",
+        "text": "78 reactions78",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/feed/",
+        "text": "2 reposts2 reposts",
+        "ariaLabel": null
+      },
+      {
+        "href": "https://www.linkedin.com/feed/",
+        "text": "Send",
+        "ariaLabel": null
+      }
+    ]
+  }
+]

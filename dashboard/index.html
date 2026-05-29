@@ -73,8 +73,13 @@
       <!-- Left: Recommendations -->
       <main class="recommendations-section animate-fade-in" style="animation-delay: 0.2s;">
         <div class="section-header">
-          <h2>🎯 Today's Recommended Comments</h2>
-          <span class="date-badge" id="currentRunDate">YYYY-MM-DD</span>
+          <h2 id="sectionTitle">🎯 Recommended Comments</h2>
+          <div class="date-selector-wrapper" style="display: flex; align-items: center;">
+            <span class="date-badge-label" style="font-size: 0.8rem; font-weight: 600; color: var(--text-muted); margin-right: 0.5rem;">Select Date:</span>
+            <select id="dateSelect" class="date-select-dropdown">
+              <!-- Dynamically populated -->
+            </select>
+          </div>
         </div>
         
         <div class="comments-list" id="commentsList">

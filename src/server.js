@@ -42,6 +42,23 @@ app.get('/api/today', (req, res) => {
   }
 });
 
+// ── GET /api/comments/:date ──
+app.get('/api/comments/:date', (req, res) => {
+  const date = req.params.date;
+  const filePath = getCommentsPath(date);
+
+  if (!fs.existsSync(filePath)) {
+    return res.status(404).json({ error: `No comments found for date: ${date}` });
+  }
+
+  try {
+    const comments = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+    res.json({ date, comments, status: 'success' });
+  } catch (err) {
+    res.status(500).json({ error: 'Failed to read comments', details: err.message });
+  }
+});
+
 // ── GET /api/stats ──
 app.get('/api/stats', (req, res) => {
   if (!fs.existsSync(STATS_FILE)) {

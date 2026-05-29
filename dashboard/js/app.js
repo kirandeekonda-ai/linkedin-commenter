@@ -14,7 +14,8 @@ const elements = {
   statToday: document.getElementById('statToday'),
   statPostRate: document.getElementById('statPostRate'),
   statPosted: document.getElementById('statPosted'),
-  currentRunDate: document.getElementById('currentRunDate'),
+  dateSelect: document.getElementById('dateSelect'),
+  sectionTitle: document.getElementById('sectionTitle'),
   commentsList: document.getElementById('commentsList'),
   historyTableBody: document.getElementById('historyTableBody'),
   editModal: document.getElementById('editModal'),
@@ -35,10 +36,16 @@ document.addEventListener('DOMContentLoaded', () => {
 // ── Data Fetching & Loading ──────────────────────────────────────────────────
 async function loadDashboardData() {
   await Promise.all([
-    fetchTodayComments(),
     fetchStats(),
     fetchHistory()
   ]);
+  
+  populateDateSelector();
+  
+  const selectedDate = elements.dateSelect.value;
+  if (selectedDate) {
+    await fetchCommentsForDate(selectedDate);
+  }
   
   renderStats();
   renderComments();
@@ -46,14 +53,16 @@ async function loadDashboardData() {
   renderCharts();
 }
 
-async function fetchTodayComments() {
+async function fetchCommentsForDate(date) {
   try {
-    const res = await fetch('/api/today');
+    const today = new Date().toISOString().split('T')[0];
+    const url = date === today ? '/api/today' : `/api/comments/${date}`;
+    const res = await fetch(url);
     const data = await res.json();
     state.date = data.date;
     state.comments = data.comments || [];
   } catch (err) {
-    console.error('Error fetching today\'s comments:', err);
+    console.error(`Error fetching comments for date ${date}:`, err);
   }
 }
 
@@ -75,6 +84,28 @@ async function fetchHistory() {
   }
 }
 
+function populateDateSelector() {
+  elements.dateSelect.innerHTML = '';
+  
+  if (state.history.length === 0) {
+    const today = new Date().toISOString().split('T')[0];
+    const opt = document.createElement('option');
+    opt.value = today;
+    opt.textContent = `${today} (Today)`;
+    elements.dateSelect.appendChild(opt);
+    return;
+  }
+  
+  state.history.forEach((run) => {
+    const today = new Date().toISOString().split('T')[0];
+    const isToday = run.date === today;
+    const opt = document.createElement('option');
+    opt.value = run.date;
+    opt.textContent = isToday ? `${run.date} (Today)` : run.date;
+    elements.dateSelect.appendChild(opt);
+  });
+}
+
 // ── Render Functions ─────────────────────────────────────────────────────────
 
 function renderStats() {
@@ -84,7 +115,6 @@ function renderStats() {
   elements.statToday.textContent = state.comments.length;
   elements.statPostRate.textContent = state.stats.posting_rate || '0.0%';
   elements.statPosted.textContent = state.stats.total_comments_posted || 0;
-  elements.currentRunDate.textContent = state.date || new Date().toISOString().split('T')[0];
 }
 
 function renderComments() {
@@ -94,8 +124,8 @@ function renderComments() {
     elements.commentsList.innerHTML = `
       <div class="empty-state">
         <span style="font-size: 3rem; margin-bottom: 1rem;">📭</span>
-        <h3>No Comments for Today</h3>
-        <p>Run a fresh feed scan to extract posts and generate comments.</p>
+        <h3>No Comments for this Date</h3>
+        <p>No scan runs are saved for the selected date.</p>
       </div>
     `;
     return;
@@ -105,6 +135,13 @@ function renderComments() {
     const relevancePercent = Math.round(c.relevance_score * 100);
     const excerpt = c.post_excerpt || '';
     const isPosted = c.was_posted || false;
+    
+    // Fallback to recent activity page if post_url is a profile link
+    let displayUrl = c.post_url || '';
+    if (displayUrl && displayUrl.includes('/in/') && !displayUrl.includes('/recent-activity/')) {
+      const base = displayUrl.endsWith('/') ? displayUrl : displayUrl + '/';
+      displayUrl = base + 'recent-activity/all/';
+    }
     
     const card = document.createElement('div');
     card.className = `post-card animate-fade-in`;
@@ -117,12 +154,13 @@ function renderComments() {
         <div class="post-badges">
           <span class="badge-relevance">🔥 ${relevancePercent}% Match</span>
           <span class="badge-tone">${c.tone}</span>
-          <a href="${c.post_url}" target="_blank" class="post-link" title="Open Post on LinkedIn">🔗</a>
+          <a href="${displayUrl}" target="_blank" class="post-link" title="Open Post on LinkedIn">🔗</a>
         </div>
       </div>
       <div class="post-body">
         <p>${excerpt}</p>
       </div>
+
       <div class="comment-section">
         <div class="comment-label">
           <span>💬 Suggested Comment</span>
@@ -299,6 +337,28 @@ function setupEventListeners() {
   // Close modal when clicking overlay
   elements.editModal.addEventListener('click', (e) => {
     if (e.target === elements.editModal) closeModal();
+  });
+  
+  // Date Selector Change Event
+  elements.dateSelect.addEventListener('change', async (e) => {
+    const selectedDate = e.target.value;
+    const today = new Date().toISOString().split('T')[0];
+    
+    if (selectedDate === today) {
+      elements.sectionTitle.textContent = "🎯 Today's Recommended Comments";
+    } else {
+      elements.sectionTitle.textContent = `🎯 Recommended Comments (${selectedDate})`;
+    }
+    
+    elements.commentsList.innerHTML = `
+      <div class="loading-state">
+        <span class="spinner"></span>
+        <p>Loading comments for ${selectedDate}...</p>
+      </div>
+    `;
+    
+    await fetchCommentsForDate(selectedDate);
+    renderComments();
   });
   
   // Run Scan Action

@@ -1,8 +1,7 @@
 /**
  * DOM Probe — Diagnostic tool
  * 
- * Opens LinkedIn feed and dumps the actual HTML structure
- * of post elements so we can find the right selectors.
+ * Target-searches for "Rakesh Gohel" or "Sandeep Gulati" to see where they live in the DOM.
  */
 
 import { chromium } from 'playwright';
@@ -31,113 +30,114 @@ async function probe() {
   });
 
   const page = await context.newPage();
+  console.log('🌐 Navigating to feed...');
   await page.goto('https://www.linkedin.com/feed/', { waitUntil: 'domcontentloaded' });
-  await page.waitForTimeout(5000);
+  await page.waitForTimeout(6000);
 
-  // Probe: What selectors exist for author info?
-  const probe = await page.evaluate(() => {
+  // Take screenshot
+  const screenshotPath = path.join(PROJECT_ROOT, 'data', 'dom-probe-screenshot.png');
+  await page.screenshot({ path: screenshotPath });
+  console.log(`📸 Screenshot saved to: ${screenshotPath}`);
+
+  // Probe
+  const probeResult = await page.evaluate(() => {
     const results = {};
+    results.url = window.location.href;
+    results.title = document.title;
+    results.bodyTextLength = document.body.innerText.length;
 
-    // Find the first post container
-    const postSelectors = [
-      '[data-urn^="urn:li:activity"]',
-      '.feed-shared-update-v2',
-      '.occludable-update',
-    ];
-
-    let firstPost = null;
-    for (const sel of postSelectors) {
-      firstPost = document.querySelector(sel);
-      if (firstPost) {
-        results.postSelector = sel;
-        break;
+    // Helper: search by text
+    const findElementByText = (text) => {
+      const walker = document.createTreeWalker(
+        document.body,
+        NodeFilter.SHOW_TEXT,
+        null,
+        false
+      );
+      let node;
+      while ((node = walker.nextNode())) {
+        if (node.nodeValue.includes(text)) {
+          return node.parentElement;
+        }
       }
+      return null;
+    };
+
+    // Find the first role="listitem" post container
+    const firstPost = document.querySelector('[role="listitem"]');
+    results.postContainerFound = !!firstPost;
+    
+    if (firstPost) {
+      results.containerTag = firstPost.tagName;
+      
+      // Discover all descendants with text content length > 40
+      const largeTextElements = [];
+      firstPost.querySelectorAll('*').forEach(el => {
+        const text = el.textContent.trim();
+        // Skip elements that just contain other elements with the same text
+        const isLeafish = Array.from(el.children).filter(c => c.textContent.trim().length > 40).length === 0;
+        if (text.length > 40 && isLeafish) {
+          largeTextElements.push({
+            tag: el.tagName,
+            textSample: text.substring(0, 150),
+            length: text.length,
+            classes: Array.from(el.classList),
+            attributes: Array.from(el.attributes).reduce((acc, attr) => {
+              acc[attr.name] = attr.value;
+              return acc;
+            }, {})
+          });
+        }
+      });
+      results.largeTextElements = largeTextElements;
+
+      // Discover all links inside this post container
+      const links = [];
+      firstPost.querySelectorAll('a').forEach(a => {
+        links.push({
+          href: a.getAttribute('href'),
+          text: a.textContent.trim().substring(0, 80),
+          ariaLabel: a.getAttribute('aria-label'),
+          classes: Array.from(a.classList)
+        });
+      });
+      results.links = links;
+
+      // Discover all images inside
+      const images = [];
+      firstPost.querySelectorAll('img').forEach(img => {
+        images.push({
+          src: img.getAttribute('src'),
+          alt: img.getAttribute('alt'),
+          classes: Array.from(img.classList)
+        });
+      });
+      results.images = images;
+
+      // Find all text blocks inside to locate post text
+      const textBlocks = [];
+      // Traverse all leaf elements with text content
+      const traverse = (el) => {
+        if (el.children.length === 0 && el.textContent.trim().length > 0) {
+          textBlocks.push({
+            tag: el.tagName,
+            classes: Array.from(el.classList),
+            text: el.textContent.trim().substring(0, 150)
+          });
+        }
+        Array.from(el.children).forEach(traverse);
+      };
+      traverse(firstPost);
+      results.textBlocks = textBlocks;
     }
-
-    if (!firstPost) {
-      results.error = 'No post container found';
-      return results;
-    }
-
-    // Dump the outer HTML of the actor/author area (first 3000 chars)
-    const actorSelectors = [
-      '.update-components-actor',
-      '.feed-shared-actor',
-      '.update-components-actor__container',
-      '.update-components-actor__meta',
-    ];
-
-    for (const sel of actorSelectors) {
-      const el = firstPost.querySelector(sel);
-      if (el) {
-        results[`actor_html_${sel}`] = el.outerHTML.substring(0, 2000);
-      }
-    }
-
-    // Try various name selectors and report what they return
-    const nameSelectors = [
-      '.update-components-actor__name',
-      '.update-components-actor__name span',
-      '.update-components-actor__name span[aria-hidden="true"]',
-      '.update-components-actor__name .hoverable-link-text',
-      '.update-components-actor__name .hoverable-link-text span[aria-hidden="true"]',
-      '.update-components-actor__title',
-      '.update-components-actor__title span[aria-hidden="true"]',
-      '.feed-shared-actor__name',
-      '.feed-shared-actor__title',
-      'a.app-aware-link[href*="/in/"] span',
-      '.update-components-actor__container-link',
-      '.update-components-actor__meta-link',
-      'span.update-components-actor__name',
-      'span.update-components-actor__title',
-    ];
-
-    results.nameResults = {};
-    for (const sel of nameSelectors) {
-      const el = firstPost.querySelector(sel);
-      results.nameResults[sel] = el
-        ? { text: el.textContent.trim().substring(0, 100), tagName: el.tagName, childCount: el.children.length }
-        : null;
-    }
-
-    // Try getting ALL text nodes that might be the author name
-    // Look at the top portion of the post
-    const allLinks = firstPost.querySelectorAll('a[href*="/in/"]');
-    results.profileLinks = Array.from(allLinks).slice(0, 3).map(a => ({
-      href: a.getAttribute('href'),
-      text: a.textContent.trim().substring(0, 100),
-      ariaLabel: a.getAttribute('aria-label'),
-    }));
-
-    // Check for headline/description
-    const descSelectors = [
-      '.update-components-actor__description',
-      '.update-components-actor__subtitle',
-      '.update-components-actor__sub-description',
-      '.feed-shared-actor__description',
-    ];
-    results.descResults = {};
-    for (const sel of descSelectors) {
-      const el = firstPost.querySelector(sel);
-      results.descResults[sel] = el ? el.textContent.trim().substring(0, 200) : null;
-    }
-
-    // Get all class names in the actor area for discovery
-    const actorArea = firstPost.querySelector('.update-components-actor') || firstPost;
-    const allClasses = new Set();
-    actorArea.querySelectorAll('*').forEach(el => {
-      el.classList.forEach(c => allClasses.add(c));
-    });
-    results.allActorClasses = Array.from(allClasses).sort();
 
     return results;
   });
 
-  // Write probe results
   const outputPath = path.join(PROJECT_ROOT, 'data', 'dom-probe.json');
-  fs.writeFileSync(outputPath, JSON.stringify(probe, null, 2));
+  fs.writeFileSync(outputPath, JSON.stringify(probeResult, null, 2));
   console.log('\n📋 DOM Probe Results:\n');
-  console.log(JSON.stringify(probe, null, 2));
+  console.log(JSON.stringify(probeResult, null, 2));
   console.log(`\n💾 Saved to: ${outputPath}`);
 
   await browser.close();
