@@ -118,7 +118,14 @@ export class BrowserGuard {
    */
   async scroll(distance) {
     this._logAllowed('scroll', `Scrolling ${distance}px`);
-    await this.page.evaluate((d) => window.scrollBy(0, d), distance);
+    await this.page.evaluate((d) => {
+      const workspace = document.querySelector('main#workspace') || document.querySelector('[role="main"]') || document.body;
+      if (workspace && workspace.scrollHeight > workspace.clientHeight) {
+        workspace.scrollBy(0, d);
+      } else {
+        window.scrollBy(0, d);
+      }
+    }, distance);
   }
 
   /**

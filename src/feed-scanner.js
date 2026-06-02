@@ -211,9 +211,6 @@ async function extractPosts(page) {
           }
         }
 
-        // Deduplicate
-        if (urn && seenIds.has(urn)) continue;
-        if (urn) seenIds.add(urn);
 
 
         // ── Author Info ──
@@ -287,6 +284,23 @@ async function extractPosts(page) {
           '.update-components-actor__container-link',
           '.feed-shared-actor__container-link',
         ]);
+        // ── Connection Degree ──
+        let connectionDegree = '';
+        const nameContainers = el.querySelectorAll('a[href*="/in/"], .update-components-actor__title, .update-components-actor__name, .feed-shared-actor__name');
+        for (const container of nameContainers) {
+          const text = container.textContent || '';
+          const match = text.match(/\b(1st|2nd|3rd\+|3rd)\b/i) || text.match(/(1st|2nd|3rd\+|3rd)/i);
+          if (match) {
+            connectionDegree = match[1].toLowerCase();
+            break;
+          }
+          const ariaLabel = container.getAttribute('aria-label') || '';
+          const ariaMatch = ariaLabel.match(/\b(1st|2nd|3rd\+|3rd)\b/i) || ariaLabel.match(/(1st|2nd|3rd\+|3rd)/i);
+          if (ariaMatch) {
+            connectionDegree = ariaMatch[1].toLowerCase();
+            break;
+          }
+        }
 
         // ── Post Text ──
         const postText = getText(el, [
@@ -382,11 +396,23 @@ async function extractPosts(page) {
           }
         }
 
+        // ── Deterministic Post ID & Deduplication ──
+        let postId = urn;
+        if (!postId) {
+          const authorSlug = (authorName || 'unknown').toLowerCase().replace(/[^a-z0-9]/g, '').substring(0, 15);
+          const textSlug = (postText || '').toLowerCase().replace(/[^a-z0-9]/g, '').substring(0, 20);
+          postId = (authorSlug || textSlug) ? `gen_${authorSlug}_${textSlug}` : `unknown_${Math.random().toString(36).substring(2, 9)}`;
+        }
+
+        if (seenIds.has(postId)) continue;
+        seenIds.add(postId);
+
         posts.push({
-          post_id: urn || `unknown_${posts.length}`,
+          post_id: postId,
           author_name: authorName,
           author_headline: authorHeadline,
           author_profile_url: authorProfileUrl,
+          connection_degree: connectionDegree,
           post_text: postText,
           post_url: postUrl,
           post_type: postType,
@@ -588,7 +614,7 @@ async function scanFeed() {
     const excerpt = p.post_text.length > 100
       ? p.post_text.substring(0, 100) + '...'
       : p.post_text;
-    console.log(`  ${i + 1}. 👤 ${p.author_name || 'Unknown'}`);
+    console.log(`  ${i + 1}. 👤 ${p.author_name || 'Unknown'} (${p.connection_degree || 'unknown'})`);
     console.log(`     📝 "${excerpt}"`);
     console.log(`     🔗 ${p.post_url || 'No URL'}`);
     console.log(`     ❤️ ${p.engagement.likes} likes | 💬 ${p.engagement.comments} comments`);
