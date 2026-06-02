@@ -100,6 +100,13 @@ GEMINI_API_KEY=AIzaSyD...your_actual_key_here...
 
 ---
 
+## 🤖 Custom Agent Chat Trigger
+
+If you are pair programming with an AI coding assistant (like Antigravity or any other Gemini agent) in a fresh chat session, you can use this shortcut:
+*   **/generate-comments**: Type this text directly in the chat. The AI agent will parse this `README.md` document, recognize the custom trigger, and automatically execute the entire pipeline (`npm run orchestrate`), generate 5 unique comments, and start your dashboard server without requiring long instruction prompts.
+
+---
+
 ## ⏰ Deploying Autonomous Background Runs
 
 To automate the entire workflow without manual chat or CLI approvals, set up **Windows Task Scheduler** to execute the built-in launcher script **`run.bat`** at **08:00 AM** every morning.
