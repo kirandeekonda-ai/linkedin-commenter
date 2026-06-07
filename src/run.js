@@ -26,6 +26,12 @@ function log(emoji, message) {
   console.log(`  ${emoji}  [${ts}] ${message}`);
 }
 
+function containsWord(text, keyword) {
+  const escaped = keyword.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+  const regex = new RegExp(`(?:^|[^a-zA-Z0-9])` + escaped + `(?:$|[^a-zA-Z0-9])`, 'i');
+  return regex.test(text);
+}
+
 function randomBetween(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -43,7 +49,7 @@ function scorePostRelevance(postText, authorHeadline) {
   
   let score = 0.5; // base score
   const matches = [];
-
+ 
   const keywords = {
     agentic: { weight: 0.15, label: "Agentic AI platform design" },
     "multi-agent": { weight: 0.15, label: "Multi-agent orchestration" },
@@ -65,7 +71,7 @@ function scorePostRelevance(postText, authorHeadline) {
   };
 
   for (const [kw, info] of Object.entries(keywords)) {
-    if (text.includes(kw) || headline.includes(kw)) {
+    if (containsWord(text, kw) || containsWord(headline, kw)) {
       score += info.weight;
       matches.push(info.label);
     }
@@ -83,101 +89,287 @@ function scorePostRelevance(postText, authorHeadline) {
 
 // ── Comment Generator Vault ────────────────────────────────────────────────────
 
-// Global set to keep track of generated comments in the current execution run to ensure zero duplication
+// Global sets to keep track of used components to ensure zero duplication within a run
 const usedComments = new Set();
+const usedHooks = new Set();
+const usedClosers = new Set();
+
+const HOOKS = {
+  experience: [
+    (name) => `${name}, this aligns closely with what we've been seeing in production.`,
+    (name) => `Spot on, ${name}. In our enterprise architecture work, we've seen a very similar pattern.`,
+    (name) => `Really resonates, ${name}. We've run into these exact same dynamics.`,
+  ],
+  addition: [
+    (name) => `Great points, ${name}. Building on your insights, there is an important layer to consider.`,
+    (name) => `Very interesting context, ${name}. I wanted to expand on a specific part of this.`,
+    (name) => `Appreciate you laying this out, ${name}. One crucial detail stands out from our architecture work.`,
+  ],
+  question: [
+    (name) => `Thoughtful analysis, ${name}.`,
+    (name) => `Really interesting angle, ${name}.`,
+    (name) => `This is a timely discussion, ${name}.`,
+  ],
+  pushback: [
+    (name) => `I see your point, ${name}, but there's another side to this.`,
+    (name) => `Interesting take, ${name}, though our experience suggests a slightly different path.`,
+    (name) => `Appreciate this perspective, ${name}, but enterprise stability requires looking at this differently.`,
+  ],
+  appreciation: [
+    (name) => `This is an exceptionally clear breakdown, ${name}.`,
+    (name) => `Fantastic summary, ${name}. You've articulated this perfectly.`,
+    (name) => `So glad you posted this, ${name}. It hits on a very critical area.`,
+  ]
+};
 
 const COMMENT_TEMPLATES = [
+  {
+    id: "mcp_tool_broker",
+    keywords: ["mcp", "model context protocol", "broker", "tool-calling", "schemas"],
+    tone: "addition",
+    baseBody: "Treating MCP as a broker interface rather than just a connection protocol is the right architectural play. By shielding the agent from raw schema complexity and centralizing tool governance at the broker level, you decouple client runtimes from downstream API churn. It's the same separation-of-concerns pattern that has historically succeeded in enterprise service buses and API gateways.",
+    closers: [
+      "Are you finding that routing tools this way helps with query latency, or does the extra broker hop add measurable overhead?",
+      "How are you managing schema versioning at the broker level when upstream tool schemas change?"
+    ]
+  },
+  {
+    id: "agentic_commerce",
+    keywords: ["commerce", "payments", "payment", "tokenization", "credential"],
+    tone: "experience",
+    baseBody: "The intersection of agentic workflows and payment tokenization is a massive area. Using scoped, revokable tokens as surrogate credentials is the only safe way to delegate spending authority to autonomous agents without exposing raw account rails. Drawing from established payments tokenization standards is far safer than trying to reinvent authorization boundaries from scratch.",
+    closers: [
+      "Are you seeing payment networks begin to issue native agent-scoped credentials yet?",
+      "How do you handle real-time fraud monitoring when an agent initiates a transaction autonomously?"
+    ]
+  },
   {
     id: "20_80_split",
     keywords: ["anthropic", "claude", "mistake", "20% model", "80% model", "agent stack", "reliability"],
     tone: "experience",
-    comment: "This 20/80 split is the absolute truth of enterprise agentic design. In our platform work, we've found that the reasoning engine is merely a probabilistic compiler, whereas actual stability comes from strict boundary schemas, self-hosted sandboxing, and deterministic state management. If you don't build a robust, transparent governance wrapper around the model, you're just scaling unquantifiable errors in production."
+    baseBody: "The 20/80 split is the absolute truth of enterprise agentic design. We've found that the reasoning engine is really just a probabilistic compiler; actual stability comes from strict boundary schemas, self-hosted sandboxing, and deterministic state management. Without a robust, transparent governance wrapper, you're just scaling unquantifiable errors in production.",
+    closers: [
+      "Are you seeing more teams build custom orchestration layers for this, or rely on vendor-native frameworks?",
+      "How are you balancing the trade-offs between custom orchestration code and developer speed?"
+    ]
   },
   {
     id: "filesystem_memory",
     keywords: ["memory", "state", "organize", "fail", "context", "history", "resumable", "struggle"],
     tone: "addition",
-    comment: "This is why the filesystem-as-memory model is replacing vector-only context stores for complex execution. When you treat agent state as a resumable, structured document tree rather than a single massive text history, long-running processes become highly reliable. It moves the cognitive burden out of the prompt window and into the application boundary."
+    baseBody: "Treating agent state as a resumable, structured document tree rather than a single massive text history makes long-running processes highly reliable. It moves the cognitive burden out of the prompt window and directly into the application boundary.",
+    closers: [
+      "Are you seeing a shift away from standard vector-only storage toward structured episodic storage in your setups?",
+      "How do you handle context compression when state documents grow over long execution periods?"
+    ]
   },
   {
     id: "model_routing",
     keywords: ["routing", "multi-model", "specialized", "composable", "slm", "lrm", "inference", "cost"],
     tone: "experience",
-    comment: "Designing custom model-routing logic is where real enterprise cost-efficiency and performance is won. We've had great success using lightweight SLMs for initial intent classification, then routing complex planning to heavy reasoning models before handing execution off to structured tool-calling nodes. Composable intelligence is the only practical way to run these platforms without going bankrupt on inference costs."
+    baseBody: "Designing custom model-routing logic is where real enterprise cost-efficiency is won. We've had great success using lightweight SLMs for initial intent classification, then routing complex planning to heavy reasoning models before handing execution off to structured tool-calling nodes. Composable intelligence is the only practical way to run these platforms without going bankrupt on inference costs.",
+    closers: [
+      "Are you routing dynamically based on real-time token cost, or using static routing schemas?",
+      "What tools are you using to classify user intent at the router level without adding too much latency?"
+    ]
   },
   {
     id: "validation_contracts",
     keywords: ["fastapi", "pydantic", "contract", "validation", "schema", "retry", "boundary"],
     tone: "addition",
-    comment: "FastAPI combined with custom Pydantic schemas provides the exact contract layer needed to stabilize agent outputs in production. In our implementations, treating model responses as strict data schemas rather than raw text allows us to run deterministic validations and orchestrate graceful retries before errors ever bubble up. The real engineering happens at these boundary contracts, not in the LLM prompts."
+    baseBody: "FastAPI combined with custom Pydantic schemas provides the exact contract layer needed to stabilize agent outputs in production. Treating model responses as strict data schemas rather than raw text allows us to run deterministic validations and orchestrate graceful retries before errors ever bubble up.",
+    closers: [
+      "Do you orchestrate validation retries immediately at the API layer, or let them bubble up to the controller?",
+      "How are you handling structural schema changes when downstream models update?"
+    ]
   },
   {
     id: "org_operating_model",
     keywords: ["governance", "operating model", "institution", "transform", "organizat", "rethink", "ceo", "board", "process"],
     tone: "experience",
-    comment: "Redesigning organization boundaries is the most overlooked phase of AI adoption. If you drop multi-agent platforms onto unmodified workflows, you just get faster, more expensive bad decisions. True enterprise modernization means redefining data ownership, establishing strict human-in-the-loop validation checkpoints, and adapting the compliance model to govern autonomous agents."
+    baseBody: "Redesigning organizational boundaries is the most overlooked phase of AI adoption. If you drop multi-agent platforms onto unmodified workflows, you just get faster, more expensive bad decisions. True enterprise modernization means redefining data ownership, establishing strict human-in-the-loop validation checkpoints, and adapting the compliance model to govern autonomous agents.",
+    closers: [
+      "What has been the biggest hurdle in getting non-technical stakeholders to participate in the HITL review loops?",
+      "How are compliance teams reacting to autonomous agents interacting directly with core databases?"
+    ]
   },
   {
     id: "rag_semantic_chunking",
     keywords: ["rag", "retrieval", "semantic", "vector", "chunking", "ingestion", "hallucinat", "data"],
     tone: "addition",
-    comment: "Moving RAG from a demo to enterprise reliability is 90% ingestion and 10% model execution. Simple paragraph splitting is the main source of context drift; we've moved entirely to structural semantic chunking and deterministic schema verification before the synthesis step to guarantee repeatable results."
+    baseBody: "Moving RAG from a demo to enterprise reliability is 90% ingestion and 10% model execution. Simple paragraph splitting is the main source of context drift; we've moved entirely to structural semantic chunking and deterministic schema verification before the synthesis step.",
+    closers: [
+      "Are you parsing document structures manually or leveraging multi-modal models for layout extraction?",
+      "How are you validating retrieval accuracy at scale before it goes to synthesis?"
+    ]
   },
   {
     id: "hexagonal_independence",
     keywords: ["hexagonal", "decouple", "vendor", "lock-in", "swap", "independent", "local"],
     tone: "experience",
-    comment: "The hexagonal pattern is particularly vital as the model landscape commoditizes. We always architect our systems to be completely decoupled from specific model providers, allowing us to swap models or run self-hosted LLMs locally without changing the core orchestration logic. It's the only way to avoid vendor lock-in and keep infrastructure costs under control in the long run."
+    baseBody: "The hexagonal pattern is particularly vital as the model landscape commoditizes. We always architect our systems to be completely decoupled from specific model providers, allowing us to swap models or run self-hosted LLMs locally without changing the core orchestration logic. It's the only way to avoid vendor lock-in and keep infrastructure costs under control.",
+    closers: [
+      "Are you self-hosting local LLMs for fallback, or just swapping cloud providers?",
+      "How do you handle API payload differences when swapping models under the hood?"
+    ]
   },
   {
     id: "hierarchical_memory",
     keywords: ["tiered", "episodic", "memory", "cache", "latency", "eviction", "storage"],
     tone: "experience",
-    comment: "Hierarchical memory is essential for long-running agent runtimes, but we quickly run into latency overhead without clear eviction policies. In our enterprise deployments, we've implemented strict tiered storage to keep the active reasoning context clean while archiving episodic history. The hard part is always establishing deterministic rules for when to offload warm memory to cold vector stores."
+    baseBody: "Hierarchical memory is essential for long-running agent runtimes, but we quickly run into latency overhead without clear eviction policies. We've implemented strict tiered storage to keep active reasoning context clean while archiving episodic history. The hard part is always establishing deterministic rules for when to offload warm memory to cold vector stores.",
+    closers: [
+      "How are you configuring eviction rules for warm vs cold memory without losing execution context?",
+      "What database backend are you finding works best for high-throughput episodic history storage?"
+    ]
   },
   {
     id: "token_auditing",
     keywords: ["token", "budget", "cost", "caching", "proxy", "spend", "gateway"],
     tone: "addition",
-    comment: "The transition from subsidized tokens to rigorous token auditing is inevitable for enterprise budgets. Beyond just restricting code generation, organizations must build transparent proxy caching and semantic deduplication layers at the API level to keep costs predictable. If you don't own the observability of your token spend, you don't own the infrastructure."
+    baseBody: "The transition from subsidized tokens to rigorous token auditing is inevitable for enterprise budgets. Beyond just restricting code generation, organizations must build transparent proxy caching and semantic deduplication layers at the API level to keep costs predictable.",
+    closers: [
+      "Are you caching at the semantic level or doing exact match caching for prompt prefixes?",
+      "How is your engineering team attributing token costs back to specific user actions or departments?"
+    ]
   },
   {
     id: "pre_retrieval_parsing",
     keywords: ["fuzzy", "parsing", "key-value", "entity", "match", "identif", "retrieve"],
     tone: "experience",
-    comment: "Relying purely on semantic vector spaces for exact identifiers is a common design flaw in enterprise RAG systems. We've found that embedding models are fundamentally built for fuzzy semantic matches, not deterministic key-value retrieval. The most resilient solution is routing queries through an explicit pre-retrieval parser that separates exact entity keys from concept-based search before they ever hit the database."
+    baseBody: "Relying purely on semantic vector spaces for exact identifiers is a common design flaw in enterprise RAG systems. Embedding models are fundamentally built for fuzzy semantic matches, not deterministic key-value retrieval. The most resilient solution is routing queries through an explicit pre-retrieval parser that separates exact entity keys from concept-based search.",
+    closers: [
+      "Are you using regex-based extraction or lighter-weight models to separate entity keys?",
+      "Have you found that routing queries this way cuts down on hallucinated context?"
+    ]
   },
   {
     id: "devops_pipelines",
     keywords: ["devops", "kubernetes", "k8s", "terraform", "infrastructure", "drift", "deploy", "build"],
     tone: "addition",
-    comment: "This is why building declarative infrastructure pipelines is critical for enterprise scale. Moving from manual resource provisioning to structured, version-controlled state definitions under Terraform or Kubernetes is exactly how we eliminate drift and enable reliable developer environments."
+    baseBody: "Building declarative infrastructure pipelines is critical for enterprise scale. Moving from manual resource provisioning to structured, version-controlled state definitions under Terraform or Kubernetes is exactly how we eliminate drift and enable reliable developer environments.",
+    closers: [
+      "How are you verifying configuration drift in your infrastructure automatically?",
+      "Are you running local k8s clusters for dev environments, or pushing to remote sandboxes?"
+    ]
   },
   {
     id: "database_optimization",
     keywords: ["database", "postgres", "sql", "query", "index", "bottleneck", "cache"],
     tone: "experience",
-    comment: "Query optimization and proper schema indexing are where database stability is actually won. In our scaling work, we've found that throwing hardware or read-replicas at database bottlenecks is a temporary fix; the real solution is designing clean, normalized boundary schemas and a robust query caching strategy."
+    baseBody: "Query optimization and proper schema indexing are where database stability is actually won. Throwing hardware or read-replicas at database bottlenecks is just a temporary fix; the real solution is designing clean, normalized boundary schemas and a robust query caching strategy.",
+    closers: [
+      "What caching strategies have you found most effective for highly dynamic read/write loads?",
+      "Are you relying on automated index advisors, or manually profiling complex transactions?"
+    ]
   },
   {
     id: "modular_hexagonal_architecture",
     keywords: ["code", "refactor", "clean", "design pattern", "modularity", "interface", "skills"],
     tone: "experience",
-    comment: "Prioritizing modularity and interface-driven design is the only way to keep enterprise codebases maintainable over a multi-year lifecycle. When we decouple core domain logic from external dependencies like database gateways or web APIs, the entire application becomes much easier to test, modernise, and debug under load."
+    baseBody: "Prioritizing modularity and interface-driven design is the only way to keep enterprise codebases maintainable over a multi-year lifecycle. Decoupling core domain logic from external dependencies like database gateways or web APIs makes the entire application much easier to test, modernize, and debug under load.",
+    closers: [
+      "Are you finding that decoupled adapter layers help with writing cleaner unit tests?",
+      "How do you structure your domain folder boundaries to keep developers from bypassing adapters?"
+    ]
   },
   {
     id: "agentic_rag_latency",
     keywords: ["agentic rag", "latency", "compounding", "iterative", "loop"],
     tone: "addition",
-    comment: "Moving from static RAG to dynamic, agentic RAG is where we start addressing real-world query ambiguity. However, in enterprise systems, this iterative loop introduces compounding latency. Implementing deterministic routing policies and caching layers at the orchestration level is critical to keep these dynamic agent loops performant under load."
+    baseBody: "Moving from static RAG to dynamic, agentic RAG is where we start addressing real-world query ambiguity. However, in enterprise systems, this iterative loop introduces compounding latency. Implementing deterministic routing policies and caching layers at the orchestration level is critical to keep these loops performant under load.",
+    closers: [
+      "Are you running agent loops in parallel, or is the latency hit too high under heavy concurrent load?",
+      "What metrics are you tracking to pinpoint where the biggest slowdowns occur in your multi-step retrievals?"
+    ]
   },
   {
     id: "fallback_probabilistic",
     keywords: ["probabilistic", "state machine", "safety gate", "systems", "stability", "guardrail"],
     tone: "addition",
-    comment: "Closing the gap between dynamic agent workflows and enterprise stability requires moving away from plain-text prompting toward deterministic execution boundaries. Wrapping probabilistic models in robust state machines and strict boundary schemas is the only way to move from experimental PoC to production impact."
+    baseBody: "Closing the gap between dynamic agent workflows and enterprise stability requires moving away from plain-text prompting toward deterministic execution boundaries. Wrapping probabilistic models in robust state machines and strict boundary schemas is the only way to move from experimental PoC to production impact.",
+    closers: [
+      "Do you hardcode state transitions, or allow the model to suggest next actions within a predefined safety envelope?",
+      "How do you handle cases where the model gets stuck in an infinite state machine loop?"
+    ]
   }
 ];
+
+const FALLBACK_TEMPLATES = [
+  {
+    tone: "addition",
+    baseBody: "Closing the gap between dynamic agent workflows and enterprise stability requires moving away from plain-text prompting toward deterministic execution boundaries. Wrapping probabilistic models in robust state machines and strict boundary schemas is the only way to move from experimental PoC to production impact.",
+    closers: [
+      "Are you seeing similar patterns in enterprise deployments?",
+      "What's your take on wrapping LLMs with traditional state machine boundaries?"
+    ]
+  },
+  {
+    tone: "experience",
+    baseBody: "In our architectural design reviews, we've repeatedly seen that treating LLM calls as raw text endpoints leads to high error rates at scale. Building deterministic validation boundaries is really the only way to move from cool demos to actual production-grade software.",
+    closers: [
+      "Are you running into these testing/validation hurdles with your current agent setups?",
+      "How is your team structuring integration tests for these probabilistic components?"
+    ]
+  }
+];
+
+function getFirstName(fullName) {
+  if (!fullName) return 'there';
+  let cleanName = fullName.split(',')[0].split('•')[0].trim();
+  cleanName = cleanName.replace(/^(Dr\.|Dr\b|Prof\.|Prof\b|Mr\.|Mr\b|Ms\.|Ms\b)\s+/i, '');
+  const parts = cleanName.split(/\s+/);
+  return parts[0] || 'there';
+}
+
+function getUniqueHook(authorName, tone) {
+  const firstName = getFirstName(authorName);
+  const toneHooks = HOOKS[tone] || HOOKS.experience;
+  
+  let availableIndices = [];
+  for (let i = 0; i < toneHooks.length; i++) {
+    const hookKey = `${tone}_${i}`;
+    if (!usedHooks.has(hookKey)) {
+      availableIndices.push(i);
+    }
+  }
+  
+  if (availableIndices.length === 0) {
+    for (let i = 0; i < toneHooks.length; i++) {
+      usedHooks.delete(`${tone}_${i}`);
+    }
+    availableIndices = Array.from({ length: toneHooks.length }, (_, i) => i);
+  }
+  
+  const selectedIndex = availableIndices[Math.floor(Math.random() * availableIndices.length)];
+  usedHooks.add(`${tone}_${selectedIndex}`);
+  return toneHooks[selectedIndex](firstName);
+}
+
+function getUniqueCloser(templateId, templateClosers) {
+  if (!templateClosers || templateClosers.length === 0) {
+    return "How are you addressing this in your systems?";
+  }
+  
+  let availableIndices = [];
+  for (let i = 0; i < templateClosers.length; i++) {
+    const closerKey = `${templateId}_${i}`;
+    if (!usedClosers.has(closerKey)) {
+      availableIndices.push(i);
+    }
+  }
+  
+  if (availableIndices.length === 0) {
+    for (let i = 0; i < templateClosers.length; i++) {
+      usedClosers.delete(`${templateId}_${i}`);
+    }
+    availableIndices = Array.from({ length: templateClosers.length }, (_, i) => i);
+  }
+  
+  const selectedIndex = availableIndices[Math.floor(Math.random() * availableIndices.length)];
+  usedClosers.add(`${templateId}_${selectedIndex}`);
+  return templateClosers[selectedIndex];
+}
 
 function generateArchitectComment(postText, authorName, historicalComments = new Set()) {
   const text = postText.toLowerCase();
@@ -185,13 +377,17 @@ function generateArchitectComment(postText, authorName, historicalComments = new
   // Calculate fit score for each template based on keyword matching
   const scoredTemplates = COMMENT_TEMPLATES.map(tmpl => {
     // Skip if already used in this run or found in historical comments to ensure zero duplicates
-    if (usedComments.has(tmpl.id) || historicalComments.has(tmpl.comment)) {
+    // Check historical comments against reconstructed baseBody to make it reliable
+    const hypotheticalCommentSnippet = tmpl.baseBody.substring(0, 50);
+    const hasBeenUsedHistorically = Array.from(historicalComments).some(h => h.includes(hypotheticalCommentSnippet));
+
+    if (usedComments.has(tmpl.id) || hasBeenUsedHistorically) {
       return { tmpl, score: -1 };
     }
     
     let matchCount = 0;
     tmpl.keywords.forEach(kw => {
-      if (text.includes(kw)) {
+      if (containsWord(text, kw)) {
         matchCount++;
       }
     });
@@ -207,15 +403,27 @@ function generateArchitectComment(postText, authorName, historicalComments = new
   
   if (bestMatch && bestMatch.tmpl) {
     usedComments.add(bestMatch.tmpl.id);
+    
+    const hook = getUniqueHook(authorName, bestMatch.tmpl.tone);
+    const closer = getUniqueCloser(bestMatch.tmpl.id, bestMatch.tmpl.closers);
+    const comment = `${hook} ${bestMatch.tmpl.baseBody} ${closer}`;
+    
     return {
       tone: bestMatch.tmpl.tone,
-      comment: bestMatch.tmpl.comment
+      comment: comment
     };
   }
   
+  // Fallback if no template matched
+  const fallbackIndex = Math.floor(Math.random() * FALLBACK_TEMPLATES.length);
+  const fallbackTmpl = FALLBACK_TEMPLATES[fallbackIndex];
+  const hook = getUniqueHook(authorName, fallbackTmpl.tone);
+  const closer = getUniqueCloser(`fallback_${fallbackIndex}`, fallbackTmpl.closers);
+  const comment = `${hook} ${fallbackTmpl.baseBody} ${closer}`;
+  
   return {
-    tone: "addition",
-    comment: `This is an important point, ${authorName}. Closing the gap between dynamic agent workflows and enterprise stability requires moving away from plain-text prompting toward deterministic execution boundaries. Wrapping probabilistic models in robust state machines and strict boundary schemas is the only way to move from experimental PoC to production impact.`
+    tone: fallbackTmpl.tone,
+    comment: comment
   };
 }
 
@@ -739,6 +947,12 @@ async function main() {
 
   fs.writeFileSync(path.join(RUN_DIR, 'raw-posts.json'), JSON.stringify(rawOutput, null, 2));
   fs.writeFileSync(path.join(RUN_DIR, 'filtered-posts.json'), JSON.stringify(qualifiedPosts, null, 2));
+
+  if (process.argv.includes('--scrape-only')) {
+    log('💾', 'Scrape-only complete. Saved raw-posts.json and filtered-posts.json.');
+    process.exit(0);
+  }
+
   fs.writeFileSync(path.join(RUN_DIR, 'comments.json'), JSON.stringify(generatedComments, null, 2));
 
   log('💾', 'Raw posts, qualified posts, and comments successfully saved to data/runs directory.');

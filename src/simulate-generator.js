@@ -180,31 +180,154 @@ console.log(`Saved filtered posts to: ${filteredPostsPath}`);
 // - Under 2-3 sentences, plain English
 // - No business buzzwords
 // - Natural contractions, highly human and authentic
+const HOOKS = {
+  experience: [
+    (name) => `${name}, this aligns closely with what we've been seeing in production.`,
+    (name) => `Spot on, ${name}. In our enterprise architecture work, we've seen a very similar pattern.`,
+    (name) => `Really resonates, ${name}. We've run into these exact same dynamics.`,
+  ],
+  addition: [
+    (name) => `Great points, ${name}. To build on this,`,
+    (name) => `Very interesting context, ${name}. Adding to your point,`,
+    (name) => `Appreciate you laying this out, ${name}. One crucial detail to add:`,
+  ],
+  question: [
+    (name) => `Thoughtful analysis, ${name}.`,
+    (name) => `Really interesting angle, ${name}.`,
+    (name) => `This is a timely discussion, ${name}.`,
+  ],
+  pushback: [
+    (name) => `I see your point, ${name}, but there's another side to this.`,
+    (name) => `Interesting take, ${name}, though our experience suggests a slightly different path.`,
+    (name) => `Appreciate this perspective, ${name}, but from an enterprise stability standpoint,`,
+  ],
+  appreciation: [
+    (name) => `This is an exceptionally clear breakdown, ${name}.`,
+    (name) => `Fantastic summary, ${name}. You've articulated this perfectly.`,
+    (name) => `So glad you posted this, ${name}. It hits on a very critical area.`,
+  ]
+};
+
 const commentTemplates = {
   "urn:li:activity:7467194084311355392": {
+    id: "20_80_split",
     tone: "experience",
-    comment: "This 20/80 split is the absolute truth of enterprise agentic design. In our platform work, we've found that the reasoning engine is merely a probabilistic compiler, whereas actual stability comes from strict boundary schemas, self-hosted sandboxing, and deterministic state management. If you don't build a robust, transparent governance wrapper around the model, you're just scaling unquantifiable errors in production."
+    baseBody: "The 20/80 split is the absolute truth of enterprise agentic design. We've found that the reasoning engine is really just a probabilistic compiler; actual stability comes from strict boundary schemas, self-hosted sandboxing, and deterministic state management. Without a robust, transparent governance wrapper, you're just scaling unquantifiable errors in production.",
+    closers: [
+      "Are you seeing more teams build custom orchestration layers for this, or rely on vendor-native frameworks?",
+      "How are you balancing the trade-offs between custom orchestration code and developer speed?"
+    ]
   },
   "gen_ketansagare_mostaiagentsdontfail": {
+    id: "filesystem_memory",
     tone: "addition",
-    comment: "This is why the filesystem-as-memory model is replacing vector-only context stores for complex execution. When you treat agent state as a resumable, structured document tree rather than a single massive text history, long-running processes become highly reliable. It moves the cognitive burden out of the prompt window and into the application boundary."
+    baseBody: "Treating agent state as a resumable, structured document tree rather than a single massive text history makes long-running processes highly reliable. It moves the cognitive burden out of the prompt window and directly into the application boundary.",
+    closers: [
+      "Are you seeing a shift away from standard vector-only storage toward structured episodic storage in your setups?",
+      "How do you handle context compression when state documents grow over long execution periods?"
+    ]
   },
   "urn:li:activity:7464895668420186112": {
+    id: "model_routing",
     tone: "experience",
-    comment: "Designing custom model-routing logic is where real enterprise cost-efficiency and performance is won. We've had great success using lightweight SLMs for initial intent classification, then routing complex planning to heavy reasoning models before handing execution off to structured tool-calling nodes. Composable intelligence is the only practical way to run these platforms without going bankrupt on inference costs."
+    baseBody: "Designing custom model-routing logic is where real enterprise cost-efficiency is won. We've had great success using lightweight SLMs for initial intent classification, then routing complex planning to heavy reasoning models before handing execution off to structured tool-calling nodes. Composable intelligence is the only practical way to run these platforms without going bankrupt on inference costs.",
+    closers: [
+      "Are you routing dynamically based on real-time token cost, or using static routing schemas?",
+      "What tools are you using to classify user intent at the router level without adding too much latency?"
+    ]
   },
   "urn:li:activity:7466387388190359552": {
+    id: "validation_contracts",
     tone: "addition",
-    comment: "FastAPI combined with custom Pydantic schemas provides the exact contract layer needed to stabilize agent outputs in production. In our implementations, treating model responses as strict data schemas rather than raw text allows us to run deterministic validations and orchestrate graceful retries before errors ever bubble up. The real engineering happens at these boundary contracts, not in the LLM prompts."
+    baseBody: "FastAPI combined with custom Pydantic schemas provides the exact contract layer needed to stabilize agent outputs in production. Treating model responses as strict data schemas rather than raw text allows us to run deterministic validations and orchestrate graceful retries before errors ever bubble up.",
+    closers: [
+      "Do you orchestrate validation retries immediately at the API layer, or let them bubble up to the controller?",
+      "How are you handling structural schema changes when downstream models update?"
+    ]
   },
   "urn:li:activity:7465643031401017344": {
+    id: "org_operating_model",
     tone: "experience",
-    comment: "Redesigning organization boundaries is the most overlooked phase of AI adoption. If you drop multi-agent platforms onto unmodified workflows, you just get faster, more expensive bad decisions. True enterprise modernization means redefining data ownership, establishing strict human-in-the-loop validation checkpoints, and adapting the compliance model to govern autonomous agents."
+    baseBody: "Redesigning organizational boundaries is the most overlooked phase of AI adoption. If you drop multi-agent platforms onto unmodified workflows, you just get faster, more expensive bad decisions. True enterprise modernization means redefining data ownership, establishing strict human-in-the-loop validation checkpoints, and adapting the compliance model to govern autonomous agents.",
+    closers: [
+      "What has been the biggest hurdle in getting non-technical stakeholders to participate in the HITL review loops?",
+      "How are compliance teams reacting to autonomous agents interacting directly with core databases?"
+    ]
   }
 };
 
+const usedHooks = new Set();
+const usedClosers = new Set();
+
+function containsWord(text, keyword) {
+  const escaped = keyword.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+  const regex = new RegExp(`(?:^|[^a-zA-Z0-9])` + escaped + `(?:$|[^a-zA-Z0-9])`, 'i');
+  return regex.test(text);
+}
+
+function getFirstName(fullName) {
+  if (!fullName) return 'there';
+  let cleanName = fullName.split(',')[0].split('•')[0].trim();
+  cleanName = cleanName.replace(/^(Dr\.|Dr\b|Prof\.|Prof\b|Mr\.|Mr\b|Ms\.|Ms\b)\s+/i, '');
+  const parts = cleanName.split(/\s+/);
+  return parts[0] || 'there';
+}
+
+function getUniqueHook(authorName, tone) {
+  const firstName = getFirstName(authorName);
+  const toneHooks = HOOKS[tone] || HOOKS.experience;
+  
+  let availableIndices = [];
+  for (let i = 0; i < toneHooks.length; i++) {
+    const hookKey = `${tone}_${i}`;
+    if (!usedHooks.has(hookKey)) {
+      availableIndices.push(i);
+    }
+  }
+  
+  if (availableIndices.length === 0) {
+    for (let i = 0; i < toneHooks.length; i++) {
+      usedHooks.delete(`${tone}_${i}`);
+    }
+    availableIndices = Array.from({ length: toneHooks.length }, (_, i) => i);
+  }
+  
+  const selectedIndex = availableIndices[Math.floor(Math.random() * availableIndices.length)];
+  usedHooks.add(`${tone}_${selectedIndex}`);
+  return toneHooks[selectedIndex](firstName);
+}
+
+function getUniqueCloser(templateId, templateClosers) {
+  if (!templateClosers || templateClosers.length === 0) {
+    return "How are you addressing this in your systems?";
+  }
+  
+  let availableIndices = [];
+  for (let i = 0; i < templateClosers.length; i++) {
+    const closerKey = `${templateId}_${i}`;
+    if (!usedClosers.has(closerKey)) {
+      availableIndices.push(i);
+    }
+  }
+  
+  if (availableIndices.length === 0) {
+    for (let i = 0; i < templateClosers.length; i++) {
+      usedClosers.delete(`${templateId}_${i}`);
+    }
+    availableIndices = Array.from({ length: templateClosers.length }, (_, i) => i);
+  }
+  
+  const selectedIndex = availableIndices[Math.floor(Math.random() * availableIndices.length)];
+  usedClosers.add(`${templateId}_${selectedIndex}`);
+  return templateClosers[selectedIndex];
+}
+
 const generatedComments = filteredPosts.map((post, index) => {
   const template = commentTemplates[post.post_id];
+  const hook = getUniqueHook(post.author_name, template.tone);
+  const closer = getUniqueCloser(template.id, template.closers);
+  const commentText = `${hook} ${template.baseBody} ${closer}`;
+  
   return {
     id: `cmt_${today.replace(/-/g, '')}_00${index + 1}`,
     post_id: post.post_id,
@@ -216,7 +339,7 @@ const generatedComments = filteredPosts.map((post, index) => {
     relevance_reason: post.relevance_reason,
     connection_degree: post.connection_degree,
     tone: template.tone,
-    comment: template.comment,
+    comment: commentText,
     generated_at: new Date().toISOString(),
     was_posted: false,
     posted_at: null
