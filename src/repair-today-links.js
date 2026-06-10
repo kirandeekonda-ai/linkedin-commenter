@@ -185,8 +185,15 @@ async function repairLinks() {
           for (const el of posts) {
             const text = el.textContent || '';
             if (text.toLowerCase().includes(cleanExcerpt)) {
-              // Try to decode URN from this element's outerHTML
-              const urn = decodeBase64ProtobufUrn(el.outerHTML);
+              // Try to find raw URN in attributes or text first, fall back to protobuf decode
+              let urn = el.getAttribute('data-urn') || el.querySelector('[data-urn]')?.getAttribute('data-urn');
+              if (!urn) {
+                const match = el.outerHTML.match(/urn:li:activity:\d+/);
+                if (match) urn = match[0];
+              }
+              if (!urn) {
+                urn = decodeBase64ProtobufUrn(el.outerHTML);
+              }
               if (urn) {
                 return { urn, found: true };
               }

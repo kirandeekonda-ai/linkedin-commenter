@@ -10,7 +10,6 @@ Designed for systems architects, engineering leaders, and developers looking to 
 
 *   **🛡️ Read-Only BrowserGuard Safety**: Wraps Playwright execution to physically intercept and block any mutation actions (clicks on like/comment/connect, form submissions, or write-based network requests). Your account remains 100% compliant.
 *   **🍪 Playwright Session Reuse**: Log in manually once, save your session state (`cookies + localStorage`), and let Playwright bypass authentication screens completely on future runs.
-*   **🧠 Multimodal AI Intelligence**: Extracts image URLs from visual posts and applies Claude 3.5 Sonnet / Gemini vision models to analyze architectural diagrams, file structures, and infographics before writing comments.
 *   **✍️ Elite Tone & Comment Engine**: Tailors suggestions to your specific developer profile. Avoids AI clichés, generic openings ("Great post!"), and emoji spam, selecting exactly one context-appropriate tone (Addition, Experience, Question, Appreciation, Pushback).
 *   **🖥️ Dark Glassmorphism Dashboard**: An interactive, premium web interface at `http://localhost:3000` to review, edit, click-to-copy, and log engagement metrics with Chart.js-powered visual trends.
 *   **⏰ Autonomous Scheduling**: Configured for 100% human-out-of-the-loop background trigger runs using native Windows Task Scheduler at **08:00 AM** daily.
@@ -26,11 +25,10 @@ linkedin-commenter/
 ├── README.md                # Project index and setup overview
 │
 ├── src/
-│   ├── run.js               # Unified pipeline orchestrator (Scanner + LLM Writer + Server)
+│   ├── run.js               # Unified pipeline orchestrator (Scanner + Writer + Server)
 │   ├── feed-scanner.js      # Playwright feed scraper (image extraction + BrowserGuard active)
 │   ├── browser-guard.js     # Strict read-only interception middleware
 │   ├── login-manager.js     # Persistent session loader and manual authenticator
-│   ├── comment-generator.js # Programmatic LLM scoring and comment writer
 │   └── server.js            # Dashboard REST API Express server
 │
 ├── dashboard/               # Glassmorphism Client Web App
@@ -78,12 +76,6 @@ Multi-agent orchestration, self-hosted transparent infrastructure, LLM integrati
 
 ## What kind of tone you prefer
 Direct, thoughtful, professional. Authoritative yet collaborative.
-```
-
-### 4. Set Up API Credentials
-Copy **`.env.example`** to **`.env`** and paste your free Gemini API key:
-```env
-GEMINI_API_KEY=AIzaSyD...your_actual_key_here...
 ```
 
 ---

@@ -8,8 +8,8 @@ This document describes how to configure the LinkedIn Commenter Agent to run **1
 
 The system uses a two-part decoupled execution model to maintain strict security, reliability, and ease of use:
 
-1.  **🧠 Programmatic Backend Orchestrator (`src/run.js` & `src/comment-generator.js`)**: 
-    An autonomous script that launches Playwright to scrape posts, uses the Gemini API to analyze images, filters by domain relevance, generates visual-informed comments, and updates the local JSON database files.
+1.  **🧠 Programmatic Backend Orchestrator (`src/run.js`)**: 
+    An autonomous script that launches Playwright to scrape posts, filters them by domain relevance, generates template-based comment drafts, and updates the local JSON database files.
 2.  **🖥️ Interactive Glassmorphism Dashboard (`src/server.js` & `dashboard/`)**: 
     A local web server serving a stunning dark glassmorphism dashboard at `http://localhost:3000` where you can review, edit, copy, and log your engagement metrics in real-time.
 
@@ -17,21 +17,7 @@ The system uses a two-part decoupled execution model to maintain strict security
 
 ## 🛠️ Step-by-Step Setup Instructions
 
-### 1. Configure the Gemini API Key
-To enable the background scripts to score posts and generate comments autonomously:
-1. Navigate to the project root directory: `c:\Users\Kiran\linkedin-commenter`.
-2. Locate the template file **`.env.example`**.
-3. Create a copy of it and name it exactly **`.env`**.
-4. Visit [Google AI Studio](https://aistudio.google.com/) and generate a free API key.
-5. Open your `.env` file and paste the key:
-   ```env
-   GEMINI_API_KEY=AIzaSyD...your_actual_key_here...
-   PORT=3000
-   ```
-
----
-
-### 2. Schedule the Task Natively (No-Confirmation Execution)
+### 1. Schedule the Task Natively (No-Confirmation Execution)
 Because standard terminal triggers inside developer tools require manual click-approvals to prevent unverified code execution, the absolute best path for background automation is using **Windows Task Scheduler**. It executes the launcher script natively, completely bypassing any UI confirm prompts.
 
 1.  Press the Windows Key, type **Task Scheduler**, and press Enter.
@@ -53,7 +39,7 @@ Because standard terminal triggers inside developer tools require manual click-a
 
 ---
 
-### 3. Run the Persistent Dashboard Server
+### 2. Run the Persistent Dashboard Server
 To keep your review panel running so you can access recommendations at any time during the day:
 1. Open a terminal in the project directory: `c:\Users\Kiran\linkedin-commenter`.
 2. Launch the Express server:
@@ -66,7 +52,7 @@ To keep your review panel running so you can access recommendations at any time 
 
 ## 🚀 Daily Workflow
 
-1.  **08:00 AM**: Windows Task Scheduler silently runs `run.bat` in the background. Playwright automatically extracts posts, Gemini generates visually informed comment suggestions, and updates the databases (`comments.json` and `stats.json`).
+1.  **08:00 AM**: Windows Task Scheduler silently runs `run.bat` in the background. Playwright automatically extracts posts, generates template-based comment suggestions, and updates the databases (`comments.json` and `stats.json`).
 2.  **Anytime**: You open **`http://localhost:3000`** in your browser. Today's 5 domain-relevant comment recommendations are already rendered on your screen.
 3.  **Review & Post**: Read the suggestions, make inline edits if needed, click **Copy Comment**, navigate to the original post via the convenient link button, and paste manually.
 4.  **Engage**: Check the **Mark as Posted** box to log your engagement and watch your metrics and tone charts update in real-time.
