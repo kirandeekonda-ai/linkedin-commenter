@@ -517,6 +517,19 @@ const GENERAL_STATEMENTS = [
   "It is a solid approach to keeping the system architecture modular and clean."
 ];
 
+async function downloadImage(url, destPath) {
+  try {
+    const res = await fetch(url);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const buffer = Buffer.from(await res.arrayBuffer());
+    fs.writeFileSync(destPath, buffer);
+    return true;
+  } catch (err) {
+    console.error(`  ⚠️  Failed to download image: ${err.message}`);
+    return false;
+  }
+}
+
 function getFirstName(fullName) {
   if (!fullName) return 'there';
   let cleanName = fullName.split(',')[0].split('•')[0].trim();
@@ -853,10 +866,38 @@ async function extractPostsFromDOM(page) {
         const likeBtn = el.querySelector('button[aria-label*="Reacted"], button[aria-pressed="true"], button.social-actions-button--active, button.react-button--active');
         const isLiked = !!likeBtn;
 
-        // Image URL
+        // Image URL (Robust exclusion-based query)
         let imageUrl = '';
-        const imgEl = el.querySelector('.update-components-image img, .feed-shared-image img, img.ivm-view-attr__img');
-        if (imgEl) imageUrl = imgEl.getAttribute('src') || '';
+        const allImgs = Array.from(el.querySelectorAll('img'));
+        for (const img of allImgs) {
+          const src = img.getAttribute('src') || '';
+          const alt = (img.getAttribute('alt') || '').toLowerCase();
+          const className = img.className.toLowerCase();
+          
+          // Exclude author avatars, member profiles, and company view shortcuts
+          const isAvatar = className.includes('actor') || 
+                           className.includes('profile') || 
+                           className.includes('avatar') || 
+                           alt.includes('profile') || 
+                           alt.includes('member') || 
+                           alt.includes('company') ||
+                           (alt.includes('view') && !alt.includes('view image'));
+                           
+          // Exclude reaction/emoji icons
+          const isReaction = className.includes('reaction') || 
+                             (src.includes('emoji') || src.includes('reactions'));
+                             
+          if (!isAvatar && !isReaction && src && !src.startsWith('data:')) {
+            imageUrl = src;
+            break;
+          }
+          
+          const delayed = img.getAttribute('data-delayed-url') || img.getAttribute('data-src') || img.getAttribute('data-original') || '';
+          if (!isAvatar && !isReaction && delayed && !delayed.startsWith('data:')) {
+            imageUrl = delayed;
+            break;
+          }
+        }
 
         const subDesc = getText(el, ['.update-components-actor__sub-description']);
         const isSponsored = !!(
@@ -1283,10 +1324,15 @@ async function main() {
   const processedPostIds = new Set();
 
   let scrollCount = 0;
-  const maxScrolls = 100;
+  const scrapeOnly = process.argv.includes('--scrape-only');
+  const args = process.argv.slice(2);
+  const cliMaxPosts = parseInt(args.find((_, i, a) => a[i - 1] === '--max-posts'), 10);
+  const cliMaxScrolls = parseInt(args.find((_, i, a) => a[i - 1] === '--max-scrolls'), 10);
+  const maxScrolls = cliMaxScrolls || (scrapeOnly ? 150 : 100);
+  const targetCount = cliMaxPosts || (scrapeOnly ? 100 : 5);
   let consecutiveStuckCount = 0;
 
-  while (scrollCount < maxScrolls && qualifiedPosts.length < 5) {
+  while (scrollCount < maxScrolls && qualifiedPosts.length < targetCount) {
     scrollCount++;
     
     // Get current scroll position to detect stuck state
@@ -1364,6 +1410,37 @@ async function main() {
         continue;
       }
 
+      if (scrapeOnly) {
+        const deg = cleanPost.connection_degree || '3rd';
+        log('🎯', `[QUALIFIED] Author: ${cleanPost.author_name} (${deg}) | Scrape-only mode`);
+        
+        // Download image if present
+        if (cleanPost.image_url) {
+          const imagesDir = path.join(RUN_DIR, 'images');
+          if (!fs.existsSync(imagesDir)) fs.mkdirSync(imagesDir, { recursive: true });
+          const extMatch = cleanPost.image_url.match(/\.(png|jpg|jpeg|gif|webp|svg)/i);
+          const ext = extMatch ? extMatch[1] : 'jpg';
+          const safePostId = cleanPost.post_id.replace(/[^a-zA-Z0-9_-]/g, '_');
+          const imgPath = path.join(imagesDir, `${safePostId}.${ext}`);
+          log('📥', `Downloading image for ${cleanPost.author_name}...`);
+          const ok = await downloadImage(cleanPost.image_url, imgPath);
+          if (ok) {
+            cleanPost.local_image_path = path.relative(PROJECT_ROOT, imgPath).replace(/\\/g, '/');
+          }
+        }
+        
+        qualifiedPosts.push({
+          ...cleanPost,
+          relevance_score: 1.0,
+          relevance_reason: "Scraped in scrape-only mode."
+        });
+
+        if (qualifiedPosts.length >= targetCount) {
+          break;
+        }
+        continue;
+      }
+
       // Evaluate score
       const evalData = scorePostRelevance(cleanPost.post_text, cleanPost.author_headline);
       const score = evalData.score;
@@ -1412,20 +1489,20 @@ async function main() {
 
       generatedComments.push(commentObj);
 
-      if (qualifiedPosts.length >= 5) {
+      if (qualifiedPosts.length >= targetCount) {
         break;
       }
     }
 
-    log('📜', `Scroll ${scrollCount}/${maxScrolls} | Extracted: ${allScrapedPosts.length} | Qualified: ${qualifiedPosts.length}/5`);
+    log('📜', `Scroll ${scrollCount}/${maxScrolls} | Extracted: ${allScrapedPosts.length} | Qualified: ${qualifiedPosts.length}/${targetCount}`);
 
-    if (qualifiedPosts.length >= 5) {
+    if (qualifiedPosts.length >= targetCount) {
       break;
     }
   }
 
   // ── Fallback relaxation logic to guarantee 5 comments ──
-  if (qualifiedPosts.length < 5) {
+  if (!scrapeOnly && qualifiedPosts.length < 5) {
     log('⚠️', `Scanned feed completely but only found ${qualifiedPosts.length} posts matching all filters. Relaxing thresholds to guarantee 5 comments...`);
     
     for (const post of allScrapedPosts) {

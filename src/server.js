@@ -14,6 +14,7 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 // Serve static dashboard files
 app.use(express.static(path.join(PROJECT_ROOT, 'dashboard')));
+app.use('/data', express.static(path.join(PROJECT_ROOT, 'data')));
 
 // Helper to get today's date in YYYY-MM-DD
 function getTodayDate() {

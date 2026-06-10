@@ -145,6 +145,24 @@ function renderComments() {
     
     const card = document.createElement('div');
     card.className = `post-card animate-fade-in`;
+    
+    // Add image preview if local path is available
+    let imageHtml = '';
+    if (c.local_image_path) {
+      imageHtml = `
+        <div class="post-image-preview" style="margin-top: 12px; border-radius: 8px; overflow: hidden; border: 1px solid var(--border-color); background: rgba(255,255,255,0.02); max-height: 280px; display: flex; justify-content: center; align-items: center;">
+          <img src="/${c.local_image_path}" alt="Post attachment" style="max-width: 100%; max-height: 280px; object-fit: contain; display: block;" />
+        </div>
+      `;
+    }
+
+    const fullText = c.post_text || excerpt;
+    const hasMore = fullText.length > excerpt.length;
+    const bodyHtml = hasMore 
+      ? `<p class="post-text-short" style="line-height: 1.5;">${excerpt} <span class="read-more-toggle" style="color: var(--color-cyan); cursor: pointer; font-weight: 600; font-size: 0.85rem; margin-left: 4px;" onclick="this.parentElement.style.display='none'; this.parentElement.nextElementSibling.style.display='block';">... Show more</span></p>
+         <p class="post-text-full" style="display: none; white-space: pre-wrap; line-height: 1.5;">${fullText} <span class="read-less-toggle" style="color: var(--color-cyan); cursor: pointer; font-weight: 600; font-size: 0.85rem; margin-left: 4px;" onclick="this.parentElement.style.display='none'; this.parentElement.previousElementSibling.style.display='block';">Show less</span></p>`
+      : `<p style="white-space: pre-wrap; line-height: 1.5;">${fullText}</p>`;
+
     card.innerHTML = `
       <div class="post-header">
         <div class="author-meta">
@@ -158,7 +176,8 @@ function renderComments() {
         </div>
       </div>
       <div class="post-body">
-        <p>${excerpt}</p>
+        ${bodyHtml}
+        ${imageHtml}
       </div>
 
       <div class="comment-section">
