@@ -781,6 +781,15 @@ async function extractPostsFromDOM(page) {
           if (match) authorName = match[1].trim();
         }
         if (!authorName) {
+          const actorTitle = el.querySelector('.update-components-actor__title, .feed-shared-actor__title, [class*="actor__title"], [class*="actor__name"]');
+          if (actorTitle) {
+            let name = actorTitle.textContent.trim();
+            if (name.includes('•')) name = name.split('•')[0].trim();
+            if (name.includes('\n')) name = name.split('\n')[0].trim();
+            authorName = name.replace(/\s+/g, ' ').trim();
+          }
+        }
+        if (!authorName) {
           const profileLink = el.querySelector('a[href*="/in/"]');
           if (profileLink && profileLink.textContent.trim()) {
             let name = profileLink.textContent.trim();
@@ -866,10 +875,16 @@ async function extractPostsFromDOM(page) {
         const likeBtn = el.querySelector('button[aria-label*="Reacted"], button[aria-pressed="true"], button.social-actions-button--active, button.react-button--active');
         const isLiked = !!likeBtn;
 
-        // Image URL (Robust exclusion-based query)
+        // Image URL (Robust exclusion-based query targeting post content media)
         let imageUrl = '';
-        const allImgs = Array.from(el.querySelectorAll('img'));
-        for (const img of allImgs) {
+        const mediaSelector = '.update-components-image img, .feed-shared-image img, .update-components-article__image img, .update-components-linkedin-video__video img, [class*="update-components-image"] img';
+        let imgElements = Array.from(el.querySelectorAll(mediaSelector));
+        if (imgElements.length === 0) {
+          // Fallback if structure changes slightly, query all img tags
+          imgElements = Array.from(el.querySelectorAll('img'));
+        }
+
+        for (const img of imgElements) {
           const src = img.getAttribute('src') || '';
           const alt = (img.getAttribute('alt') || '').toLowerCase();
           const className = img.className.toLowerCase();
@@ -881,7 +896,16 @@ async function extractPostsFromDOM(page) {
                            alt.includes('profile') || 
                            alt.includes('member') || 
                            alt.includes('company') ||
-                           (alt.includes('view') && !alt.includes('view image'));
+                           (alt.includes('view') && !alt.includes('view image')) ||
+                           src.includes('profile-displayphoto') ||
+                           src.includes('profile-framedphoto') ||
+                           src.includes('group-logo') ||
+                           src.includes('shrink_100_100') ||
+                           src.includes('scale_100_100') ||
+                           src.includes('shrink_200_200') ||
+                           src.includes('shrink_48x48') ||
+                           src.includes('/companylogo/') ||
+                           src.includes('/company-');
                            
           // Exclude reaction/emoji icons
           const isReaction = className.includes('reaction') || 
@@ -893,7 +917,15 @@ async function extractPostsFromDOM(page) {
           }
           
           const delayed = img.getAttribute('data-delayed-url') || img.getAttribute('data-src') || img.getAttribute('data-original') || '';
-          if (!isAvatar && !isReaction && delayed && !delayed.startsWith('data:')) {
+          const isDelayedAvatar = delayed.includes('profile-displayphoto') || 
+                                  delayed.includes('profile-framedphoto') || 
+                                  delayed.includes('group-logo') ||
+                                  delayed.includes('shrink_100_100') ||
+                                  delayed.includes('scale_100_100') ||
+                                  delayed.includes('/companylogo/') ||
+                                  delayed.includes('/company-');
+
+          if (!isAvatar && !isReaction && delayed && !delayed.startsWith('data:') && !isDelayedAvatar) {
             imageUrl = delayed;
             break;
           }
@@ -1329,7 +1361,7 @@ async function main() {
   const cliMaxPosts = parseInt(args.find((_, i, a) => a[i - 1] === '--max-posts'), 10);
   const cliMaxScrolls = parseInt(args.find((_, i, a) => a[i - 1] === '--max-scrolls'), 10);
   const maxScrolls = cliMaxScrolls || (scrapeOnly ? 150 : 100);
-  const targetCount = cliMaxPosts || (scrapeOnly ? 100 : 5);
+  const targetCount = cliMaxPosts || (scrapeOnly ? 20 : 5);
   let consecutiveStuckCount = 0;
 
   while (scrollCount < maxScrolls && qualifiedPosts.length < targetCount) {
@@ -1392,6 +1424,12 @@ async function main() {
 
       allScrapedPosts.push(cleanPost);
 
+      // Exclude sponsored posts/ads immediately
+      if (cleanPost.is_sponsored) {
+        log('⏭️', `Skipping sponsored post/ad by ${cleanPost.author_name}`);
+        continue;
+      }
+
       // Check if already liked in DOM
       if (cleanPost.is_liked) {
         log('⏭️', `Skipping post by ${cleanPost.author_name} (already Liked in DOM)`);
@@ -1404,6 +1442,12 @@ async function main() {
         continue;
       }
 
+      // Skip posts with empty author name (unactionable)
+      if (!cleanPost.author_name) {
+        log('⏭️', `Skipping post due to empty author name extraction`);
+        continue;
+      }
+
       // Check if duplicate author today or recently to avoid spamming the same connection
       if (qualifiedPosts.some(q => q.author_name === cleanPost.author_name) || alreadyCommentedAuthors.has(cleanPost.author_name)) {
         log('⏭️', `Skipping post by ${cleanPost.author_name} (author already has a recent comment)`);
@@ -1411,8 +1455,17 @@ async function main() {
       }
 
       if (scrapeOnly) {
+        const evalData = scorePostRelevance(cleanPost.post_text, cleanPost.author_headline);
+        const score = evalData.score;
+        
+        // Apply lightweight relevance pre-filtering (threshold >= 0.70)
+        if (score < 0.70) {
+          log('⏭️', `Skipping post by ${cleanPost.author_name} | Low relevance score: ${(score * 100).toFixed(0)}%`);
+          continue;
+        }
+
         const deg = cleanPost.connection_degree || '3rd';
-        log('🎯', `[QUALIFIED] Author: ${cleanPost.author_name} (${deg}) | Scrape-only mode`);
+        log('🎯', `[QUALIFIED] Author: ${cleanPost.author_name} (${deg}) | Score: ${(score * 100).toFixed(0)}% | Scrape-only mode`);
         
         // Download image if present
         if (cleanPost.image_url) {
@@ -1431,8 +1484,8 @@ async function main() {
         
         qualifiedPosts.push({
           ...cleanPost,
-          relevance_score: 1.0,
-          relevance_reason: "Scraped in scrape-only mode."
+          relevance_score: score,
+          relevance_reason: evalData.reason
         });
 
         if (qualifiedPosts.length >= targetCount) {
