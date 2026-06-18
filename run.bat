@@ -7,8 +7,8 @@ echo    LinkedIn Commenter Agent — Automated pipeline
 echo ======================================================
 echo.
 
-:: Execute the full orchestrator pipeline (scanner + comment generator)
-node src/run.js
+:: Execute Phase 1 of the orchestrator pipeline (scanner only)
+node src/run.js --scrape-only
 
 echo.
 echo ======================================================

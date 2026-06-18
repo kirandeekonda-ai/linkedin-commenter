@@ -1062,7 +1062,20 @@ async function main() {
   console.log('║        LinkedIn Commenter Agent — Autonomous Runner      ║');
   console.log('╚══════════════════════════════════════════════════════════╝\n');
 
-  if (process.argv.includes('--simulate')) {
+  const simulate = process.argv.includes('--simulate');
+  const scrapeOnly = process.argv.includes('--scrape-only');
+  const generateOnly = process.argv.includes('--generate-only');
+
+  if (!simulate && !scrapeOnly && !generateOnly) {
+    console.error('  ❌  Error: Explicit run phase must be specified.');
+    console.log('\nUsage:');
+    console.log('  Phase 1: node src/run.js --scrape-only     (Scrapes feed and downloads media)');
+    console.log('  Phase 2: node src/run.js --generate-only   (Generates comments and starts server)');
+    console.log('  Dry Run: node src/run.js --simulate        (Simulates comment generation offline)\n');
+    process.exit(1);
+  }
+
+  if (simulate) {
     log('🎮', 'Running in simulation (dry-run) mode with mock posts...');
     
     let history = [];
@@ -1261,6 +1274,207 @@ async function main() {
     return;
   }
 
+  if (generateOnly) {
+    log('🔄', 'Running in generate-only mode. Loading scraped posts...');
+    const rawPostsPath = path.join(RUN_DIR, 'raw-posts.json');
+    if (!fs.existsSync(rawPostsPath)) {
+      log('❌', `No scraped posts found for today at ${rawPostsPath}. Please run with --scrape-only first.`);
+      process.exit(1);
+    }
+
+    let rawData;
+    try {
+      rawData = JSON.parse(fs.readFileSync(rawPostsPath, 'utf-8'));
+    } catch (e) {
+      log('❌', `Failed to parse raw-posts.json: ${e.message}`);
+      process.exit(1);
+    }
+
+    const posts = rawData.posts || [];
+    log('📋', `Loaded ${posts.length} posts from raw-posts.json.`);
+
+    // Load history to prevent duplicate commenting
+    let history = [];
+    if (fs.existsSync(HISTORY_FILE)) {
+      try {
+        history = JSON.parse(fs.readFileSync(HISTORY_FILE, 'utf-8'));
+      } catch (e) {
+        log('⚠️', 'Failed to read comment history database.');
+      }
+    }
+    const alreadyCommentedUrls = new Set(history.map(h => h.post_url));
+    const alreadyCommentedAuthors = new Set(history.map(h => h.author_name));
+    const historicalComments = new Set(history.map(h => h.comment).filter(Boolean));
+
+    const qualifiedPosts = [];
+    const generatedComments = [];
+
+    // Filter and score posts
+    for (const post of posts) {
+      if (qualifiedPosts.length >= 5) break;
+
+      if (post.is_sponsored) {
+        log('⏭️', `Skipping sponsored post/ad by ${post.author_name}`);
+        continue;
+      }
+      if (post.is_liked) {
+        log('⏭️', `Skipping post by ${post.author_name} (already Liked in DOM)`);
+        continue;
+      }
+      if (alreadyCommentedUrls.has(post.post_url)) {
+        log('⏭️', `Skipping post by ${post.author_name} (already commented in history)`);
+        continue;
+      }
+      if (!post.author_name) {
+        log('⏭️', `Skipping post due to empty author name extraction`);
+        continue;
+      }
+      if (qualifiedPosts.some(q => q.author_name === post.author_name) || alreadyCommentedAuthors.has(post.author_name)) {
+        log('⏭️', `Skipping post by ${post.author_name} (author already has a recent comment)`);
+        continue;
+      }
+
+      const evalData = scorePostRelevance(post.post_text, post.author_headline);
+      const score = evalData.score;
+      const deg = post.connection_degree || '3rd';
+
+      if (score < 0.91) continue;
+      if (deg === '1st' && score < 0.96) {
+        log('⏭️', `Skipping 1st connection post by ${post.author_name} | Score: ${(score * 100).toFixed(0)}% (below 96% elite threshold)`);
+        continue;
+      }
+
+      log('🎯', `[QUALIFIED] Author: ${post.author_name} (${deg}) | Score: ${(score * 100).toFixed(0)}%`);
+      const enrichedPost = { ...post, relevance_score: score, relevance_reason: evalData.reason };
+      qualifiedPosts.push(enrichedPost);
+
+      const commentData = generateArchitectComment(enrichedPost.post_text, enrichedPost.author_name, historicalComments);
+      const commentObj = {
+        id: `cmt_${today.replace(/-/g, '')}_00${qualifiedPosts.length}`,
+        post_id: enrichedPost.post_id,
+        post_url: enrichedPost.post_url,
+        post_author: enrichedPost.author_name,
+        post_author_headline: enrichedPost.author_headline || "Technology Leader",
+        post_excerpt: enrichedPost.post_text.substring(0, 160) + (enrichedPost.post_text.length > 160 ? '...' : ''),
+        relevance_score: enrichedPost.relevance_score,
+        relevance_reason: enrichedPost.relevance_reason,
+        connection_degree: deg,
+        tone: commentData.tone,
+        comment: commentData.comment,
+        generated_at: new Date().toISOString(),
+        was_posted: false,
+        posted_at: null
+      };
+      generatedComments.push(commentObj);
+    }
+
+    // Fallback relaxation logic to guarantee 5 comments
+    if (qualifiedPosts.length < 5) {
+      log('⚠️', `Only found ${qualifiedPosts.length} qualified posts. Relaxing thresholds to guarantee 5 comments...`);
+      for (const post of posts) {
+        if (qualifiedPosts.length >= 5) break;
+        if (qualifiedPosts.some(q => q.post_id === post.post_id)) continue;
+        if (post.is_liked || alreadyCommentedUrls.has(post.post_url)) continue;
+        if (qualifiedPosts.some(q => q.author_name === post.author_name) || alreadyCommentedAuthors.has(post.author_name)) continue;
+
+        const evalData = scorePostRelevance(post.post_text, post.author_headline);
+        const score = evalData.score;
+        if (score < 0.85) continue;
+
+        log('🎯', `[RELAXED QUALIFIED] Author: ${post.author_name} (${post.connection_degree || '3rd'}) | Score: ${(score * 100).toFixed(0)}%`);
+        const enrichedPost = { ...post, relevance_score: score, relevance_reason: evalData.reason };
+        qualifiedPosts.push(enrichedPost);
+
+        const commentData = generateArchitectComment(enrichedPost.post_text, enrichedPost.author_name, historicalComments);
+        const commentObj = {
+          id: `cmt_${today.replace(/-/g, '')}_00${qualifiedPosts.length}`,
+          post_id: enrichedPost.post_id,
+          post_url: enrichedPost.post_url,
+          post_author: enrichedPost.author_name,
+          post_author_headline: enrichedPost.author_headline || "Technology Leader",
+          post_excerpt: enrichedPost.post_text.substring(0, 160) + (enrichedPost.post_text.length > 160 ? '...' : ''),
+          relevance_score: enrichedPost.relevance_score,
+          relevance_reason: enrichedPost.relevance_reason,
+          connection_degree: enrichedPost.connection_degree || '3rd',
+          tone: commentData.tone,
+          comment: commentData.comment,
+          generated_at: new Date().toISOString(),
+          was_posted: false,
+          posted_at: null
+        };
+        generatedComments.push(commentObj);
+      }
+    }
+
+    // Save output files
+    ensureDir(RUN_DIR);
+    fs.writeFileSync(path.join(RUN_DIR, 'filtered-posts.json'), JSON.stringify(qualifiedPosts, null, 2));
+    fs.writeFileSync(path.join(RUN_DIR, 'comments.json'), JSON.stringify(generatedComments, null, 2));
+    log('💾', 'Filtered posts and comments successfully saved to data/runs directory.');
+
+    // Update history
+    generatedComments.forEach(c => {
+      if (!history.some(h => h.post_id === c.post_id && h.date === today)) {
+        history.push({
+          date: today,
+          post_id: c.post_id,
+          author_name: c.post_author,
+          comment: c.comment
+        });
+      }
+    });
+    fs.writeFileSync(HISTORY_FILE, JSON.stringify(history, null, 2));
+    log('💾', 'Updated history database synchronized.');
+
+    // Update stats.json
+    if (fs.existsSync(STATS_FILE)) {
+      try {
+        const stats = JSON.parse(fs.readFileSync(STATS_FILE, 'utf-8'));
+        stats.total_runs = (stats.total_runs || 0) + 1;
+        stats.total_posts_analyzed = (stats.total_posts_analyzed || 0) + posts.length;
+
+        generatedComments.forEach(c => {
+          stats.tones_used[c.tone] = (stats.tones_used[c.tone] || 0) + 1;
+        });
+
+        stats.daily_history = stats.daily_history || [];
+        const dayHistIndex = stats.daily_history.findIndex(h => h.date === today);
+        if (dayHistIndex !== -1) {
+          stats.daily_history[dayHistIndex].posts_scanned = posts.length;
+          stats.daily_history[dayHistIndex].relevant_found = qualifiedPosts.length;
+          stats.daily_history[dayHistIndex].comments_generated = generatedComments.length;
+        } else {
+          stats.daily_history.push({
+            date: today,
+            posts_scanned: posts.length,
+            relevant_found: qualifiedPosts.length,
+            comments_generated: generatedComments.length,
+            comments_posted: 0
+          });
+        }
+
+        let totalGeneratedComments = 0;
+        stats.daily_history.forEach(h => {
+          totalGeneratedComments += (h.comments_generated || 0);
+        });
+        stats.total_comments_generated = totalGeneratedComments;
+
+        const totalPosted = stats.total_comments_posted || 0;
+        stats.posting_rate = ((totalPosted / (stats.total_comments_generated || 1)) * 100).toFixed(1) + '%';
+
+        fs.writeFileSync(STATS_FILE, JSON.stringify(stats, null, 2));
+        log('📊', 'Global statistics successfully updated in stats.json');
+      } catch (e) {
+        log('⚠️', `Failed to update statistics: ${e.message}`);
+      }
+    }
+
+    log('🎉', `Process completed successfully! Generated exactly ${generatedComments.length} comments.`);
+    log('🚀', 'Launching dashboard server...');
+    await import('./server.js');
+    return;
+  }
+
   if (!fs.existsSync(SESSION_FILE)) {
     log('❌', 'No saved session. Run `npm run login` first.');
     process.exit(1);
@@ -1356,7 +1570,6 @@ async function main() {
   const processedPostIds = new Set();
 
   let scrollCount = 0;
-  const scrapeOnly = process.argv.includes('--scrape-only');
   const args = process.argv.slice(2);
   const cliMaxPosts = parseInt(args.find((_, i, a) => a[i - 1] === '--max-posts'), 10);
   const cliMaxScrolls = parseInt(args.find((_, i, a) => a[i - 1] === '--max-scrolls'), 10);

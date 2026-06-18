@@ -9,6 +9,9 @@
     "test-spike1": "node src/login-manager.js --full-test",
     "start": "node src/server.js",
     "scan": "node src/feed-scanner.js",
+    "scrape": "node src/run.js --scrape-only",
+    "generate": "node src/run.js --generate-only",
+    "simulate": "node src/run.js --simulate",
     "orchestrate": "node src/run.js",
     "test": "node tests/browser-guard.test.js"
   },
